@@ -15,3 +15,6 @@ their maintainers:
   for research replication; contact the project before further reuse.
 - **Referenzkorpus Altdeutsch** (OHG): CC BY-NC-SA (via LAUDATIO) - processed
   derivatives shared here non-commercially with attribution.
+
+
+The MIT license in LICENSE applies to the code in this repo only. The corpus data remains governed by the source corpus.
