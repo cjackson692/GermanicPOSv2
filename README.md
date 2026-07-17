@@ -1,4 +1,4 @@
-# GermanicPOS
+﻿# GermanicPOS
 Neural network error analysis for understanding language change: training Bi-LSTM POS taggers on five early Germanic languages (Old English, Old Saxon, Old Icelandic, Old High German, Gothic) and reading their error patterns as signals of syntactic stability and change. This is the complete, configuration-driven pipeline for the revised study (v2); it supersedes the notebook-based v1 repository.
 
 ### Structure
@@ -9,9 +9,9 @@ Run everything with:
     - Optional duplicate-sentence sensitivity check; deterministic seeds reproduce the main-run models.
 
 Code:
-  - `extract.py` — parses each source corpus (Penn .psd, IcePaHC .tagged, Wulfila and ReA token tables) into aligned sentence-tag arrays, applying the form-level tag conversions in `tag_maps.py`. Every extraction writes a report listing each source tag -> final tag mapping with token counts (these reports regenerate the paper's Appendix A).
-  - `core.py` — dataset handling (train-only vocabulary with a trained UNK embedding, 80/10/10 splits, masking), the Bi-LSTM tagger, training with early stopping on development loss, evaluation (precision/recall/F1, confusion matrices, softmax entropy, error examples), and the most-frequent-tag baseline.
-  - `run.py` — experiment orchestration and analysis (Welch + Mann-Whitney tests with Holm correction over the ablation grid, on both recall and F1).
+  - `extract.py` â€” parses each source corpus (Penn .psd, IcePaHC .tagged, Wulfila and ReA token tables) into aligned sentence-tag arrays, applying the form-level tag conversions in `tag_maps.py`. Every extraction writes a report listing each source tag -> final tag mapping with token counts (these reports regenerate the paper's Appendix A).
+  - `core.py` â€” dataset handling (train-only vocabulary with a trained UNK embedding, 80/10/10 splits, masking), the Bi-LSTM tagger, training with early stopping on development loss, evaluation (precision/recall/F1, confusion matrices, softmax entropy, error examples), and the most-frequent-tag baseline.
+  - `run.py` â€” experiment orchestration and analysis (Welch + Mann-Whitney tests with Holm correction over the ablation grid, on both recall and F1).
 
 Datasets:
   - `data/processed/` contains the extracted aligned sentence-tag arrays for OS, OIce, OHG (including the Notker/heterogeneous and definiteness-contrast subsets), and Gothic, plus extraction reports for all five languages.
@@ -28,6 +28,6 @@ Taylor, A., A. Warner, S. Pintzuk, and F. Beths. (2003). The York-Toronto-Helsin
 
 Walkden, G. (2016). The HeliPaD: a parsed corpus of Old Saxon. International journal of corpus linguistics, 21(4), (pp. 559-571).
 
-Wallenberg, J. C., Ingason A. K., Sigurðsson, E. F., and Rögnvaldsson E. (2011). Icelandic Parsed Historical Corpus (IcePaHC). Version 0.9. http://www.linguist.is/icelandic_treebank
+Wallenberg, J. C., Ingason A. K., SigurÃ°sson, E. F., and RÃ¶gnvaldsson E. (2011). Icelandic Parsed Historical Corpus (IcePaHC). Version 0.9. http://www.linguist.is/icelandic_treebank
 
-Zeige, L. E. , Schnelle, G., Klotz, M., Donhauser, K., Gippert, J., Lühr, R. (2024). Deutsch Diachron Digital - Referenzkorpus Altdeutsch. Version 1.2. Humboldt-Universität zu Berlin.
+Zeige, L. E. , Schnelle, G., Klotz, M., Donhauser, K., Gippert, J., LÃ¼hr, R. (2024). Deutsch Diachron Digital - Referenzkorpus Altdeutsch. Version 1.2. Humboldt-UniversitÃ¤t zu Berlin.
