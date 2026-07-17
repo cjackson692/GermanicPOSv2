@@ -1,0 +1,5136 @@
+{
+ "language": "GOTH",
+ "n_sentences": 4305,
+ "seeds": [
+  {
+   "confusion": {
+    "CONJ": {
+     "CONJ": 492,
+     "PRO": 16,
+     "ADV": 19,
+     "ADJ": 4
+    },
+    "PRO": {
+     "PRO": 1205,
+     "VB": 20,
+     "CONJ": 23,
+     "N": 5,
+     "ADV": 1
+    },
+    "VB": {
+     "VB": 1392,
+     "N": 70,
+     "ADJ": 25,
+     "PRO": 18
+    },
+    "N": {
+     "N": 1301,
+     "ADJ": 29,
+     "VB": 104,
+     "PRO": 2,
+     "ADV": 1
+    },
+    "AP": {
+     "AP": 525,
+     "ADV": 16,
+     "ADJ": 1
+    },
+    "ADV": {
+     "ADV": 201,
+     "AP": 49,
+     "CONJ": 10,
+     "ADJ": 7,
+     "N": 1,
+     "VB": 5
+    },
+    "ADJ": {
+     "VB": 36,
+     "ADJ": 290,
+     "N": 30
+    },
+    "NUM": {
+     "VB": 1,
+     "NUM": 16,
+     "N": 1,
+     "ADJ": 1,
+     "ADV": 2
+    },
+    "PART": {
+     "CONJ": 11,
+     "PART": 7,
+     "VB": 1
+    }
+   },
+   "prf": {
+    "ADJ": {
+     "precision": 0.8123249299719888,
+     "recall": 0.8146067415730337,
+     "f1": 0.8134642356241233,
+     "support": 356
+    },
+    "ADV": {
+     "precision": 0.8375,
+     "recall": 0.7362637362637363,
+     "f1": 0.7836257309941521,
+     "support": 273
+    },
+    "AP": {
+     "precision": 0.9146341463414634,
+     "recall": 0.9686346863468634,
+     "f1": 0.9408602150537635,
+     "support": 542
+    },
+    "CONJ": {
+     "precision": 0.917910447761194,
+     "recall": 0.9265536723163842,
+     "f1": 0.9222118088097468,
+     "support": 531
+    },
+    "N": {
+     "precision": 0.9240056818181818,
+     "recall": 0.9053583855254002,
+     "f1": 0.9145869947275923,
+     "support": 1437
+    },
+    "NUM": {
+     "precision": 1.0,
+     "recall": 0.7619047619047619,
+     "f1": 0.8648648648648648,
+     "support": 21
+    },
+    "PART": {
+     "precision": 1.0,
+     "recall": 0.3684210526315789,
+     "f1": 0.5384615384615384,
+     "support": 19
+    },
+    "PRO": {
+     "precision": 0.9709911361804996,
+     "recall": 0.9609250398724083,
+     "f1": 0.9659318637274548,
+     "support": 1254
+    },
+    "VB": {
+     "precision": 0.8928800513149455,
+     "recall": 0.9249169435215947,
+     "f1": 0.9086161879895562,
+     "support": 1505
+    }
+   },
+   "overall_accuracy": 0.9142809026608285,
+   "mean_softmax_entropy": {
+    "CONJ": 0.1716535034363216,
+    "PRO": 0.07244638608845821,
+    "VB": 0.20830640600765266,
+    "N": 0.1842130529503069,
+    "AP": 0.17865730358830678,
+    "ADV": 0.4161923769793231,
+    "ADJ": 0.34949676043699296,
+    "NUM": 1.3172384755952018,
+    "PART": 1.16919832872717
+   },
+   "error_examples": {
+    "VB->N": [
+     {
+      "sentence": "start a\u00fe\u00fean weis sium bimait weis ahmin guda skalkinondans jah \u0195opandans in xristau iesu jan~ni in leika gatrauam stop",
+      "token": "bimait",
+      "gold": "VB",
+      "pred": "N"
+     },
+     {
+      "sentence": "start i\u00fe israel laistjands wito\u00fe garaihteins bi wito\u00fe garaihteins ni gasnau stop",
+      "token": "laistjands",
+      "gold": "VB",
+      "pred": "N"
+     },
+     {
+      "sentence": "start faginon mi\u00fe faginondam gretan mi\u00fe gretandam stop",
+      "token": "faginondam",
+      "gold": "VB",
+      "pred": "N"
+     },
+     {
+      "sentence": "start faginon mi\u00fe faginondam gretan mi\u00fe gretandam stop",
+      "token": "gretan",
+      "gold": "VB",
+      "pred": "N"
+     },
+     {
+      "sentence": "start managistans bro\u00fere in fraujin gatrauandans bandjom meinaim mais gadaursan unagandans waurd gudis rodjan stop",
+      "token": "unagandans",
+      "gold": "VB",
+      "pred": "N"
+     }
+    ],
+    "CONJ->PRO": [
+     {
+      "sentence": "start i\u00fe witands iesus in sis silbin \u00featei birodidedun \u00feata \u00feai siponjos is qa\u00fe du im \u00feata izwis gamarzei\u00fe stop",
+      "token": "\u00featei",
+      "gold": "CONJ",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start all auk \u00feata \u00feiudos sokjand waituh \u00fean atta izwar sa ufar himinam \u00featei \u00feaurbu\u00fe stop",
+      "token": "\u00featei",
+      "gold": "CONJ",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start so goleins meinai handau pawlaus \u00featei ist bandwo ana allaim aipistaulem meinaim swa melja stop",
+      "token": "\u00featei",
+      "gold": "CONJ",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start iba \u00feank \u00feu fairhaitis skalka jainamma unte gatawida \u00featei anabudan was ni man stop",
+      "token": "iba",
+      "gold": "CONJ",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start i\u00fe jus qi\u00fei\u00fe jabai qi\u00feai manna attin seinamma ai\u00fe\u00feau ai\u00feein kaurban \u00featei ist mai\u00fems \u00feis\u0195ah \u00featei us mis gabatnis stop",
+      "token": "\u00featei",
+      "gold": "CONJ",
+      "pred": "PRO"
+     }
+    ],
+    "ADJ->VB": [
+     {
+      "sentence": "start \u0195aiwa nei mais andbahti ahmins wair\u00feai in wul\u00feau stop",
+      "token": "wair\u00feai",
+      "gold": "ADJ",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start unte gairnjands was allaize izwara jah unwunands in \u00feizei hausidedu\u00fe ina siukan stop",
+      "token": "siukan",
+      "gold": "ADJ",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start gahausidedun \u00fean \u00feo alla jah \u00feai fareisaieis faihufrikai wisandans jah bimampidedun ina stop",
+      "token": "faihufrikai",
+      "gold": "ADJ",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start inuh \u00feis bidja izwis tulgjan in imma fria\u00fewa stop",
+      "token": "tulgjan",
+      "gold": "ADJ",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start jah \u00featei us barniskja weihos bokos kun\u00fees \u00feos mahteigons \u00feuk usfratwjan du ganistai \u00feairh galaubein \u00feo in xristau iesu stop",
+      "token": "mahteigons",
+      "gold": "ADJ",
+      "pred": "VB"
+     }
+    ],
+    "N->ADJ": [
+     {
+      "sentence": "start i\u00fe iesus gawandjands sik jah gasai\u0195ands \u00feo qa\u00fe \u00ferafstei \u00feuk dauhtar galaubeins \u00feeina ganasida \u00feuk jah ganas so qino fram \u00feizai \u0195eilai jainai stop",
+      "token": "galaubeins",
+      "gold": "N",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start jah ni in waihtai afagidai fram \u00feaim andasta\u00fejam \u00featei ist im ustaikneins fralustais i\u00fe izwis ganistais jah \u00feata fram guda stop",
+      "token": "ustaikneins",
+      "gold": "N",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start jah \u00featei us barniskja weihos bokos kun\u00fees \u00feos mahteigons \u00feuk usfratwjan du ganistai \u00feairh galaubein \u00feo in xristau iesu stop",
+      "token": "galaubein",
+      "gold": "N",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start unte ains hlaifs ain leik \u00feai managans sium \u00feaiei auk allai ainis hlaibis jah ainis stiklis brukjam stop",
+      "token": "stiklis",
+      "gold": "N",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start ains frauja aina galaubeins aina daupeins stop",
+      "token": "galaubeins",
+      "gold": "N",
+      "pred": "ADJ"
+     }
+    ],
+    "N->VB": [
+     {
+      "sentence": "start jah ni in waihtai afagidai fram \u00feaim andasta\u00fejam \u00featei ist im ustaikneins fralustais i\u00fe izwis ganistais jah \u00feata fram guda stop",
+      "token": "andasta\u00fejam",
+      "gold": "N",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start wasuh \u00fean be\u00feania ne\u0195a iairusaulwmim swaswe ana spaurdim fimftaihunim stop",
+      "token": "be\u00feania",
+      "gold": "N",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start ni \u00feanamais nu uns misso stojaima ak \u00feata stojai\u00fe mais ei ni satjai\u00fe bistugq bro\u00fer ai\u00fe\u00feau gamarzein stop",
+      "token": "bistugq",
+      "gold": "N",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start ni \u00feanamais nu uns misso stojaima ak \u00feata stojai\u00fe mais ei ni satjai\u00fe bistugq bro\u00fer ai\u00fe\u00feau gamarzein stop",
+      "token": "gamarzein",
+      "gold": "N",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start qimai \u00feiudinassus \u00feeins wair\u00feai wilja \u00feeins swe in himina jah ana air\u00feai stop",
+      "token": "\u00feiudinassus",
+      "gold": "N",
+      "pred": "VB"
+     }
+    ],
+    "ADV->AP": [
+     {
+      "sentence": "start gasai\u0195andans \u00fean gakannidedun bi \u00feata waurd \u00featei rodi\u00fe was du im bi \u00feata barn stop",
+      "token": "du",
+      "gold": "ADV",
+      "pred": "AP"
+     },
+     {
+      "sentence": "start du kaurin\u00feium \u00b7a\u00b7 ustauh du kaurin\u00feium frume melida ist us filippai swe qe\u00feun sumai i\u00fe mais \u00feugkei\u00fe bi silbins apaustaulaus insahtai melida wisan us asiai stop",
+      "token": "du",
+      "gold": "ADV",
+      "pred": "AP"
+     },
+     {
+      "sentence": "start du kaurin\u00feium \u00b7a\u00b7 ustauh du kaurin\u00feium frume melida ist us filippai swe qe\u00feun sumai i\u00fe mais \u00feugkei\u00fe bi silbins apaustaulaus insahtai melida wisan us asiai stop",
+      "token": "du",
+      "gold": "ADV",
+      "pred": "AP"
+     },
+     {
+      "sentence": "start jah qa\u00fe mis ganah \u00feuk ansts meina unte mahts in siukeim ustiuhada filu gabaurjaba nu mais \u0195opa in siukeim meinaim ei ufarhlei\u00ferjai ana mis mahts xristaus stop",
+      "token": "ana",
+      "gold": "ADV",
+      "pred": "AP"
+     },
+     {
+      "sentence": "start domjandans \u00feata \u00featei ains faur allans gaswalt \u00feannu allai gaswultun jah faur allans gaswalt ei \u00feai libandans ni \u00feanasei\u00fes sis silbam libaina ak \u00feamma faur sik gaswiltandin jah urreisandin stop",
+      "token": "faur",
+      "gold": "ADV",
+      "pred": "AP"
+     }
+    ],
+    "PRO->VB": [
+     {
+      "sentence": "start jah \u0195arbonds faur marein galeilaias gasa\u0195 seimonu jah andraian bro\u00fear is \u00feis seimonis wairpandans nati in marein wesun auk fiskjans stop",
+      "token": "is",
+      "gold": "PRO",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start i\u00fe is qa\u00feuh \u00feata allata gafastaida us jundai meinai stop",
+      "token": "is",
+      "gold": "PRO",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start i\u00fe \u00fean sei\u00feu war\u00fe qam manna gabigs af areima\u00feaias \u00feizuh namo iosef saei jah silba siponida iesua stop",
+      "token": "\u00feizuh",
+      "gold": "PRO",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start jah ik wul\u00feu \u00feanei gaft mis gaf im ei sijaina ain swaswe wit ain siju stop",
+      "token": "wit",
+      "gold": "PRO",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start unagein us handau fijande unsaraize galausidaim skalkinon imma stop",
+      "token": "unsaraize",
+      "gold": "PRO",
+      "pred": "VB"
+     }
+    ],
+    "AP->ADV": [
+     {
+      "sentence": "start akei und hina dag mi\u00fe\u00feanei siggwada moses hulistr ligi\u00fe ana hairtin ize stop",
+      "token": "ana",
+      "gold": "AP",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start wasuh \u00fean be\u00feania ne\u0195a iairusaulwmim swaswe ana spaurdim fimftaihunim stop",
+      "token": "ana",
+      "gold": "AP",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start jah managans suniwe israelis gawandei\u00fe du fraujin guda ize stop",
+      "token": "du",
+      "gold": "AP",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start domjandans \u00feata \u00featei ains faur allans gaswalt \u00feannu allai gaswultun jah faur allans gaswalt ei \u00feai libandans ni \u00feanasei\u00fes sis silbam libaina ak \u00feamma faur sik gaswiltandin jah urreisandin stop",
+      "token": "faur",
+      "gold": "AP",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start jah \u00featei us barniskja weihos bokos kun\u00fees \u00feos mahteigons \u00feuk usfratwjan du ganistai \u00feairh galaubein \u00feo in xristau iesu stop",
+      "token": "du",
+      "gold": "AP",
+      "pred": "ADV"
+     }
+    ],
+    "NUM->VB": [
+     {
+      "sentence": "start wasuh \u00fean be\u00feania ne\u0195a iairusaulwmim swaswe ana spaurdim fimftaihunim stop",
+      "token": "fimftaihunim",
+      "gold": "NUM",
+      "pred": "VB"
+     }
+    ],
+    "VB->ADJ": [
+     {
+      "sentence": "start managistans bro\u00fere in fraujin gatrauandans bandjom meinaim mais gadaursan unagandans waurd gudis rodjan stop",
+      "token": "gadaursan",
+      "gold": "VB",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start qimai \u00feiudinassus \u00feeins wair\u00feai wilja \u00feeins swe in himina jah ana air\u00feai stop",
+      "token": "wair\u00feai",
+      "gold": "VB",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start i\u00fe is ubuhwopida qi\u00feands iesu sunu daweidis armai mik stop",
+      "token": "armai",
+      "gold": "VB",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start jah \u00feai bokarjos jah fareisaieis gasai\u0195andans ina matjandan mi\u00fe \u00feaim motarjam jah frawaurhtaim qe\u00feun du \u00feaim siponjam is \u0195a ist \u00featei mi\u00fe motarjam jah frawaurhtaim matji\u00fe jah driggki\u00fe stop",
+      "token": "matjandan",
+      "gold": "VB",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start jah \u00feai bokarjos jah fareisaieis gasai\u0195andans ina matjandan mi\u00fe \u00feaim motarjam jah frawaurhtaim qe\u00feun du \u00feaim siponjam is \u0195a ist \u00featei mi\u00fe motarjam jah frawaurhtaim matji\u00fe jah driggki\u00fe stop",
+      "token": "frawaurhtaim",
+      "gold": "VB",
+      "pred": "ADJ"
+     }
+    ],
+    "ADV->CONJ": [
+     {
+      "sentence": "start andhafjandans imma qe\u00feun iesu \u00feana nazoraiu \u00fearuh qa\u00fe im iesus ik im sto\u00feuh \u00fean jah iudas sa lewjands ina mi\u00fe im stop",
+      "token": "\u00fearuh",
+      "gold": "ADV",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start \u00feanuh peilatus hausjands \u00feize stop",
+      "token": "\u00feanuh",
+      "gold": "ADV",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start wair\u00feai\u00fe nu galeikondans guda swe barna liuba stop",
+      "token": "nu",
+      "gold": "ADV",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start du\u00fe\u00fee habandans \u00feata andbahti swaswe gaarmaidai waur\u00feum ni wair\u00feaima usgrudjans stop",
+      "token": "swaswe",
+      "gold": "ADV",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start bidja nu izwis ik bandja in fraujin wair\u00feaba gaggan \u00feizos la\u00feonais \u00feizaiei la\u00feodai siu\u00fe stop",
+      "token": "nu",
+      "gold": "ADV",
+      "pred": "CONJ"
+     }
+    ],
+    "CONJ->ADV": [
+     {
+      "sentence": "start ni \u00feanamais nu uns misso stojaima ak \u00feata stojai\u00fe mais ei ni satjai\u00fe bistugq bro\u00fer ai\u00fe\u00feau gamarzein stop",
+      "token": "nu",
+      "gold": "CONJ",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start jah qa\u00fe mis ganah \u00feuk ansts meina unte mahts in siukeim ustiuhada filu gabaurjaba nu mais \u0195opa in siukeim meinaim ei ufarhlei\u00ferjai ana mis mahts xristaus stop",
+      "token": "nu",
+      "gold": "CONJ",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start swaei nu bro\u00ferjus meinai liubans jah lustusamans fahe\u00fes jah waips meins swa standai\u00fe in fraujin stop",
+      "token": "nu",
+      "gold": "CONJ",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start sijai\u00fe nu jus fullatojai swaswe atta izwar sa in himinam fullatojis ist stop",
+      "token": "nu",
+      "gold": "CONJ",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start unte managai gaggand \u00feanzei ufta qa\u00fe izwis i\u00fe nu jag~gretands qi\u00fea \u00feans fijands galgins xristaus stop",
+      "token": "nu",
+      "gold": "CONJ",
+      "pred": "ADV"
+     }
+    ],
+    "PART->CONJ": [
+     {
+      "sentence": "start jah fram \u00feamma daga ei anabau\u00fe mis ei weisjau faurama\u00feleis ize in iudaia fram jera \u00b7k\u00b7 und jer \u00b7l\u00b7 jah an\u00fear artaksairksaus \u00feiudanis \u00b7ib\u00b7 jera ik jah bro\u00ferjus meinai hlaif faurama\u00feleis meinis ni matidedum stop",
+      "token": "ei",
+      "gold": "PART",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start izwis silbans fragi\u00fe sijaidu in galaubeinai silbans izwis kausei\u00fe \u00feauh niu kunnu\u00fe \u00featei iesus xristus in izwis ist ibai aufto ungakusanai siju\u00fe stop",
+      "token": "ibai",
+      "gold": "PART",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start ibai aftra qimandan mik gu\u00fe gahaunjai at izwis jah qaino managans \u00feize faura frawaurkjandane jan~ni idreigondane ana unhraini\u00feai \u00feoei gatawidedun horinassau jah aglaitja stop",
+      "token": "ibai",
+      "gold": "PART",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start a\u00fe\u00fean jabai wiljau \u0195opan ni sijau unwita unte sunja qi\u00fea i\u00fe freidja ibai \u0195as in mis \u0195a muni ufar \u00featei gasai\u0195i\u00fe ai\u00fe\u00feau ai\u00fe\u00feau gahausei\u00fe \u0195a us mis stop",
+      "token": "ibai",
+      "gold": "PART",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start a\u00fe\u00fean jabai siju\u00fe in mis jah waurda meina in izwis sind \u00feata\u0195ah \u00feei wilei\u00fe bidji\u00fe jah wair\u00fei\u00fe izwis stop",
+      "token": "\u00feei",
+      "gold": "PART",
+      "pred": "CONJ"
+     }
+    ],
+    "PRO->CONJ": [
+     {
+      "sentence": "start jah \u00featei us barniskja weihos bokos kun\u00fees \u00feos mahteigons \u00feuk usfratwjan du ganistai \u00feairh galaubein \u00feo in xristau iesu stop",
+      "token": "\u00featei",
+      "gold": "PRO",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start atta \u00featei atgaft mis wiljau ei \u00fearei im ik jah \u00feai sijaina mi\u00fe mis ei sai\u0195aina wul\u00feu meinana \u00feanei gaft mis unte frijodes mik faur gaskaft fair\u0195aus stop",
+      "token": "\u00featei",
+      "gold": "PRO",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start atta \u00featei atgaft mis wiljau ei \u00fearei im ik jah \u00feai sijaina mi\u00fe mis ei sai\u0195aina wul\u00feu meinana \u00feanei gaft mis unte frijodes mik faur gaskaft fair\u0195aus stop",
+      "token": "\u00feanei",
+      "gold": "PRO",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start \u00feanuh \u00fean in meno\u00fe saihstin insandi\u00fes was aggilus gabriel fram guda in baurg galeilaias sei haitada nazarai\u00fe stop",
+      "token": "\u00feanuh",
+      "gold": "PRO",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start jah ik wul\u00feu \u00feanei gaft mis gaf im ei sijaina ain swaswe wit ain siju stop",
+      "token": "\u00feanei",
+      "gold": "PRO",
+      "pred": "CONJ"
+     }
+    ],
+    "ADJ->N": [
+     {
+      "sentence": "start a\u00fe\u00fean qi\u00fea swalaud melis swe arbinumja niuklahs ist ni und waiht iusiza ist skalka frauja allaize wisands stop",
+      "token": "iusiza",
+      "gold": "ADJ",
+      "pred": "N"
+     },
+     {
+      "sentence": "start wrakjom wunnim \u0195ileika mis waur\u00feun in antiaukiai in eikaunion in lwstrws \u0195ileikos wrakjos us\u00feulaida jah us allaim mik galausida frauja stop",
+      "token": "\u0195ileikos",
+      "gold": "ADJ",
+      "pred": "N"
+     },
+     {
+      "sentence": "start sijai\u00fe nu jus fullatojai swaswe atta izwar sa in himinam fullatojis ist stop",
+      "token": "fullatojis",
+      "gold": "ADJ",
+      "pred": "N"
+     },
+     {
+      "sentence": "start jah inliuhtjan allans \u0195ileik \u00feata fauragaggi runos \u00feizos gafulginons fram aiwam in guda \u00feamma alla gaskapjandin stop",
+      "token": "gafulginons",
+      "gold": "ADJ",
+      "pred": "N"
+     },
+     {
+      "sentence": "start jah war\u00fe bi\u00fee ne\u0195a was be\u00fesfagein jah be\u00feanijin at fairgunja \u00featei haitada alewjo insandida twans siponje seinaize stop",
+      "token": "alewjo",
+      "gold": "ADJ",
+      "pred": "N"
+     }
+    ],
+    "VB->PRO": [
+     {
+      "sentence": "start jah \u00feai fauragaggandans andbitun ina ei \u00feahaidedi i\u00fe is und filu mais hropida sunau daweidis armai mik stop",
+      "token": "is",
+      "gold": "VB",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start jah \u00feai bokarjos jah fareisaieis gasai\u0195andans ina matjandan mi\u00fe \u00feaim motarjam jah frawaurhtaim qe\u00feun du \u00feaim siponjam is \u0195a ist \u00featei mi\u00fe motarjam jah frawaurhtaim matji\u00fe jah driggki\u00fe stop",
+      "token": "is",
+      "gold": "VB",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start \u00fean in \u00feamma fair\u0195au im liuha\u00fe im \u00feis fair\u0195aus stop",
+      "token": "im",
+      "gold": "VB",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start \u00fean in \u00feamma fair\u0195au im liuha\u00fe im \u00feis fair\u0195aus stop",
+      "token": "im",
+      "gold": "VB",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start \u00fea\u00feroh galagi\u00fes ist mis waips garaihteins \u00feanei usgibi\u00fe mis frauja in jainamma daga sa garaihta staua a\u00fe\u00fean ni \u00featainei mis ak jah allaim \u00feaiei frijond qum is stop",
+      "token": "is",
+      "gold": "VB",
+      "pred": "PRO"
+     }
+    ],
+    "CONJ->ADJ": [
+     {
+      "sentence": "start swaswe raihtis in ainamma leika li\u00feuns managans habam \u00feai\u00fe~\u00fean li\u00fejus allai ni \u00feata samo taui haband stop",
+      "token": "raihtis",
+      "gold": "CONJ",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start unte raihtis bida andnam a\u00fe\u00fean usdaudoza wisands silba wiljands galai\u00fe du izwis stop",
+      "token": "raihtis",
+      "gold": "CONJ",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start iftumin daga managei sei sto\u00fe hindar marein se\u0195un \u00featei skip an\u00fear ni was jainar alja ain jah \u00featei mi\u00fe~ni~qam siponjam seinaim iesus in \u00feata skip ak ainai siponjos is gali\u00feun stop",
+      "token": "alja",
+      "gold": "CONJ",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start ains allis gu\u00fe ains jah midumonds gudis jah manne manna xristus iesus stop",
+      "token": "allis",
+      "gold": "CONJ",
+      "pred": "ADJ"
+     }
+    ],
+    "PRO->N": [
+     {
+      "sentence": "start jah ni du ainaihun \u00feizo insandi\u00fes was helias alja in saraipta seidonais du qinon widuwon stop",
+      "token": "ainaihun",
+      "gold": "PRO",
+      "pred": "N"
+     },
+     {
+      "sentence": "start jah insandida twans siponje seinaize qa\u00feuh du im gaggats in \u00feo baurg jah gamotei\u00fe igqis manna kas watins bairands gaggats afar \u00feamma stop",
+      "token": "igqis",
+      "gold": "PRO",
+      "pred": "N"
+     },
+     {
+      "sentence": "start akei faur \u00feata at bajo\u00feum daupjandam jah ain\u0195a\u00fearammeh seina anafilhandam daupein mi\u00fe sis misso sik undrunnun sumai ni kunnandans \u0195a\u00fear skuldedi maiza stop",
+      "token": "ain\u0195a\u00fearammeh",
+      "gold": "PRO",
+      "pred": "N"
+     },
+     {
+      "sentence": "start jah qino wisandei in runa blo\u00feis jera twalif soei in lekjans fraqam allamma aigina seinamma jah ni mahta was fram ainomehun galeikinon stop",
+      "token": "ainomehun",
+      "gold": "PRO",
+      "pred": "N"
+     },
+     {
+      "sentence": "start jah qa\u00fe im iesus hirjats afar mis jah gatauja igqis wair\u00fean nutans manne stop",
+      "token": "igqis",
+      "gold": "PRO",
+      "pred": "N"
+     }
+    ],
+    "AP->ADJ": [
+     {
+      "sentence": "start jah ni du ainaihun \u00feizo insandi\u00fes was helias alja in saraipta seidonais du qinon widuwon stop",
+      "token": "alja",
+      "gold": "AP",
+      "pred": "ADJ"
+     }
+    ],
+    "NUM->N": [
+     {
+      "sentence": "start \u00feanuh \u00fean in meno\u00fe saihstin insandi\u00fes was aggilus gabriel fram guda in baurg galeilaias sei haitada nazarai\u00fe stop",
+      "token": "saihstin",
+      "gold": "NUM",
+      "pred": "N"
+     }
+    ],
+    "ADV->ADJ": [
+     {
+      "sentence": "start a\u00fe\u00fean silba gu\u00fe gawair\u00fejis gaweihai izwis allandjo jah gahailana izwarana ahman jah saiwala jah leik unfairinona in quma fraujins unsaris iesuis xristaus gafastaindau stop",
+      "token": "allandjo",
+      "gold": "ADV",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start ak qimands in rumai usdaudo sokida mik jah bigat stop",
+      "token": "usdaudo",
+      "gold": "ADV",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start jah \u00feata witandans \u00feata \u00feeihs \u00featei mel ist uns ju us slepa urreisan unte nu ne\u0195is ist naseins unsara \u00feau \u00fean galaubidedum stop",
+      "token": "ne\u0195is",
+      "gold": "ADV",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start jah auk qimandam unsis in makaidonjai ni waiht habaida ga\u0195eilainais leik unsar ak in allamma anapragganai utana waihjons innana agisa stop",
+      "token": "innana",
+      "gold": "ADV",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start ja\u00fe\u00fee razdai \u0195as rodjai bi twans ai\u00fe\u00feau maist \u00ferins jah stop",
+      "token": "maist",
+      "gold": "ADV",
+      "pred": "ADJ"
+     }
+    ],
+    "N->PRO": [
+     {
+      "sentence": "start \u00feis nasjandins uns jah la\u00feondins la\u00feonai weihai ni bi waurstwam unsaraim ak bi seinai leikainai jah anstai sei gibana ist unsis in xristau iesu faur mela aiweina stop",
+      "token": "seinai",
+      "gold": "N",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start wasuh \u00fean jah frauja \u00feo ahmeinon anafilhands daupein ei\u00fean garaihtaba war\u00fe bi swiknein sokeins gawagida stop",
+      "token": "daupein",
+      "gold": "N",
+      "pred": "PRO"
+     }
+    ],
+    "ADV->N": [
+     {
+      "sentence": "start \u00feanuh qe\u00feun du imma frauja framwigis gif unsis \u00feana hlaif stop",
+      "token": "framwigis",
+      "gold": "ADV",
+      "pred": "N"
+     }
+    ],
+    "PART->VB": [
+     {
+      "sentence": "start nih \u00fean ainshun swe\u00feauh bal\u00feaba rodida bi ina in agisis iudaie stop",
+      "token": "swe\u00feauh",
+      "gold": "PART",
+      "pred": "VB"
+     }
+    ],
+    "ADV->VB": [
+     {
+      "sentence": "start nih \u00fean ainshun swe\u00feauh bal\u00feaba rodida bi ina in agisis iudaie stop",
+      "token": "bal\u00feaba",
+      "gold": "ADV",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start wakai\u00fe standaiduh in galaubeinai wairaleiko taujai\u00fe ga\u00fewastidai sijai\u00fe stop",
+      "token": "wairaleiko",
+      "gold": "ADV",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start ainshun uslagida ana ina handuns at weihai auk is mahtai unanasiuniba unselein ize nauh disskaidandein jah ni uslaubjandein faur mel sik gahaban stop",
+      "token": "unanasiuniba",
+      "gold": "ADV",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start ei gaggai\u00fe gafehaba du \u00feaim \u00feaiei uta sind jah ni ainishun \u0195is \u00feaurbei\u00fe stop",
+      "token": "gafehaba",
+      "gold": "ADV",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start \u00fean qi\u00feand gawair\u00fei jah tulgi\u00fea \u00feanuh unweniggo ins biqimi\u00fe fralusts swaswe sair qi\u00feuhafton jah ni un\u00fea\u00feliuhand stop",
+      "token": "unweniggo",
+      "gold": "ADV",
+      "pred": "VB"
+     }
+    ],
+    "NUM->ADJ": [
+     {
+      "sentence": "start jah gahausjandans \u00feai taihun dugunnun unwerjan bi iakobu jah iohannen stop",
+      "token": "taihun",
+      "gold": "NUM",
+      "pred": "ADJ"
+     }
+    ],
+    "NUM->ADV": [
+     {
+      "sentence": "start in \u00feizai usstassai nu \u0195arjis \u00feize wair\u00fei\u00fe qens \u00feai auk sibun aihtedun \u00feo du qenai stop",
+      "token": "sibun",
+      "gold": "NUM",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start twaim ize ataugi\u00fes war\u00fe in an\u00fearamma farwa gaggandam du wehsa stop",
+      "token": "twaim",
+      "gold": "NUM",
+      "pred": "ADV"
+     }
+    ],
+    "N->ADV": [
+     {
+      "sentence": "start a\u00fe\u00fean swe\u00feauh fijands meinans jainans \u00feaiei ni wildedun mik \u00feiudanon ufar sis briggi\u00fe her jah usqimi\u00fe faura mis stop",
+      "token": "her",
+      "gold": "N",
+      "pred": "ADV"
+     }
+    ],
+    "PRO->ADV": [
+     {
+      "sentence": "start \u0195e nu galeiko \u00feans mans \u00feis kunjis jah \u0195e sijaina galeikai stop",
+      "token": "\u0195e",
+      "gold": "PRO",
+      "pred": "ADV"
+     }
+    ]
+   },
+   "seed": 0,
+   "baseline": {
+    "prf": {
+     "ADJ": {
+      "precision": 0.9161676646706587,
+      "recall": 0.8595505617977528,
+      "f1": 0.8869565217391304,
+      "support": 356
+     },
+     "ADV": {
+      "precision": 0.8949771689497716,
+      "recall": 0.717948717948718,
+      "f1": 0.7967479674796749,
+      "support": 273
+     },
+     "AP": {
+      "precision": 0.8986710963455149,
+      "recall": 0.9981549815498155,
+      "f1": 0.9458041958041957,
+      "support": 542
+     },
+     "CONJ": {
+      "precision": 0.964509394572025,
+      "recall": 0.8700564971751412,
+      "f1": 0.9148514851485147,
+      "support": 531
+     },
+     "N": {
+      "precision": 0.9798136645962733,
+      "recall": 0.8782185107863605,
+      "f1": 0.9262385321100917,
+      "support": 1437
+     },
+     "NUM": {
+      "precision": 1.0,
+      "recall": 0.9047619047619048,
+      "f1": 0.9500000000000001,
+      "support": 21
+     },
+     "PART": {
+      "precision": 0.75,
+      "recall": 0.7894736842105263,
+      "f1": 0.7692307692307692,
+      "support": 19
+     },
+     "PRO": {
+      "precision": 0.9492697924673328,
+      "recall": 0.9848484848484849,
+      "f1": 0.9667318982387475,
+      "support": 1254
+     },
+     "VB": {
+      "precision": 0.8645584725536993,
+      "recall": 0.9627906976744186,
+      "f1": 0.9110342659541025,
+      "support": 1505
+     }
+    },
+    "overall_accuracy": 0.9237116874368474,
+    "confusion": {
+     "CONJ": {
+      "CONJ": 462,
+      "PRO": 39,
+      "ADV": 21,
+      "ADJ": 4,
+      "PART": 5
+     },
+     "PRO": {
+      "PRO": 1235,
+      "VB": 12,
+      "CONJ": 5,
+      "N": 1,
+      "ADV": 1
+     },
+     "VB": {
+      "VB": 1449,
+      "N": 21,
+      "PRO": 27,
+      "ADJ": 8
+     },
+     "N": {
+      "N": 1262,
+      "ADJ": 12,
+      "VB": 162,
+      "ADV": 1
+     },
+     "AP": {
+      "AP": 541,
+      "ADJ": 1
+     },
+     "ADV": {
+      "ADV": 196,
+      "AP": 61,
+      "CONJ": 8,
+      "ADJ": 3,
+      "VB": 5
+     },
+     "ADJ": {
+      "VB": 46,
+      "ADJ": 306,
+      "N": 4
+     },
+     "NUM": {
+      "VB": 2,
+      "NUM": 19
+     },
+     "PART": {
+      "CONJ": 4,
+      "PART": 15
+     }
+    }
+   },
+   "oov_rate_test": 0.07881441562815762,
+   "train_vocab_size": 8466
+  },
+  {
+   "confusion": {
+    "AP": {
+     "AP": 492,
+     "ADV": 18,
+     "N": 1
+    },
+    "PRO": {
+     "PRO": 1154,
+     "VB": 10,
+     "CONJ": 8,
+     "ADV": 2,
+     "N": 3
+    },
+    "ADV": {
+     "ADV": 220,
+     "AP": 38,
+     "CONJ": 11,
+     "ADJ": 7,
+     "VB": 7,
+     "N": 4
+    },
+    "ADJ": {
+     "N": 32,
+     "ADJ": 313,
+     "VB": 59
+    },
+    "N": {
+     "VB": 116,
+     "N": 1315,
+     "ADJ": 18,
+     "PRO": 2,
+     "ADV": 1
+    },
+    "VB": {
+     "VB": 1398,
+     "N": 84,
+     "ADJ": 23,
+     "PRO": 11
+    },
+    "CONJ": {
+     "CONJ": 446,
+     "PRO": 15,
+     "PART": 4,
+     "ADV": 12,
+     "ADJ": 3
+    },
+    "NUM": {
+     "NUM": 16,
+     "VB": 1,
+     "ADJ": 3
+    },
+    "PART": {
+     "CONJ": 5,
+     "PART": 6
+    },
+    "INTJ": {
+     "CONJ": 1,
+     "ADV": 1,
+     "ADJ": 1
+    }
+   },
+   "prf": {
+    "ADJ": {
+     "precision": 0.8505434782608695,
+     "recall": 0.7747524752475248,
+     "f1": 0.8108808290155439,
+     "support": 404
+    },
+    "ADV": {
+     "precision": 0.8661417322834646,
+     "recall": 0.7665505226480837,
+     "f1": 0.8133086876155268,
+     "support": 287
+    },
+    "AP": {
+     "precision": 0.9283018867924528,
+     "recall": 0.9628180039138943,
+     "f1": 0.9452449567723343,
+     "support": 511
+    },
+    "CONJ": {
+     "precision": 0.9469214437367304,
+     "recall": 0.9291666666666667,
+     "f1": 0.9379600420609885,
+     "support": 480
+    },
+    "INTJ": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "support": 3
+    },
+    "N": {
+     "precision": 0.9138290479499652,
+     "recall": 0.9056473829201102,
+     "f1": 0.9097198201314423,
+     "support": 1452
+    },
+    "NUM": {
+     "precision": 1.0,
+     "recall": 0.8,
+     "f1": 0.888888888888889,
+     "support": 20
+    },
+    "PART": {
+     "precision": 0.6,
+     "recall": 0.5454545454545454,
+     "f1": 0.5714285714285713,
+     "support": 11
+    },
+    "PRO": {
+     "precision": 0.9763113367174281,
+     "recall": 0.9804587935429057,
+     "f1": 0.9783806697753286,
+     "support": 1177
+    },
+    "VB": {
+     "precision": 0.8786926461345066,
+     "recall": 0.9221635883905013,
+     "f1": 0.8999034438364982,
+     "support": 1516
+    }
+   },
+   "overall_accuracy": 0.914519706534721,
+   "mean_softmax_entropy": {
+    "AP": 0.1437502089457736,
+    "PRO": 0.05921553244724072,
+    "ADV": 0.26259281900338177,
+    "ADJ": 0.26923431724881625,
+    "N": 0.1419535483959703,
+    "VB": 0.15502754007318698,
+    "CONJ": 0.12514718672803912,
+    "NUM": 0.8874587267637253,
+    "PART": 0.6444057720628652,
+    "INTJ": 1.2133368253707886
+   },
+   "error_examples": {
+    "ADJ->N": [
+     {
+      "sentence": "start bro\u00feralubon in izwis misso fria\u00fewamildjai sweri\u00feai izwis misso faurarahnjandans stop",
+      "token": "fria\u00fewamildjai",
+      "gold": "ADJ",
+      "pred": "N"
+     },
+     {
+      "sentence": "start hausidedu\u00fe \u00featei qi\u00fean ist \u00feaim airizam ni maur\u00ferjais i\u00fe saei maur\u00ferei\u00fe skula wair\u00fei\u00fe stauai stop",
+      "token": "airizam",
+      "gold": "ADJ",
+      "pred": "N"
+     },
+     {
+      "sentence": "start a\u00fe\u00fean \u00feiudana aiwe unriurjamma ungasai\u0195anamma ainamma frodamma guda sweri\u00fea jah wul\u00feus in aldins aiwe amen stop",
+      "token": "frodamma",
+      "gold": "ADJ",
+      "pred": "N"
+     },
+     {
+      "sentence": "start i\u00fe is bilei\u00feands \u00feamma leina naqa\u00fes ga\u00felauh faura im stop",
+      "token": "naqa\u00fes",
+      "gold": "ADJ",
+      "pred": "N"
+     },
+     {
+      "sentence": "start jah gairnida sa\u00fe itan drauhsno \u00feizo driusandeino af biuda \u00feis gabeigins akei jah hundos atrinnandans bilaigodedun banjos is stop",
+      "token": "sa\u00fe",
+      "gold": "ADJ",
+      "pred": "N"
+     }
+    ],
+    "N->VB": [
+     {
+      "sentence": "start bro\u00feralubon in izwis misso fria\u00fewamildjai sweri\u00feai izwis misso faurarahnjandans stop",
+      "token": "sweri\u00feai",
+      "gold": "N",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start unte \u00feairh ina habam atgagg bajo\u00fes in ainamma ahmin du attin stop",
+      "token": "atgagg",
+      "gold": "N",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start warjandane liugos ga\u00fearban mate \u00feanzei gu\u00fe gaskop du andniman mi\u00fe awiliudam galaubjandam jah ufkunnandam sunja stop",
+      "token": "liugos",
+      "gold": "N",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start jah jabai fotus \u00feeins marzjai \u00feuk afmait ina go\u00fe \u00feus ist galei\u00fean in libain haltamma \u00feau twans fotuns habandin gawairpan in gaiainnan in fon \u00feata un\u0195apnando stop",
+      "token": "fotus",
+      "gold": "N",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start \u00fea\u00feroh \u00fean war\u00fe sokeins us siponjam iohannes mi\u00fe iudaium bi swiknein stop",
+      "token": "sokeins",
+      "gold": "N",
+      "pred": "VB"
+     }
+    ],
+    "ADV->AP": [
+     {
+      "sentence": "start warjandane liugos ga\u00fearban mate \u00feanzei gu\u00fe gaskop du andniman mi\u00fe awiliudam galaubjandam jah ufkunnandam sunja stop",
+      "token": "du",
+      "gold": "ADV",
+      "pred": "AP"
+     },
+     {
+      "sentence": "start jabai \u0195as gaggi\u00fe du mis jah ni fijai\u00fe attan seinana jah ai\u00feein jah qen jah barna jah bro\u00feruns jah swistruns nauhu\u00fe~\u00fean seina silbins saiwala ni mag meins siponeis wisan stop",
+      "token": "du",
+      "gold": "ADV",
+      "pred": "AP"
+     },
+     {
+      "sentence": "start jah \u0195arbonds gasa\u0195 laiwwi \u00feana alfaiaus sitandan at motai jah qa\u00fe du imma gagg afar mis jah usstandands iddja afar imma stop",
+      "token": "du",
+      "gold": "ADV",
+      "pred": "AP"
+     },
+     {
+      "sentence": "start jah \u0195arbonds gasa\u0195 laiwwi \u00feana alfaiaus sitandan at motai jah qa\u00fe du imma gagg afar mis jah usstandands iddja afar imma stop",
+      "token": "afar",
+      "gold": "ADV",
+      "pred": "AP"
+     },
+     {
+      "sentence": "start jah \u0195arbonds gasa\u0195 laiwwi \u00feana alfaiaus sitandan at motai jah qa\u00fe du imma gagg afar mis jah usstandands iddja afar imma stop",
+      "token": "afar",
+      "gold": "ADV",
+      "pred": "AP"
+     }
+    ],
+    "N->ADJ": [
+     {
+      "sentence": "start warjandane liugos ga\u00fearban mate \u00feanzei gu\u00fe gaskop du andniman mi\u00fe awiliudam galaubjandam jah ufkunnandam sunja stop",
+      "token": "sunja",
+      "gold": "N",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start a\u00fe\u00fean andeis ist anabusnais fria\u00fewa us hrainjamma hairtin jah mi\u00fewissein godai jah galaubeinai unhindarweisai stop",
+      "token": "galaubeinai",
+      "gold": "N",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start jah mi\u00felitidedun imma \u00feai an\u00fearai iudaieis swaei barnabas mi\u00fegatauhans war\u00fe \u00feizai litai ize stop",
+      "token": "barnabas",
+      "gold": "N",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start seinai galaubeinai wair\u00feands ju faur ina bal\u00feei\u00fe in mela raihtis \u00feulainais leik is afar \u00feulain swikun\u00feaba mi\u00fe ioseba usfilhands gaswikun\u00fejands ei ni afwandida sik in faurama\u00felje \u0195otos stop",
+      "token": "galaubeinai",
+      "gold": "N",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start \u0195arjizuh raihtis bagme us swesamma akrana uskun\u00fes ist ni auk us \u00feaurnum lisand smakkans nih \u00fean us ai\u0195atundjai trudand weinabasja stop",
+      "token": "\u00feaurnum",
+      "gold": "N",
+      "pred": "ADJ"
+     }
+    ],
+    "ADJ->VB": [
+     {
+      "sentence": "start jah jabai fotus \u00feeins marzjai \u00feuk afmait ina go\u00fe \u00feus ist galei\u00fean in libain haltamma \u00feau twans fotuns habandin gawairpan in gaiainnan in fon \u00feata un\u0195apnando stop",
+      "token": "haltamma",
+      "gold": "ADJ",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start usbida auk ana\u00feaima wisan silba ik af xristau faur bro\u00feruns meinans \u00feans samakunjans bi leika stop",
+      "token": "samakunjans",
+      "gold": "ADJ",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start jah zakarias atta is gafullnoda ahmins weihis jah praufetida jah qa\u00fe stop",
+      "token": "weihis",
+      "gold": "ADJ",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start \u00feos anabusnins kant ni horinos ni maur\u00ferjais ni hlifais ni galiugaweitwods sijais swerai attan \u00feeinana jah ai\u00feein stop",
+      "token": "swerai",
+      "gold": "ADJ",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start jah sokida gasai\u0195an iesu \u0195as wesi jah ni mahta faura managein unte wahstau leitils was stop",
+      "token": "leitils",
+      "gold": "ADJ",
+      "pred": "VB"
+     }
+    ],
+    "CONJ->PRO": [
+     {
+      "sentence": "start qimandin \u00fean in garda duatiddjedun imma \u00feai blindans jah qa\u00fe im iesus ga~u~laubjats \u00featei magjau \u00feata taujan qe\u00feun du imma jai frauja stop",
+      "token": "\u00featei",
+      "gold": "CONJ",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start jah qa\u00fe du im \u0195a \u00featei sokidedu\u00fe mik niu wissedu\u00fe \u00featei in \u00feaim attins meinis skulda wisan stop",
+      "token": "\u00featei",
+      "gold": "CONJ",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start jah qa\u00fe du im \u0195a \u00featei sokidedu\u00fe mik niu wissedu\u00fe \u00featei in \u00feaim attins meinis skulda wisan stop",
+      "token": "\u00featei",
+      "gold": "CONJ",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start uzu\u00fe~\u00fean~iddja bi andhuleinai jah ussok im aiwaggeli \u00featei merja in \u00feiudos i\u00fe sundro \u00feaimei \u00feuhta ibai sware rinnau ai\u00fe\u00feau runnjau stop",
+      "token": "\u00featei",
+      "gold": "CONJ",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start \u00featu\u00fe~\u00fean izwis qi\u00feam in waurda fraujins \u00featei weis \u00feai libandans \u00feai bilaibidans in quma fraujins ni bisniwam faur \u00feans anaslepandans stop",
+      "token": "\u00featei",
+      "gold": "CONJ",
+      "pred": "PRO"
+     }
+    ],
+    "VB->N": [
+     {
+      "sentence": "start jah \u00feis\u0195aduh \u00feadei iddja in haimos ai\u00fe\u00feau baurgs ai\u00fe\u00feau in weihsa ana gagga lagidedun siukans jah bedun ina ei \u00feau skauta wastjos is attaitokeina jah swa managai swe attaitokun imma ganesun stop",
+      "token": "lagidedun",
+      "gold": "VB",
+      "pred": "N"
+     },
+     {
+      "sentence": "start jah bi\u00fee war\u00fe sabbato dugann in swnagoge laisjan jah managai hausjandans sildaleikidedun qi\u00feandans \u0195a\u00fero \u00feamma \u00feata jah \u0195o so handugeino so gibano imma ei mahteis swaleikos \u00feairh handuns is wair\u00feand stop",
+      "token": "gibano",
+      "gold": "VB",
+      "pred": "N"
+     },
+     {
+      "sentence": "start jah auk ik manna im habands uf waldufnja meinamma gadrauhtins jah qi\u00fea du \u00feamma gagg jah gaggi\u00fe jah an\u00fearamma qim jah qimi\u00fe jah du skalka meinamma tawei \u00feata jah tauji\u00fe stop",
+      "token": "gagg",
+      "gold": "VB",
+      "pred": "N"
+     },
+     {
+      "sentence": "start \u00fea\u00feroh \u00fean war\u00fe sokeins us siponjam iohannes mi\u00fe iudaium bi swiknein stop",
+      "token": "siponjam",
+      "gold": "VB",
+      "pred": "N"
+     },
+     {
+      "sentence": "start qi\u00fea allis izwis \u00featei ni ainshun manne jainaize \u00feize faura haitanane kausei\u00fe \u00feis nahtamatis meinis stop",
+      "token": "haitanane",
+      "gold": "VB",
+      "pred": "N"
+     }
+    ],
+    "ADV->CONJ": [
+     {
+      "sentence": "start jah \u00feis\u0195aduh \u00feadei iddja in haimos ai\u00fe\u00feau baurgs ai\u00fe\u00feau in weihsa ana gagga lagidedun siukans jah bedun ina ei \u00feau skauta wastjos is attaitokeina jah swa managai swe attaitokun imma ganesun stop",
+      "token": "\u00feau",
+      "gold": "ADV",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start und \u00feo nu \u0195eila jah huggridai jah \u00feaursidai jah naqadai jah kaupatidai jah ungasto\u00feai stop",
+      "token": "nu",
+      "gold": "ADV",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start \u0195e nu galeiko \u00feans mans \u00feis kunjis jah \u0195e sijaina galeikai stop",
+      "token": "nu",
+      "gold": "ADV",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start \u00fearuh galai\u00fe in praitauria aftra peilatus jah wopida iesu qa\u00feuh imma \u00feu is \u00feiudans iudaie stop",
+      "token": "\u00fearuh",
+      "gold": "ADV",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start wair\u00feai\u00fe nu galeikondans guda swe barna liuba stop",
+      "token": "nu",
+      "gold": "ADV",
+      "pred": "CONJ"
+     }
+    ],
+    "PRO->VB": [
+     {
+      "sentence": "start jah bi\u00fee war\u00fe sabbato dugann in swnagoge laisjan jah managai hausjandans sildaleikidedun qi\u00feandans \u0195a\u00fero \u00feamma \u00feata jah \u0195o so handugeino so gibano imma ei mahteis swaleikos \u00feairh handuns is wair\u00feand stop",
+      "token": "is",
+      "gold": "PRO",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start jah athaitands ain\u0195arjanoh faihuskulane fraujins seinis qa\u00fe \u00feamma frumistin \u0195an filu skalt fraujin meinamma stop",
+      "token": "ain\u0195arjanoh",
+      "gold": "PRO",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start jah managai iudaie gaqemun bi mar\u00fean jah marjan ei ga\u00ferafstidedeina ijos bi \u00feana bro\u00fear izo stop",
+      "token": "ijos",
+      "gold": "PRO",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start jah managai iudaie gaqemun bi mar\u00fean jah marjan ei ga\u00ferafstidedeina ijos bi \u00feana bro\u00fear izo stop",
+      "token": "izo",
+      "gold": "PRO",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start jah atgaggandein inn dauhtar herodiadins jah plinsjandein jah galeikandein heroda jah \u00feaim mi\u00feanakumbjandam qa\u00fe \u00feiudans du \u00feizai maujai bidei mik \u00feis\u0195izuh \u00feei wileis jah giba \u00feus stop",
+      "token": "\u00feis\u0195izuh",
+      "gold": "PRO",
+      "pred": "VB"
+     }
+    ],
+    "VB->ADJ": [
+     {
+      "sentence": "start jah mi\u00felitidedun imma \u00feai an\u00fearai iudaieis swaei barnabas mi\u00fegatauhans war\u00fe \u00feizai litai ize stop",
+      "token": "mi\u00fegatauhans",
+      "gold": "VB",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start a\u00fe\u00fean \u00feiudana aiwe unriurjamma ungasai\u0195anamma ainamma frodamma guda sweri\u00fea jah wul\u00feus in aldins aiwe amen stop",
+      "token": "ungasai\u0195anamma",
+      "gold": "VB",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start ni magu\u00fe stikl fraujins drigkan jah stikl skohsle ni magu\u00fe biudis fraujins fairaihan jab~biudis skohsle stop",
+      "token": "fairaihan",
+      "gold": "VB",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start \u00fearuh qe\u00feun \u00feai iudaieis du sis misso \u0195adre sa skuli gaggan \u00feei weis ni bigitaima ina nibai in distahein \u00feiudo skuli gaggan jah laisjan \u00feiudos stop",
+      "token": "skuli",
+      "gold": "VB",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start i\u00fe sware mik blotand laisjandans laiseinins anabusnins manne stop",
+      "token": "blotand",
+      "gold": "VB",
+      "pred": "ADJ"
+     }
+    ],
+    "PART->CONJ": [
+     {
+      "sentence": "start uzu\u00fe~\u00fean~iddja bi andhuleinai jah ussok im aiwaggeli \u00featei merja in \u00feiudos i\u00fe sundro \u00feaimei \u00feuhta ibai sware rinnau ai\u00fe\u00feau runnjau stop",
+      "token": "ibai",
+      "gold": "PART",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start a\u00fe\u00fean \u00feamma haidau ei jannes jah mamres andsto\u00feun moseza swa jah \u00feai andstandand sunjai mannans frawaur\u00feanai ahin uskusanai bi galaubein stop",
+      "token": "ei",
+      "gold": "PART",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start \u00feammuh \u00fean ni fro\u00fe nekaudemus in \u00feis ei mi\u00fe\u00fean frumist hausida fram laisarja inuh \u00feis qa\u00fe \u0195aiwa mahts ist manna gabairan al\u00feeis wisands ibai mag in wamba ai\u00feeins seinaizos aftra galei\u00fean jag~gabairaidau stop",
+      "token": "ibai",
+      "gold": "PART",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start i\u00fe \u00feai an\u00fearai qe\u00feun let ei sai\u0195am qimaiu helias nasjan ina stop",
+      "token": "ei",
+      "gold": "PART",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start du\u00fe\u00fee jah weis fram \u00feamma daga ei hausidedum ni \u0195eilaidedum faur izwis bidjandans jah aihtrondans ei fullnai\u00fe kun\u00fejis wiljins is in allai handugein jah frodein ahmeinai stop",
+      "token": "ei",
+      "gold": "PART",
+      "pred": "CONJ"
+     }
+    ],
+    "ADV->ADJ": [
+     {
+      "sentence": "start qi\u00fea allis izwis \u00featei ni ainshun manne jainaize \u00feize faura haitanane kausei\u00fe \u00feis nahtamatis meinis stop",
+      "token": "allis",
+      "gold": "ADV",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start qa\u00fe sums \u00feize skalke \u00feis maistins gudjins sah ni\u00fejis was \u00feammei afmaimait paitrus auso niu \u00feuk sa\u0195 ik in aurtigarda mi\u00fe imma stop",
+      "token": "maistins",
+      "gold": "ADV",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start a\u00fe\u00fean guda awiliu\u00fe \u00feamma sinteino ustaiknjandin hro\u00feeigans uns in xristau jah daun kun\u00fejis seinis gabairhtjandin \u00feairh uns in allaim stadim stop",
+      "token": "sinteino",
+      "gold": "ADV",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start namuh \u00fean \u00feans hlaibans iesus jah awiliudonds gadailida \u00feaim anakumbjandam samaleiko jah \u00feize fiske swa filu swe wildedun stop",
+      "token": "samaleiko",
+      "gold": "ADV",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start sai allis sunsei war\u00fe stibna goleinais \u00feeinaizos in ausam meinaim lailaik \u00feata barn in swigni\u00feai in wambai meinai stop",
+      "token": "allis",
+      "gold": "ADV",
+      "pred": "ADJ"
+     }
+    ],
+    "CONJ->PART": [
+     {
+      "sentence": "start ei sai\u0195andans sai\u0195aina jah ni gaumjaina jah hausjandans hausjaina jah ni fra\u00fejaina ibai \u0195an gawandjaina sik jah afletaindau im frawaurhteis stop",
+      "token": "ibai",
+      "gold": "CONJ",
+      "pred": "PART"
+     },
+     {
+      "sentence": "start ibai ni habam waldufni swistar qinon bitiuhan swaswe \u00feai an\u00fearai apaustauleis jah bro\u00ferjus fraujins jah kefas stop",
+      "token": "ibai",
+      "gold": "CONJ",
+      "pred": "PART"
+     },
+     {
+      "sentence": "start \u00fearuh qe\u00feun \u00feai iudaieis du sis misso \u0195adre sa skuli gaggan \u00feei weis ni bigitaima ina nibai in distahein \u00feiudo skuli gaggan jah laisjan \u00feiudos stop",
+      "token": "\u00feei",
+      "gold": "CONJ",
+      "pred": "PART"
+     },
+     {
+      "sentence": "start \u00feanuh bi\u00fee sadai waur\u00feun qa\u00fe du siponjam seinaim galisi\u00fe \u00feos aflifnandeins drauhsnos \u00feei waihtai ni fraqistnai stop",
+      "token": "\u00feei",
+      "gold": "CONJ",
+      "pred": "PART"
+     }
+    ],
+    "INTJ->CONJ": [
+     {
+      "sentence": "start wai izwis jus sadans nu unte gredagai wair\u00fei\u00fe wai izwis jus hlahjandans nu unte gaunon jah gretan duginnid stop",
+      "token": "wai",
+      "gold": "INTJ",
+      "pred": "CONJ"
+     }
+    ],
+    "CONJ->ADV": [
+     {
+      "sentence": "start wai izwis jus sadans nu unte gredagai wair\u00fei\u00fe wai izwis jus hlahjandans nu unte gaunon jah gretan duginnid stop",
+      "token": "nu",
+      "gold": "CONJ",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start wai izwis jus sadans nu unte gredagai wair\u00fei\u00fe wai izwis jus hlahjandans nu unte gaunon jah gretan duginnid stop",
+      "token": "nu",
+      "gold": "CONJ",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start swaei nu bro\u00ferjus meinai liubans jah lustusamans fahe\u00fes jah waips meins swa standai\u00fe in fraujin stop",
+      "token": "nu",
+      "gold": "CONJ",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start jah suns gaqemun managai swaswe ju\u00fean ni gamostedun nih at daura jah rodida im waurd stop",
+      "token": "swaswe",
+      "gold": "CONJ",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start \u00fearuh \u00fean swe faridedun anasaislep jah atiddja skura windis in \u00feana marisaiw jah gafullnodedun jah birekjai waur\u00feun stop",
+      "token": "swe",
+      "gold": "CONJ",
+      "pred": "ADV"
+     }
+    ],
+    "INTJ->ADV": [
+     {
+      "sentence": "start wai izwis jus sadans nu unte gredagai wair\u00fei\u00fe wai izwis jus hlahjandans nu unte gaunon jah gretan duginnid stop",
+      "token": "wai",
+      "gold": "INTJ",
+      "pred": "ADV"
+     }
+    ],
+    "AP->ADV": [
+     {
+      "sentence": "start akei silbans in uns silbam andahaft dau\u00feaus habaidedum ei ni sijaima trauandans du uns silbam ak du guda \u00feamma urraisjandin dau\u00feans stop",
+      "token": "du",
+      "gold": "AP",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start seinai galaubeinai wair\u00feands ju faur ina bal\u00feei\u00fe in mela raihtis \u00feulainais leik is afar \u00feulain swikun\u00feaba mi\u00fe ioseba usfilhands gaswikun\u00fejands ei ni afwandida sik in faurama\u00felje \u0195otos stop",
+      "token": "faur",
+      "gold": "AP",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start \u00feande liuha\u00fe habai\u00fe galaubei\u00fe du liuhada ei sunjus liuhadis wair\u00feai\u00fe \u00feata rodida iesus jah galai\u00fe jah gafalh sik faura im stop",
+      "token": "du",
+      "gold": "AP",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start \u00feande liuha\u00fe habai\u00fe galaubei\u00fe du liuhada ei sunjus liuhadis wair\u00feai\u00fe \u00feata rodida iesus jah galai\u00fe jah gafalh sik faura im stop",
+      "token": "faura",
+      "gold": "AP",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start insai\u0195ands du im iesus qa\u00fe akei fram mannan unmahteig ist akei ni fram guda allata auk mahteig ist fram guda stop",
+      "token": "fram",
+      "gold": "AP",
+      "pred": "ADV"
+     }
+    ],
+    "N->PRO": [
+     {
+      "sentence": "start seinai galaubeinai wair\u00feands ju faur ina bal\u00feei\u00fe in mela raihtis \u00feulainais leik is afar \u00feulain swikun\u00feaba mi\u00fe ioseba usfilhands gaswikun\u00fejands ei ni afwandida sik in faurama\u00felje \u0195otos stop",
+      "token": "seinai",
+      "gold": "N",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start moses auk raihtis qa\u00fe swerai attan \u00feeinana jah ai\u00feein \u00feeina jah saei ubil qi\u00feai attin seinamma ai\u00fe\u00feau ai\u00feein seinai dau\u00feau afdau\u00fejaidau stop",
+      "token": "seinai",
+      "gold": "N",
+      "pred": "PRO"
+     }
+    ],
+    "CONJ->ADJ": [
+     {
+      "sentence": "start ains allis gu\u00fe ains jah midumonds gudis jah manne manna xristus iesus stop",
+      "token": "allis",
+      "gold": "CONJ",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start moses auk raihtis qa\u00fe swerai attan \u00feeinana jah ai\u00feein \u00feeina jah saei ubil qi\u00feai attin seinamma ai\u00fe\u00feau ai\u00feein seinai dau\u00feau afdau\u00fejaidau stop",
+      "token": "raihtis",
+      "gold": "CONJ",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start du\u00fe\u00fee allis arbaidjam jah idweitjanda unte wenidedum du guda libandin saei ist nasjands allaize manne \u00feishun galaubjandane stop",
+      "token": "allis",
+      "gold": "CONJ",
+      "pred": "ADJ"
+     }
+    ],
+    "PRO->CONJ": [
+     {
+      "sentence": "start akei qi\u00fea izwis \u00featei ju helias qam jah gatawidedun imma swa filu swe wildedun swaswe gameli\u00fe ist bi ina stop",
+      "token": "\u00featei",
+      "gold": "PRO",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start \u00feanei weis gateiham talzjandans all manne jah laisjandans all manne in allai handugein ei atsatjaima all manne fullawitan in xristau iesu stop",
+      "token": "\u00feanei",
+      "gold": "PRO",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start jah is faurbaud imma ei mann ni qe\u00fei ak gagg jah ataugei \u00feuk silban gudjin jah atbair imma fram \u00feizai gahraineinai \u00feeinai \u00featei anabaud moses du weitwodi\u00feai im stop",
+      "token": "\u00featei",
+      "gold": "PRO",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start \u00feanzei skal gasakan \u00feaiei gardins allans uswaltjand laisjandans \u00featei ni skuld ist in faihugairneins stop",
+      "token": "\u00featei",
+      "gold": "PRO",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start triggw \u00feata waurd jah allaizos andanumtais wair\u00fe \u00featei xristus iesus qam in \u00feamma fair\u0195au frawaurhtans nasjan \u00feizeei frumists im ik stop",
+      "token": "\u00featei",
+      "gold": "PRO",
+      "pred": "CONJ"
+     }
+    ],
+    "PRO->ADV": [
+     {
+      "sentence": "start \u0195e nu galeiko \u00feans mans \u00feis kunjis jah \u0195e sijaina galeikai stop",
+      "token": "\u0195e",
+      "gold": "PRO",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start \u00feanuh qa\u00fe imma peilatus \u0195a ist so sunja jah \u00feata qi\u00feands aftra galai\u00fe ut du iudaium jah qa\u00fe im ik ainohun fairino ni bigita in \u00feamma stop",
+      "token": "\u00feanuh",
+      "gold": "PRO",
+      "pred": "ADV"
+     }
+    ],
+    "VB->PRO": [
+     {
+      "sentence": "start \u00fearuh galai\u00fe in praitauria aftra peilatus jah wopida iesu qa\u00feuh imma \u00feu is \u00feiudans iudaie stop",
+      "token": "is",
+      "gold": "VB",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start \u00fea\u00feroh galagi\u00fes ist mis waips garaihteins \u00feanei usgibi\u00fe mis frauja in jainamma daga sa garaihta staua a\u00fe\u00fean ni \u00featainei mis ak jah allaim \u00feaiei frijond qum is stop",
+      "token": "is",
+      "gold": "VB",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start jah sa\u0195azuh saei gamarzjai ainana \u00feize leitilane \u00feize galaubjandane du mis go\u00fe ist imma mais ei galagjaidau asiluqairnus ana halsaggan is jah frawaurpans wesi in marein stop",
+      "token": "is",
+      "gold": "VB",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start \u00fean in \u00feamma fair\u0195au im liuha\u00fe im \u00feis fair\u0195aus stop",
+      "token": "im",
+      "gold": "VB",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start jah andhafjandans qe\u00feun du imma \u0195ar frauja i\u00fe is qa\u00fe im \u00fearei leik jaindre galisand sik arans stop",
+      "token": "is",
+      "gold": "VB",
+      "pred": "PRO"
+     }
+    ],
+    "ADV->VB": [
+     {
+      "sentence": "start \u00fearuh qe\u00feun \u00feai iudaieis du sis misso \u0195adre sa skuli gaggan \u00feei weis ni bigitaima ina nibai in distahein \u00feiudo skuli gaggan jah laisjan \u00feiudos stop",
+      "token": "\u0195adre",
+      "gold": "ADV",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start \u0195anuh \u00fean \u00feuk se\u0195um gast jah gala\u00feodedum ai\u00fe\u00feau naqadana jah wasidedum stop",
+      "token": "\u0195anuh",
+      "gold": "ADV",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start \u00feammuh \u00fean ni fro\u00fe nekaudemus in \u00feis ei mi\u00fe\u00fean frumist hausida fram laisarja inuh \u00feis qa\u00fe \u0195aiwa mahts ist manna gabairan al\u00feeis wisands ibai mag in wamba ai\u00feeins seinaizos aftra galei\u00fean jag~gabairaidau stop",
+      "token": "mi\u00fe\u00fean",
+      "gold": "ADV",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start ake bi\u00fee ik gasa\u0195 \u00featei ni raihtaba gaggand du sunjai aiwaggeljons qa\u00fe du paitrau faura allaim jabai \u00feu iudaius wisands \u00feiudisko libais jah ni iudaiwisko \u0195aiwa \u00feiudos baideis iudaiwiskon stop",
+      "token": "\u00feiudisko",
+      "gold": "ADV",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start jah andhafjandans qe\u00feun du imma \u0195ar frauja i\u00fe is qa\u00fe im \u00fearei leik jaindre galisand sik arans stop",
+      "token": "jaindre",
+      "gold": "ADV",
+      "pred": "VB"
+     }
+    ],
+    "PRO->N": [
+     {
+      "sentence": "start i\u00fe jabai \u0195as qi\u00feai \u00featei galiugam gasali\u00fe ist ni matjai\u00fe in jainis \u00feis bandwjandins jah \u00feuhtaus fraujins ist auk air\u00fea jah fullo izos stop",
+      "token": "jainis",
+      "gold": "PRO",
+      "pred": "N"
+     },
+     {
+      "sentence": "start sai allis sunsei war\u00fe stibna goleinais \u00feeinaizos in ausam meinaim lailaik \u00feata barn in swigni\u00feai in wambai meinai stop",
+      "token": "\u00feeinaizos",
+      "gold": "PRO",
+      "pred": "N"
+     },
+     {
+      "sentence": "start unagein us handau fijande unsaraize galausidaim skalkinon imma stop",
+      "token": "unsaraize",
+      "gold": "PRO",
+      "pred": "N"
+     }
+    ],
+    "AP->N": [
+     {
+      "sentence": "start i\u00fe si andhof imma jah qa\u00fe du imma jai frauja jah auk hundos undaro biuda matjand af drauhsnom barne stop",
+      "token": "undaro",
+      "gold": "AP",
+      "pred": "N"
+     }
+    ],
+    "INTJ->ADJ": [
+     {
+      "sentence": "start a\u00fe\u00fean wai \u00feaim qi\u00feuhaftom jah daddjandeim in jainaim dagam stop",
+      "token": "wai",
+      "gold": "INTJ",
+      "pred": "ADJ"
+     }
+    ],
+    "NUM->VB": [
+     {
+      "sentence": "start maht wesi auk \u00feata balsan frabugjan in managizo \u00feau \u00ferija hunda skatte jah giban unledaim jah andstaurraidedun \u00feo stop",
+      "token": "\u00ferija",
+      "gold": "NUM",
+      "pred": "VB"
+     }
+    ],
+    "NUM->ADJ": [
+     {
+      "sentence": "start maht wesi auk \u00feata balsan frabugjan in managizo \u00feau \u00ferija hunda skatte jah giban unledaim jah andstaurraidedun \u00feo stop",
+      "token": "hunda",
+      "gold": "NUM",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start bi spedistin \u00fean anakumbjandam \u00feaim ainlibim ataugida jah idweitida ungalaubein ize jah harduhairtein unte \u00feaim gasai\u0195andam ina urrisanana ni galaubidedun stop",
+      "token": "ainlibim",
+      "gold": "NUM",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start \u00feridjo \u00feata qima at izwis ana mun\u00fea twaddje weitwode jah \u00ferije gastandai all waurde stop",
+      "token": "\u00feridjo",
+      "gold": "NUM",
+      "pred": "ADJ"
+     }
+    ],
+    "ADV->N": [
+     {
+      "sentence": "start swe in daga garedaba gaggaima ni gabauram jah drugkaneim ni ligram jah aglaitjam ni haifstai jah aljana stop",
+      "token": "garedaba",
+      "gold": "ADV",
+      "pred": "N"
+     },
+     {
+      "sentence": "start jah wisandin paitrau in rohsnai dala\u00fea jah atiddja aina \u00feiujo \u00feis auhumistins gudjins stop",
+      "token": "dala\u00fea",
+      "gold": "ADV",
+      "pred": "N"
+     },
+     {
+      "sentence": "start nih ist ains ak jah andraias saei qa\u00fe ist magula ains her saei habai\u00fe \u00b7e\u00b7 hlaibans barizeinans jah twans fiskans analeiko swe filippus gasakada ni waiht mikilis hugjands nih wair\u00feidos laisareis and\u00feaggkjands \u00feairh \u00feoei usbar qi\u00feands akei \u00feata \u0195a ist du swa managaim stop",
+      "token": "analeiko",
+      "gold": "ADV",
+      "pred": "N"
+     },
+     {
+      "sentence": "start wasu\u00fe~\u00fean sunus is sa al\u00feiza ana akra jah qimands atiddja ne\u0195 razn jah gahausida saggwins jah laikins stop",
+      "token": "ne\u0195",
+      "gold": "ADV",
+      "pred": "N"
+     }
+    ],
+    "N->ADV": [
+     {
+      "sentence": "start nih ist ains ak jah andraias saei qa\u00fe ist magula ains her saei habai\u00fe \u00b7e\u00b7 hlaibans barizeinans jah twans fiskans analeiko swe filippus gasakada ni waiht mikilis hugjands nih wair\u00feidos laisareis and\u00feaggkjands \u00feairh \u00feoei usbar qi\u00feands akei \u00feata \u0195a ist du swa managaim stop",
+      "token": "her",
+      "gold": "N",
+      "pred": "ADV"
+     }
+    ]
+   },
+   "seed": 1,
+   "baseline": {
+    "prf": {
+     "ADJ": {
+      "precision": 0.9241573033707865,
+      "recall": 0.8143564356435643,
+      "f1": 0.8657894736842106,
+      "support": 404
+     },
+     "ADV": {
+      "precision": 0.895397489539749,
+      "recall": 0.7456445993031359,
+      "f1": 0.8136882129277567,
+      "support": 287
+     },
+     "AP": {
+      "precision": 0.9180327868852459,
+      "recall": 0.9863013698630136,
+      "f1": 0.950943396226415,
+      "support": 511
+     },
+     "CONJ": {
+      "precision": 0.9553571428571429,
+      "recall": 0.8916666666666667,
+      "f1": 0.9224137931034484,
+      "support": 480
+     },
+     "INTJ": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 3
+     },
+     "N": {
+      "precision": 0.9778830963665087,
+      "recall": 0.8526170798898072,
+      "f1": 0.9109639440765268,
+      "support": 1452
+     },
+     "NUM": {
+      "precision": 1.0,
+      "recall": 0.9,
+      "f1": 0.9473684210526316,
+      "support": 20
+     },
+     "PART": {
+      "precision": 1.0,
+      "recall": 0.2727272727272727,
+      "f1": 0.42857142857142855,
+      "support": 11
+     },
+     "PRO": {
+      "precision": 0.9488636363636364,
+      "recall": 0.9932030586236194,
+      "f1": 0.9705271897052719,
+      "support": 1177
+     },
+     "VB": {
+      "precision": 0.8351459645105895,
+      "recall": 0.962401055408971,
+      "f1": 0.8942690775360099,
+      "support": 1516
+     }
+    },
+    "overall_accuracy": 0.9153728032758914,
+    "confusion": {
+     "AP": {
+      "AP": 504,
+      "ADV": 7
+     },
+     "PRO": {
+      "PRO": 1169,
+      "ADV": 1,
+      "VB": 5,
+      "CONJ": 2
+     },
+     "ADV": {
+      "ADV": 214,
+      "AP": 45,
+      "CONJ": 10,
+      "ADJ": 6,
+      "VB": 12
+     },
+     "ADJ": {
+      "VB": 69,
+      "ADJ": 329,
+      "N": 6
+     },
+     "N": {
+      "N": 1238,
+      "VB": 201,
+      "ADJ": 9,
+      "PRO": 3,
+      "ADV": 1
+     },
+     "VB": {
+      "VB": 1459,
+      "PRO": 27,
+      "N": 21,
+      "ADJ": 9
+     },
+     "CONJ": {
+      "CONJ": 428,
+      "PRO": 33,
+      "ADV": 16,
+      "ADJ": 3
+     },
+     "NUM": {
+      "NUM": 18,
+      "VB": 1,
+      "N": 1
+     },
+     "PART": {
+      "CONJ": 8,
+      "PART": 3
+     },
+     "INTJ": {
+      "INTJ": 3
+     }
+    }
+   },
+   "oov_rate_test": 0.0965705511004948,
+   "train_vocab_size": 8427
+  },
+  {
+   "confusion": {
+    "VB": {
+     "VB": 1378,
+     "PRO": 17,
+     "N": 66,
+     "ADJ": 17
+    },
+    "PRO": {
+     "PRO": 1139,
+     "CONJ": 5,
+     "N": 2,
+     "VB": 24,
+     "ADJ": 3
+    },
+    "N": {
+     "N": 1352,
+     "VB": 121,
+     "ADJ": 16,
+     "PRO": 1
+    },
+    "CONJ": {
+     "CONJ": 469,
+     "ADV": 16,
+     "PRO": 20,
+     "ADJ": 1,
+     "PART": 2
+    },
+    "AP": {
+     "AP": 499,
+     "ADV": 24
+    },
+    "ADV": {
+     "CONJ": 15,
+     "ADV": 214,
+     "AP": 38,
+     "VB": 5,
+     "ADJ": 5,
+     "NUM": 1,
+     "N": 1
+    },
+    "PART": {
+     "NUM": 1,
+     "PART": 7,
+     "CONJ": 10,
+     "VB": 1
+    },
+    "ADJ": {
+     "VB": 65,
+     "ADJ": 279,
+     "N": 40,
+     "ADV": 2
+    },
+    "NUM": {
+     "N": 7,
+     "NUM": 15,
+     "VB": 5
+    }
+   },
+   "prf": {
+    "ADJ": {
+     "precision": 0.8691588785046729,
+     "recall": 0.7227979274611399,
+     "f1": 0.7892503536067892,
+     "support": 386
+    },
+    "ADV": {
+     "precision": 0.8359375,
+     "recall": 0.7670250896057348,
+     "f1": 0.8,
+     "support": 279
+    },
+    "AP": {
+     "precision": 0.9292364990689013,
+     "recall": 0.9541108986615678,
+     "f1": 0.941509433962264,
+     "support": 523
+    },
+    "CONJ": {
+     "precision": 0.9398797595190381,
+     "recall": 0.9232283464566929,
+     "f1": 0.9314796425024827,
+     "support": 508
+    },
+    "N": {
+     "precision": 0.9209809264305178,
+     "recall": 0.9073825503355705,
+     "f1": 0.9141311697092629,
+     "support": 1490
+    },
+    "NUM": {
+     "precision": 0.8823529411764706,
+     "recall": 0.5555555555555556,
+     "f1": 0.6818181818181819,
+     "support": 27
+    },
+    "PART": {
+     "precision": 0.7777777777777778,
+     "recall": 0.3684210526315789,
+     "f1": 0.5,
+     "support": 19
+    },
+    "PRO": {
+     "precision": 0.967714528462192,
+     "recall": 0.9710144927536232,
+     "f1": 0.9693617021276595,
+     "support": 1173
+    },
+    "VB": {
+     "precision": 0.8617886178861789,
+     "recall": 0.93234100135318,
+     "f1": 0.8956776080597986,
+     "support": 1478
+    }
+   },
+   "overall_accuracy": 0.9097399286078531,
+   "mean_softmax_entropy": {
+    "VB": 0.18255533059398582,
+    "PRO": 0.06364172378567644,
+    "N": 0.17107730128383578,
+    "CONJ": 0.1489706525403097,
+    "AP": 0.1095131956161949,
+    "ADV": 0.29614668678639183,
+    "PART": 1.0664151473657082,
+    "ADJ": 0.31365421609084454,
+    "NUM": 0.7568679222906077
+   },
+   "error_examples": {
+    "PRO->CONJ": [
+     {
+      "sentence": "start akei \u00featei was mis gawaurki \u00featuh rahnida in xristaus slei\u00fea wisan stop",
+      "token": "\u00featei",
+      "gold": "PRO",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start jah jabai \u0195as iggqis qi\u00feai du\u0195e \u00feata taujats qi\u00feaits \u00featei frauja \u00feis gairnei\u00fe jah sunsaiw ina insandei\u00fe hidre stop",
+      "token": "\u00featei",
+      "gold": "PRO",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start i\u00fe si gasai\u0195andei ga\u00felahsnoda bi innatgahtai is jah \u00feahta sis \u0195eleika wesi so goleins \u00featei swa \u00feiu\u00feida izai stop",
+      "token": "\u00featei",
+      "gold": "PRO",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start atta meins \u00featei fragaf mis maizo allaim ist jah ni aiw ainshun mag frawilwan \u00feo us handau attins meinis stop",
+      "token": "\u00featei",
+      "gold": "PRO",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start ake bi\u00fee ik gasa\u0195 \u00featei ni raihtaba gaggand du sunjai aiwaggeljons qa\u00fe du paitrau faura allaim jabai \u00feu iudaius wisands \u00feiudisko libais jah ni iudaiwisko \u0195aiwa \u00feiudos baideis iudaiwiskon stop",
+      "token": "\u00featei",
+      "gold": "PRO",
+      "pred": "CONJ"
+     }
+    ],
+    "ADV->CONJ": [
+     {
+      "sentence": "start \u00fearuh qa\u00fe imma peilatus an nuh \u00feiudans is \u00feu andhafjands iesus qa\u00fe \u00feu qi\u00feis ei \u00feiudans im ik ik du \u00feamma gabaurans im jah du \u00feamma qam in \u00feamma fair\u0195au ei weitwodjau sunjai \u0195azuh saei ist sunjos hausei\u00fe stibnos meinaizos stop",
+      "token": "\u00fearuh",
+      "gold": "ADV",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start \u00feanuh insandida ina annas gabundanana du kajafin \u00feamma maistin gudjin stop",
+      "token": "\u00feanuh",
+      "gold": "ADV",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start \u00feanuh birunnun ina iudaieis jah qe\u00feun du imma und \u0195a saiwala unsara hahis jabai \u00feu sijais xristus qi\u00fe unsis andaugiba stop",
+      "token": "andaugiba",
+      "gold": "ADV",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start \u00fearuh \u00fean swe faridedun anasaislep jah atiddja skura windis in \u00feana marisaiw jah gafullnodedun jah birekjai waur\u00feun stop",
+      "token": "\u00fean",
+      "gold": "ADV",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start sai nu ni siju\u00fe gasteis jah aljakonjai ak siju\u00fe gabaurgjans \u00feaim weiham jah ingardjans gudis stop",
+      "token": "nu",
+      "gold": "ADV",
+      "pred": "CONJ"
+     }
+    ],
+    "PART->NUM": [
+     {
+      "sentence": "start \u00fearuh qa\u00fe imma peilatus an nuh \u00feiudans is \u00feu andhafjands iesus qa\u00fe \u00feu qi\u00feis ei \u00feiudans im ik ik du \u00feamma gabaurans im jah du \u00feamma qam in \u00feamma fair\u0195au ei weitwodjau sunjai \u0195azuh saei ist sunjos hausei\u00fe stibnos meinaizos stop",
+      "token": "an",
+      "gold": "PART",
+      "pred": "NUM"
+     }
+    ],
+    "N->VB": [
+     {
+      "sentence": "start \u00fearuh qa\u00fe imma peilatus an nuh \u00feiudans is \u00feu andhafjands iesus qa\u00fe \u00feu qi\u00feis ei \u00feiudans im ik ik du \u00feamma gabaurans im jah du \u00feamma qam in \u00feamma fair\u0195au ei weitwodjau sunjai \u0195azuh saei ist sunjos hausei\u00fe stibnos meinaizos stop",
+      "token": "gabaurans",
+      "gold": "N",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start \u00fearuh is andhafjands qa\u00fe du attin sai swa filu jere skalkinoda \u00feus jah ni \u0195anhun anabusn \u00feeina ufariddja jah mis ni aiw atgaft gaitein ei mi\u00fe frijondam meinaim biwesjau stop",
+      "token": "gaitein",
+      "gold": "N",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start saei nu fagino in \u00feaimei winna faur izwis jah usfullja gaidwa aglono xristaus in leika meinamma faur leik is \u00featei ist aikklesjo stop",
+      "token": "winna",
+      "gold": "N",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start saei nu fagino in \u00feaimei winna faur izwis jah usfullja gaidwa aglono xristaus in leika meinamma faur leik is \u00featei ist aikklesjo stop",
+      "token": "aglono",
+      "gold": "N",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start all dalei usfulljada jah all fairgunje jah hlaine gahnaiwjada jah wair\u00fei\u00fe \u00feata wraiqo du raihtamma jah usdrusteis du wigam slaihtaim stop",
+      "token": "usdrusteis",
+      "gold": "N",
+      "pred": "VB"
+     }
+    ],
+    "VB->PRO": [
+     {
+      "sentence": "start ni \u00feanasei\u00fes im in \u00feamma fair\u0195au i\u00fe \u00feai in \u00feamma fair\u0195au sind jah ik du \u00feus gagga atta weiha fastai ins in namin \u00feeinamma \u00feanzei atgaft mis ei sijaina ain swaswe wit stop",
+      "token": "im",
+      "gold": "VB",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start \u00fearuh is andhafjands qa\u00fe du attin sai swa filu jere skalkinoda \u00feus jah ni \u0195anhun anabusn \u00feeina ufariddja jah mis ni aiw atgaft gaitein ei mi\u00fe frijondam meinaim biwesjau stop",
+      "token": "is",
+      "gold": "VB",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start i\u00fe is \u00feairhlei\u00feands \u00feairh midjans ins iddja stop",
+      "token": "is",
+      "gold": "VB",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start hausidedu\u00fe \u00feo wajamerein is \u0195a izwis \u00feugkei\u00fe \u00fearuh eis allai gadomidedun ina skulan wisan dau\u00feau stop",
+      "token": "is",
+      "gold": "VB",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start \u00feata nu an\u00fear bro\u00ferjus meinai inswin\u00fejai\u00fe izwis in fraujin jah in mahtai swin\u00feeins is stop",
+      "token": "is",
+      "gold": "VB",
+      "pred": "PRO"
+     }
+    ],
+    "ADJ->VB": [
+     {
+      "sentence": "start ni \u00feanasei\u00fes im in \u00feamma fair\u0195au i\u00fe \u00feai in \u00feamma fair\u0195au sind jah ik du \u00feus gagga atta weiha fastai ins in namin \u00feeinamma \u00feanzei atgaft mis ei sijaina ain swaswe wit stop",
+      "token": "weiha",
+      "gold": "ADJ",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start usbida auk ana\u00feaima wisan silba ik af xristau faur bro\u00feruns meinans \u00feans samakunjans bi leika stop",
+      "token": "samakunjans",
+      "gold": "ADJ",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start all dalei usfulljada jah all fairgunje jah hlaine gahnaiwjada jah wair\u00fei\u00fe \u00feata wraiqo du raihtamma jah usdrusteis du wigam slaihtaim stop",
+      "token": "wraiqo",
+      "gold": "ADJ",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start all dalei usfulljada jah all fairgunje jah hlaine gahnaiwjada jah wair\u00fei\u00fe \u00feata wraiqo du raihtamma jah usdrusteis du wigam slaihtaim stop",
+      "token": "slaihtaim",
+      "gold": "ADJ",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start \u00feanuh insandida ina annas gabundanana du kajafin \u00feamma maistin gudjin stop",
+      "token": "maistin",
+      "gold": "ADJ",
+      "pred": "VB"
+     }
+    ],
+    "ADJ->N": [
+     {
+      "sentence": "start ik auk im sa smalista apaustaule ikei ni im wair\u00fes ei haitaidau apaustaulus du\u00fee ei wrak aikklesjon gudis stop",
+      "token": "smalista",
+      "gold": "ADJ",
+      "pred": "N"
+     },
+     {
+      "sentence": "start all dalei usfulljada jah all fairgunje jah hlaine gahnaiwjada jah wair\u00fei\u00fe \u00feata wraiqo du raihtamma jah usdrusteis du wigam slaihtaim stop",
+      "token": "raihtamma",
+      "gold": "ADJ",
+      "pred": "N"
+     },
+     {
+      "sentence": "start qi\u00feands gaggats in \u00feo wi\u00ferawair\u00feon haim in \u00feizaiei inngaggandans bigitats fulan asilaus gabundanana ana \u00feammei ni ainshun aiw manne sat andbindandans ina attiuhi\u00fe stop",
+      "token": "wi\u00ferawair\u00feon",
+      "gold": "ADJ",
+      "pred": "N"
+     },
+     {
+      "sentence": "start jabai auk \u00feu us wistai usmaitans \u00feis wil\u00feeins alewabagmis jah aljakuns wisands intrusgans warst in godana alewabagm \u0195an filu mais \u00feai bi wistai intrusgjanda in swesana alewabagm stop",
+      "token": "godana",
+      "gold": "ADJ",
+      "pred": "N"
+     },
+     {
+      "sentence": "start jabai auk \u00feu us wistai usmaitans \u00feis wil\u00feeins alewabagmis jah aljakuns wisands intrusgans warst in godana alewabagm \u0195an filu mais \u00feai bi wistai intrusgjanda in swesana alewabagm stop",
+      "token": "swesana",
+      "gold": "ADJ",
+      "pred": "N"
+     }
+    ],
+    "AP->ADV": [
+     {
+      "sentence": "start du aifaisium anastodei\u00fe stop",
+      "token": "du",
+      "gold": "AP",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start amen amen qi\u00fea izwis \u00feei greiti\u00fe jah gauno\u00fe jus i\u00fe manase\u00fes fagino\u00fe jus saurgandans wair\u00fei\u00fe akei so saurga izwara du fahedai wair\u00fei\u00fe stop",
+      "token": "du",
+      "gold": "AP",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start akei und hina dag mi\u00fe\u00feanei siggwada moses hulistr ligi\u00fe ana hairtin ize stop",
+      "token": "ana",
+      "gold": "AP",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start biwandjandans \u00feata ibai \u0195as uns fairinodedi in digrein \u00feizai andbahtidon fram uns stop",
+      "token": "fram",
+      "gold": "AP",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start unte anabaud ahmin \u00feamma unhrainjin usgaggan af \u00feamma mann manag auk mel frawalw ina jah bundans was eisarnabandjom jah fotubandjom fastai\u00fes was jah dishniupands \u00feos bandjos draibi\u00fes was fram \u00feamma unhul\u00fein ana au\u00feidos stop",
+      "token": "fram",
+      "gold": "AP",
+      "pred": "ADV"
+     }
+    ],
+    "VB->N": [
+     {
+      "sentence": "start saei nu fagino in \u00feaimei winna faur izwis jah usfullja gaidwa aglono xristaus in leika meinamma faur leik is \u00featei ist aikklesjo stop",
+      "token": "usfullja",
+      "gold": "VB",
+      "pred": "N"
+     },
+     {
+      "sentence": "start saei nu fagino in \u00feaimei winna faur izwis jah usfullja gaidwa aglono xristaus in leika meinamma faur leik is \u00featei ist aikklesjo stop",
+      "token": "leika",
+      "gold": "VB",
+      "pred": "N"
+     },
+     {
+      "sentence": "start ist gameli\u00fe ana praufetum jah wair\u00feand allai laisidai gudis \u0195azuh nu sa gahausjands at attin jah ganam gaggi\u00fe du mis stop",
+      "token": "laisidai",
+      "gold": "VB",
+      "pred": "N"
+     },
+     {
+      "sentence": "start i\u00fe is gahausjands andhof imma qi\u00feands ni faurhtei \u00featainei galaubei jah ganasjada stop",
+      "token": "galaubei",
+      "gold": "VB",
+      "pred": "N"
+     },
+     {
+      "sentence": "start \u00fearuh \u00fean swe faridedun anasaislep jah atiddja skura windis in \u00feana marisaiw jah gafullnodedun jah birekjai waur\u00feun stop",
+      "token": "faridedun",
+      "gold": "VB",
+      "pred": "N"
+     }
+    ],
+    "ADV->AP": [
+     {
+      "sentence": "start saei nu fagino in \u00feaimei winna faur izwis jah usfullja gaidwa aglono xristaus in leika meinamma faur leik is \u00featei ist aikklesjo stop",
+      "token": "faur",
+      "gold": "ADV",
+      "pred": "AP"
+     },
+     {
+      "sentence": "start all dalei usfulljada jah all fairgunje jah hlaine gahnaiwjada jah wair\u00fei\u00fe \u00feata wraiqo du raihtamma jah usdrusteis du wigam slaihtaim stop",
+      "token": "du",
+      "gold": "ADV",
+      "pred": "AP"
+     },
+     {
+      "sentence": "start inuh \u00feis ga\u00ferafstidai sium a\u00fe\u00fean ana ga\u00ferafsteinai unsarai filaus mais faginodedum ana fahedai teitaus unte ana\u0195eilai\u00fes war\u00fe ahma is fram allaim izwis stop",
+      "token": "ana",
+      "gold": "ADV",
+      "pred": "AP"
+     },
+     {
+      "sentence": "start inuh \u00feis ga\u00ferafstidai sium a\u00fe\u00fean ana ga\u00ferafsteinai unsarai filaus mais faginodedum ana fahedai teitaus unte ana\u0195eilai\u00fes war\u00fe ahma is fram allaim izwis stop",
+      "token": "fram",
+      "gold": "ADV",
+      "pred": "AP"
+     },
+     {
+      "sentence": "start ja\u00fe~\u00featei ataugids ist kefin jah afar \u00feata \u00feaim ainlibim stop",
+      "token": "afar",
+      "gold": "ADV",
+      "pred": "AP"
+     }
+    ],
+    "ADV->VB": [
+     {
+      "sentence": "start jah jabai \u0195as iggqis qi\u00feai du\u0195e \u00feata taujats qi\u00feaits \u00featei frauja \u00feis gairnei\u00fe jah sunsaiw ina insandei\u00fe hidre stop",
+      "token": "hidre",
+      "gold": "ADV",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start galeikaida jah mis jah ahmin weihamma fram anastodeinai allaim glaggwuba afarlaistjandin gahahjo \u00feus meljan batista \u00feaiaufeilu stop",
+      "token": "gahahjo",
+      "gold": "ADV",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start jah gu\u00fe \u0195aiwa weihaba jah garaihtaba jah unfairinodaba izwis \u00feaim galaubjandam wesum stop",
+      "token": "unfairinodaba",
+      "gold": "ADV",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start jah manag ga\u00feulandei fram managaim lekjam jah fraqimandei allamma seinamma jah ni waihtai botida ak mais wairs habaida stop",
+      "token": "wairs",
+      "gold": "ADV",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start ake bi\u00fee ik gasa\u0195 \u00featei ni raihtaba gaggand du sunjai aiwaggeljons qa\u00fe du paitrau faura allaim jabai \u00feu iudaius wisands \u00feiudisko libais jah ni iudaiwisko \u0195aiwa \u00feiudos baideis iudaiwiskon stop",
+      "token": "\u00feiudisko",
+      "gold": "ADV",
+      "pred": "VB"
+     }
+    ],
+    "N->ADJ": [
+     {
+      "sentence": "start qi\u00feands gaggats in \u00feo wi\u00ferawair\u00feon haim in \u00feizaiei inngaggandans bigitats fulan asilaus gabundanana ana \u00feammei ni ainshun aiw manne sat andbindandans ina attiuhi\u00fe stop",
+      "token": "asilaus",
+      "gold": "N",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start jah qa\u00fe du im du\u0195e faurhtai siju\u00fe swa \u0195aiwa ni nauh habai\u00fe galaubein stop",
+      "token": "galaubein",
+      "gold": "N",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start \u00feanuh bi\u00fee sadai waur\u00feun qa\u00fe du siponjam seinaim galisi\u00fe \u00feos aflifnandeins drauhsnos \u00feei waihtai ni fraqistnai stop",
+      "token": "drauhsnos",
+      "gold": "N",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start i\u00fe lew nimandei frawaurhts \u00feairh anabusn gawaurhta in mis allana lustu unte inu wito\u00fe frawaurhts was nawis stop",
+      "token": "frawaurhts",
+      "gold": "N",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start i\u00fe \u00feu galaista is laiseinai meinai usmeta muna sidau galaubeinai usbeisnai frija\u00fewai \u00feulainai stop",
+      "token": "galaista",
+      "gold": "N",
+      "pred": "ADJ"
+     }
+    ],
+    "CONJ->ADV": [
+     {
+      "sentence": "start ist gameli\u00fe ana praufetum jah wair\u00feand allai laisidai gudis \u0195azuh nu sa gahausjands at attin jah ganam gaggi\u00fe du mis stop",
+      "token": "nu",
+      "gold": "CONJ",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start qa\u00fe nu izwis \u00featei gadau\u00feni\u00fe in frawaurhtim izwaraim jabai auk ni galaubei\u00fe \u00featei ik im gadau\u00feni\u00fe in frawaurhtim izwaraim stop",
+      "token": "nu",
+      "gold": "CONJ",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start \u00fearuh \u00fean swe faridedun anasaislep jah atiddja skura windis in \u00feana marisaiw jah gafullnodedun jah birekjai waur\u00feun stop",
+      "token": "swe",
+      "gold": "CONJ",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start \u00feanuh se\u0195un du sis misso \u00feai siponjos \u00feagkjandans bi \u0195arjana qe\u00fei stop",
+      "token": "\u00feanuh",
+      "gold": "CONJ",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start jah izwis simle wisandans frama\u00feidans jah fijands gahugdai in waurstwam ubilaim i\u00fe nu gafri\u00feodai stop",
+      "token": "nu",
+      "gold": "CONJ",
+      "pred": "ADV"
+     }
+    ],
+    "CONJ->PRO": [
+     {
+      "sentence": "start qa\u00fe nu izwis \u00featei gadau\u00feni\u00fe in frawaurhtim izwaraim jabai auk ni galaubei\u00fe \u00featei ik im gadau\u00feni\u00fe in frawaurhtim izwaraim stop",
+      "token": "\u00featei",
+      "gold": "CONJ",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start i\u00fe iesus kunnands \u00featei munaidedun usgaggan jah wilwan ina ei tawidedeina ina du \u00feiudana afiddja aftra in fairguni is ains stop",
+      "token": "\u00featei",
+      "gold": "CONJ",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start in witoda auk mosezis gameli\u00fe ist ni faurmuljais auhsau \u00feriskandan ni \u00featei bi auhsum us stop",
+      "token": "\u00featei",
+      "gold": "CONJ",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start du mose auk qi\u00fei\u00fe gaarma \u00feanei arma jah gablei\u00feja \u00feanei blei\u00feja stop",
+      "token": "\u00feanei",
+      "gold": "CONJ",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start sei ist bi aiwaggeli wul\u00feaus \u00feis audagins gudis \u00featei gatrauai\u00fe ist mis stop",
+      "token": "\u00featei",
+      "gold": "CONJ",
+      "pred": "PRO"
+     }
+    ],
+    "VB->ADJ": [
+     {
+      "sentence": "start jah gahausjands iesus qa\u00fe du im ni \u00feaurbun swin\u00feai lekeis ak \u00feai ubilaba habandans ni qam la\u00feon uswaurhtans ak frawaurhtans stop",
+      "token": "uswaurhtans",
+      "gold": "VB",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start i\u00fe lew nimandei frawaurhts \u00feairh anabusn gawaurhta in mis allana lustu unte inu wito\u00fe frawaurhts was nawis stop",
+      "token": "frawaurhts",
+      "gold": "VB",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start sai nu ni siju\u00fe gasteis jah aljakonjai ak siju\u00fe gabaurgjans \u00feaim weiham jah ingardjans gudis stop",
+      "token": "weiham",
+      "gold": "VB",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start sei ist bi aiwaggeli wul\u00feaus \u00feis audagins gudis \u00featei gatrauai\u00fe ist mis stop",
+      "token": "gatrauai\u00fe",
+      "gold": "VB",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start ni waihtai maurnai\u00fe ak in allai bidai jah aihtronai mi\u00fe awiliudam bidos izwaros kun\u00feos sijaina stop",
+      "token": "maurnai\u00fe",
+      "gold": "VB",
+      "pred": "ADJ"
+     }
+    ],
+    "NUM->N": [
+     {
+      "sentence": "start ja\u00fe~\u00featei ataugids ist kefin jah afar \u00feata \u00feaim ainlibim stop",
+      "token": "ainlibim",
+      "gold": "NUM",
+      "pred": "N"
+     },
+     {
+      "sentence": "start jah gafri\u00feodedi \u00feans bans in ainamma leika guda \u00feairh galgan afslahands fija\u00fewa in sis silbin stop",
+      "token": "bans",
+      "gold": "NUM",
+      "pred": "N"
+     },
+     {
+      "sentence": "start widuwo gawaljaidau ni mins saihs tigum jere sei wesi ainis abins qens stop",
+      "token": "saihs",
+      "gold": "NUM",
+      "pred": "N"
+     },
+     {
+      "sentence": "start widuwo gawaljaidau ni mins saihs tigum jere sei wesi ainis abins qens stop",
+      "token": "saihs",
+      "gold": "NUM",
+      "pred": "N"
+     },
+     {
+      "sentence": "start maht wesi auk \u00feata balsan frabugjan in managizo \u00feau \u00ferija hunda skatte jah giban unledaim jah andstaurraidedun \u00feo stop",
+      "token": "\u00ferija",
+      "gold": "NUM",
+      "pred": "N"
+     }
+    ],
+    "CONJ->ADJ": [
+     {
+      "sentence": "start i\u00fe gaswikun\u00feida nu \u00feairh gabairhtein nasjandis unsaris iesuis xristaus gatairandins raihtis dau\u00feau i\u00fe galiuhtjandins libain jah unriurein \u00feairh aiwaggeljon stop",
+      "token": "raihtis",
+      "gold": "CONJ",
+      "pred": "ADJ"
+     }
+    ],
+    "PRO->N": [
+     {
+      "sentence": "start \u00feanuh se\u0195un du sis misso \u00feai siponjos \u00feagkjandans bi \u0195arjana qe\u00fei stop",
+      "token": "\u0195arjana",
+      "gold": "PRO",
+      "pred": "N"
+     },
+     {
+      "sentence": "start jah was fraquman dagis \u0195izuh stiur \u00b7a\u00b7 lamba gawalida \u00b7q\u00b7 jah gaits \u00b7a\u00b7 gamanwida was mis jah bi \u00b7i\u00b7 dagans gaf wein allai \u00feizai filusnai jah allai \u00feizai managein jah ana \u00feo alla hlaif faurama\u00feleis meinis ni sokida in \u00feis ei ni kauridedjau \u00feo managein in \u00feaim waurstwam stop",
+      "token": "\u0195izuh",
+      "gold": "PRO",
+      "pred": "N"
+     }
+    ],
+    "ADV->ADJ": [
+     {
+      "sentence": "start usstandandei \u00fean mariam in \u00feaim dagam iddja in bairgahein sniumundo in baurg iudins stop",
+      "token": "sniumundo",
+      "gold": "ADV",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start jah swaswe wileid ei taujaina izwis mans jah jus taujaid im samaleiko stop",
+      "token": "samaleiko",
+      "gold": "ADV",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start galeikaida jah mis jah ahmin weihamma fram anastodeinai allaim glaggwuba afarlaistjandin gahahjo \u00feus meljan batista \u00feaiaufeilu stop",
+      "token": "glaggwuba",
+      "gold": "ADV",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start sinteino laisjandona sik jan~ni aiw \u0195anhun in ufkun\u00feja sunjos qiman mahteiga stop",
+      "token": "sinteino",
+      "gold": "ADV",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start nih arwjo hlaib matidedum at \u0195amma ak winnandans in arbaidai naht jah daga waurkjandans ei ni kauridedeima \u0195ana izwara stop",
+      "token": "arwjo",
+      "gold": "ADV",
+      "pred": "ADJ"
+     }
+    ],
+    "PRO->VB": [
+     {
+      "sentence": "start war\u00fe \u00fean mi\u00fe\u00feanei gawandida sik iesus andnam ina managei wesun auk allai beidandans is stop",
+      "token": "is",
+      "gold": "PRO",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start i\u00fe \u00feu galaista is laiseinai meinai usmeta muna sidau galaubeinai usbeisnai frija\u00fewai \u00feulainai stop",
+      "token": "is",
+      "gold": "PRO",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start jah usgaggandei alla managei dugunnun bidjan swaswe sinteino tawida im stop",
+      "token": "im",
+      "gold": "PRO",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start berun \u00fean du imma barna ei im attaitoki gasai\u0195andans \u00fean siponjos andbitun ins stop",
+      "token": "im",
+      "gold": "PRO",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start jah iudas iskarioteis ains \u00feize twalibe galai\u00fe du \u00feaim gudjam ei galewidedi ina im stop",
+      "token": "im",
+      "gold": "PRO",
+      "pred": "VB"
+     }
+    ],
+    "ADJ->ADV": [
+     {
+      "sentence": "start jah usgaggandei alla managei dugunnun bidjan swaswe sinteino tawida im stop",
+      "token": "sinteino",
+      "gold": "ADJ",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start sinteino dau\u00feein fraujins iesuis ana leika unsaramma stop",
+      "token": "sinteino",
+      "gold": "ADJ",
+      "pred": "ADV"
+     }
+    ],
+    "PART->CONJ": [
+     {
+      "sentence": "start ibai ni habam waldufni matjan jah drigkan stop",
+      "token": "ibai",
+      "gold": "PART",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start \u00feragjands \u00fean ains jah gafulljands swam akeitis galagjands ana raus dragkida ina qi\u00feands let ei sai\u0195am qimaiu helias athafjan ina stop",
+      "token": "ei",
+      "gold": "PART",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start \u00feau inaljanom fraujin ibai swin\u00feozans imma sium stop",
+      "token": "ibai",
+      "gold": "PART",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start jus auk du freihalsa la\u00feodai siju\u00fe bro\u00ferjus \u00featainei ibai \u00feana freihals du lewa leikis taujai\u00fe ak in fria\u00fewos ahmins skalkino\u00fe izwis misso stop",
+      "token": "ibai",
+      "gold": "PART",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start ni manna plat fanins niujis siuji\u00fe ana snagan fairnjana ibai afnimai fullon af \u00feamma sa niuja \u00feamma fairnjin jah wairsiza gataura wair\u00fei\u00fe stop",
+      "token": "ibai",
+      "gold": "PART",
+      "pred": "CONJ"
+     }
+    ],
+    "NUM->VB": [
+     {
+      "sentence": "start jah bi\u00fee usfulnodedun dagos ahtau du bimaitan ina jah haitan was namo is iesus \u00feata qi\u00feano fram aggilau faur\u00feizei ganumans wesi in wamba stop",
+      "token": "ahtau",
+      "gold": "NUM",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start jah sijaina \u00feo twa du leika samin swaswe \u00feanasei\u00fes ni sind twa ak leik ain stop",
+      "token": "twa",
+      "gold": "NUM",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start jah sijaina \u00feo twa du leika samin swaswe \u00feanasei\u00fes ni sind twa ak leik ain stop",
+      "token": "twa",
+      "gold": "NUM",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start qa\u00feuh \u00fean gajukon im ibai mag blinds blindana tiuhan niu bai in dal gadriusand stop",
+      "token": "bai",
+      "gold": "NUM",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start jah qa\u00fe du im ni waiht nimai\u00fe in wig nih waluns nih matibalg nih hlaib nih skattans nih \u00fean tweihnos paidos haban stop",
+      "token": "tweihnos",
+      "gold": "NUM",
+      "pred": "VB"
+     }
+    ],
+    "PRO->ADJ": [
+     {
+      "sentence": "start a\u00fe\u00fean jabai siju\u00fe in mis jah waurda meina in izwis sind \u00feata\u0195ah \u00feei wilei\u00fe bidji\u00fe jah wair\u00fei\u00fe izwis stop",
+      "token": "\u00feata\u0195ah",
+      "gold": "PRO",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start jah war\u00fe in sumamma dage jainaize at laisjandin imma \u00feo managein in alh jah wailamerjandin atsto\u00feun \u00feai gudjans jah bokarjos mi\u00fe \u00feaim sinistam stop",
+      "token": "sumamma",
+      "gold": "PRO",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start i\u00fe jabai liban in leika \u00feata mis akran waurstwis ist jah \u0195a\u00fear waljau ni kann stop",
+      "token": "\u0195a\u00fear",
+      "gold": "PRO",
+      "pred": "ADJ"
+     }
+    ],
+    "PART->VB": [
+     {
+      "sentence": "start jah swor izai \u00featei \u00feis\u0195ah \u00feei bidjais mik giba \u00feus und halba \u00feiudangardja meina stop",
+      "token": "\u00feei",
+      "gold": "PART",
+      "pred": "VB"
+     }
+    ],
+    "ADV->NUM": [
+     {
+      "sentence": "start jah \u00feata qi\u00feandei galai\u00fe jah wopida marjan swistar seina \u00feiubjo qi\u00feandei laisareis qam jah haiti\u00fe \u00feuk stop",
+      "token": "\u00feiubjo",
+      "gold": "ADV",
+      "pred": "NUM"
+     }
+    ],
+    "N->PRO": [
+     {
+      "sentence": "start bi\u00feeh \u00fean ne\u0195a was daura \u00feizos baurgs \u00fearuh sai utbaurans was naus sunus ainaha ai\u00feein seinai jah si silbo widowo jah managei \u00feizos baurgs ganoha mi\u00fe izai stop",
+      "token": "seinai",
+      "gold": "N",
+      "pred": "PRO"
+     }
+    ],
+    "CONJ->PART": [
+     {
+      "sentence": "start qa\u00feuh \u00fean gajukon im ibai mag blinds blindana tiuhan niu bai in dal gadriusand stop",
+      "token": "ibai",
+      "gold": "CONJ",
+      "pred": "PART"
+     },
+     {
+      "sentence": "start \u00feoh \u00fean mi\u00fe baitrein \u00fewairheins rodidedun in \u00feammei liugandans bigitanda ei ni ainshun reike ai\u00fe\u00feau fareisaie galaubidedi imma at neikaudaimau bi garehsnai gudis qimandin at imma in naht jah mi\u00fe bal\u00feein faur sunja insakandin jah qi\u00feandin im ibai wito\u00fe unsar stoji\u00fe mannan stop",
+      "token": "ibai",
+      "gold": "CONJ",
+      "pred": "PART"
+     }
+    ],
+    "ADV->N": [
+     {
+      "sentence": "start jah qa\u00fe zakarias du \u00feamma aggilau bi\u0195e kunnum \u00feata ik raihtis im sineigs jah qens meina framaldrozei in dagam seinaim stop",
+      "token": "bi\u0195e",
+      "gold": "ADV",
+      "pred": "N"
+     }
+    ]
+   },
+   "seed": 2,
+   "baseline": {
+    "prf": {
+     "ADJ": {
+      "precision": 0.9179331306990881,
+      "recall": 0.7823834196891192,
+      "f1": 0.8447552447552447,
+      "support": 386
+     },
+     "ADV": {
+      "precision": 0.9045454545454545,
+      "recall": 0.7132616487455197,
+      "f1": 0.7975951903807614,
+      "support": 279
+     },
+     "AP": {
+      "precision": 0.9064124783362218,
+      "recall": 1.0,
+      "f1": 0.9509090909090909,
+      "support": 523
+     },
+     "CONJ": {
+      "precision": 0.9427966101694916,
+      "recall": 0.8759842519685039,
+      "f1": 0.9081632653061226,
+      "support": 508
+     },
+     "N": {
+      "precision": 0.9766899766899767,
+      "recall": 0.8436241610738255,
+      "f1": 0.9052934821750089,
+      "support": 1490
+     },
+     "NUM": {
+      "precision": 1.0,
+      "recall": 0.8518518518518519,
+      "f1": 0.92,
+      "support": 27
+     },
+     "PART": {
+      "precision": 0.5833333333333334,
+      "recall": 0.3684210526315789,
+      "f1": 0.4516129032258065,
+      "support": 19
+     },
+     "PRO": {
+      "precision": 0.9426957223567393,
+      "recall": 0.9957374254049446,
+      "f1": 0.9684908789386402,
+      "support": 1173
+     },
+     "VB": {
+      "precision": 0.818445475638051,
+      "recall": 0.9546684709066305,
+      "f1": 0.8813241723922547,
+      "support": 1478
+     }
+    },
+    "overall_accuracy": 0.906850246472888,
+    "confusion": {
+     "VB": {
+      "VB": 1411,
+      "PRO": 35,
+      "N": 23,
+      "ADJ": 9
+     },
+     "PRO": {
+      "PRO": 1168,
+      "VB": 5
+     },
+     "N": {
+      "N": 1257,
+      "VB": 220,
+      "ADJ": 11,
+      "PRO": 2
+     },
+     "CONJ": {
+      "CONJ": 445,
+      "PRO": 34,
+      "PART": 5,
+      "ADJ": 3,
+      "ADV": 21
+     },
+     "AP": {
+      "AP": 523
+     },
+     "ADV": {
+      "CONJ": 15,
+      "ADV": 199,
+      "AP": 54,
+      "VB": 7,
+      "ADJ": 4
+     },
+     "PART": {
+      "PART": 7,
+      "CONJ": 12
+     },
+     "ADJ": {
+      "ADJ": 302,
+      "VB": 78,
+      "N": 6
+     },
+     "NUM": {
+      "NUM": 23,
+      "VB": 3,
+      "N": 1
+     }
+    }
+   },
+   "oov_rate_test": 0.0997790243073262,
+   "train_vocab_size": 8418
+  },
+  {
+   "confusion": {
+    "VB": {
+     "VB": 1355,
+     "ADJ": 9,
+     "N": 102,
+     "PRO": 18,
+     "ADV": 4
+    },
+    "N": {
+     "N": 1451,
+     "VB": 80,
+     "ADJ": 6,
+     "PRO": 5,
+     "ADV": 1
+    },
+    "PRO": {
+     "PRO": 1184,
+     "VB": 7,
+     "CONJ": 10,
+     "ADV": 2,
+     "N": 2
+    },
+    "AP": {
+     "AP": 553,
+     "ADV": 20
+    },
+    "CONJ": {
+     "CONJ": 486,
+     "ADV": 23,
+     "PRO": 12,
+     "ADJ": 3,
+     "VB": 1
+    },
+    "ADV": {
+     "ADV": 243,
+     "AP": 38,
+     "VB": 3,
+     "PRO": 2,
+     "N": 4,
+     "ADJ": 3,
+     "CONJ": 13
+    },
+    "ADJ": {
+     "ADJ": 301,
+     "VB": 43,
+     "N": 53
+    },
+    "PART": {
+     "CONJ": 12,
+     "ADJ": 1
+    },
+    "NUM": {
+     "ADV": 5,
+     "NUM": 12,
+     "N": 7,
+     "VB": 3
+    },
+    "INTJ": {
+     "N": 1
+    }
+   },
+   "prf": {
+    "ADJ": {
+     "precision": 0.9318885448916409,
+     "recall": 0.7581863979848866,
+     "f1": 0.836111111111111,
+     "support": 397
+    },
+    "ADV": {
+     "precision": 0.8154362416107382,
+     "recall": 0.7941176470588235,
+     "f1": 0.804635761589404,
+     "support": 306
+    },
+    "AP": {
+     "precision": 0.9357021996615905,
+     "recall": 0.9650959860383944,
+     "f1": 0.9501718213058419,
+     "support": 573
+    },
+    "CONJ": {
+     "precision": 0.9328214971209213,
+     "recall": 0.9257142857142857,
+     "f1": 0.9292543021032504,
+     "support": 525
+    },
+    "INTJ": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "support": 1
+    },
+    "N": {
+     "precision": 0.895679012345679,
+     "recall": 0.9403758911211925,
+     "f1": 0.9174834018337021,
+     "support": 1543
+    },
+    "NUM": {
+     "precision": 1.0,
+     "recall": 0.4444444444444444,
+     "f1": 0.6153846153846153,
+     "support": 27
+    },
+    "PART": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "support": 13
+    },
+    "PRO": {
+     "precision": 0.9696969696969697,
+     "recall": 0.9825726141078838,
+     "f1": 0.9760923330585325,
+     "support": 1205
+    },
+    "VB": {
+     "precision": 0.9081769436997319,
+     "recall": 0.9106182795698925,
+     "f1": 0.9093959731543625,
+     "support": 1488
+    }
+   },
+   "overall_accuracy": 0.9188877920368542,
+   "mean_softmax_entropy": {
+    "VB": 0.21051022654990115,
+    "N": 0.17434592799501455,
+    "PRO": 0.05683252003229382,
+    "AP": 0.13770847346302104,
+    "CONJ": 0.17627525655286652,
+    "ADV": 0.33090079753519663,
+    "ADJ": 0.37063011202388807,
+    "PART": 1.1920164405153348,
+    "NUM": 1.2466470993779324,
+    "INTJ": 0.574522078037262
+   },
+   "error_examples": {
+    "CONJ->ADV": [
+     {
+      "sentence": "start andhof iesus \u00feiudangardi meina nist us \u00feamma fair\u0195au i\u00fe us \u00feamma fair\u0195au wesi meina \u00feiudangardi ai\u00fe\u00feau andbahtos meinai usdaudidedeina ei ni galewi\u00fes wesjau iudaium i\u00fe nu \u00feiudangardi meina nist \u00fea\u00fero stop",
+      "token": "nu",
+      "gold": "CONJ",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start \u00feanuh bi\u00fee atgibada akran suns insandei\u00fe gil\u00fea unte atist asans stop",
+      "token": "\u00feanuh",
+      "gold": "CONJ",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start \u00feannu nu \u00feandei mel habam waurkjam \u00feiu\u00fe wi\u00fera allans \u00feishun wi\u00fera swesans galaubeinai stop",
+      "token": "nu",
+      "gold": "CONJ",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start \u00feata nu qi\u00fea jah weitwodja in fraujin ei \u00feanasei\u00fes ni gaggai\u00fe swaswe jah an\u00fearos \u00feiudos gaggand in uswissja hugis seinis stop",
+      "token": "nu",
+      "gold": "CONJ",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start i\u00fe nu aflagji\u00fe jah jus \u00feo alla hatis \u00fewairhein unselein anaqiss aglaitiwaurdein us mun\u00fea izwaramma ni ni stop",
+      "token": "nu",
+      "gold": "CONJ",
+      "pred": "ADV"
+     }
+    ],
+    "N->VB": [
+     {
+      "sentence": "start ik ufitahari papa ufmelida handau meinai jah andnemum skilliggans \u00b7j\u00b7 jah faur\u00feis \u00feairh kawtsjon mi\u00fe diakuna alamoda unsaramma jah mi\u00fe gahlaibaim unsaraim andnemum skilliggans \u00b7rk\u00b7 wair\u00fe \u00feize saiwe stop",
+      "token": "wair\u00fe",
+      "gold": "N",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start a\u00fe\u00fean gazds dau\u00feaus frawaurhts i\u00fe mahts frawaurhtais wito\u00fe stop",
+      "token": "mahts",
+      "gold": "N",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start jah sai andaugiba rodei\u00fe jah waiht du imma ni qi\u00feand ibai aufto bi sunjai ufkun\u00feedun \u00feai reiks \u00featei sa ist bi sunjai xristus stop",
+      "token": "waiht",
+      "gold": "N",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start \u00feanuh bi\u00fee atgibada akran suns insandei\u00fe gil\u00fea unte atist asans stop",
+      "token": "gil\u00fea",
+      "gold": "N",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start a\u00fe\u00fean \u0195arjizuh in seinai tewai anastodeins xristus \u00fea\u00fero\u00fe~\u00fean \u00feai xristaus \u00feaiei in quma is stop",
+      "token": "tewai",
+      "gold": "N",
+      "pred": "VB"
+     }
+    ],
+    "VB->ADJ": [
+     {
+      "sentence": "start a\u00fe\u00fean gazds dau\u00feaus frawaurhts i\u00fe mahts frawaurhtais wito\u00fe stop",
+      "token": "frawaurhts",
+      "gold": "VB",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start \u00feai auk waila andbahtjandans grid goda sis fairwaurkjand jah managa bal\u00feein in galaubeinai \u00feizai in xristau iesu stop",
+      "token": "andbahtjandans",
+      "gold": "VB",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start all taine in mis unbairandane akran go\u00fe usnimi\u00fe ita jah all akran bairandane gahrainei\u00fe ita ei managizo akran bairaina stop",
+      "token": "bairandane",
+      "gold": "VB",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start jah sai wegs mikils war\u00fe in marein swaswe \u00feata skip gahuli\u00fe wair\u00fean fram wegim i\u00fe is saislep stop",
+      "token": "wair\u00fean",
+      "gold": "VB",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start unte wito\u00fe \u00feize unfaurweisane missadede ainaizos wito\u00fe raidida azgon kalbons gabrannidaizos utana bibaurgeinais afaruh \u00fean \u00feo in wato wairpandans hrain jah hwssopon jah wullai raudai ufartrusnjandans swaswe gadob \u00feans ufarmiton munandans stop",
+      "token": "ufarmiton",
+      "gold": "VB",
+      "pred": "ADJ"
+     }
+    ],
+    "CONJ->PRO": [
+     {
+      "sentence": "start \u00fearuh \u00fean gasa\u0195 managei \u00featei iesus nist jainar nih siponjos is gastigun in skipa jah qemun in kafarnaum sokjandans iesu stop",
+      "token": "\u00featei",
+      "gold": "CONJ",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start jah war\u00fe bi\u00fee ne\u0195a was be\u00fesfagein jah be\u00feanijin at fairgunja \u00featei haitada alewjo insandida twans siponje seinaize stop",
+      "token": "\u00featei",
+      "gold": "CONJ",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start \u00feanei insandida du izwis du\u00fe\u00fee ei kunnjai \u0195a bi izwis ist jah ga\u00ferafstjai hairtona izwara stop",
+      "token": "\u00feanei",
+      "gold": "CONJ",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start \u00feanuh bi\u00fee sadai waur\u00feun qa\u00fe siponjam seinaim galisi\u00fe \u00feos aflifnandeins drausnos ei waihtai ni fraqistnai \u00feanuh galesun jah gafullidedun \u00b7ib\u00b7 tainjons gabruko us \u00feaim \u00b7e\u00b7 hlaibam barizeinam jah \u00b7b\u00b7 fiskam \u00featei aflifnoda at \u00feaim stop",
+      "token": "\u00featei",
+      "gold": "CONJ",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start \u00featei i\u00fe wissedeis jah \u00feu in \u00feamma daga \u00feeinamma \u00feo du gawair\u00feja \u00feeinamma i\u00fe nu gafulgin ist faura augam \u00feeinaim stop",
+      "token": "\u00featei",
+      "gold": "CONJ",
+      "pred": "PRO"
+     }
+    ],
+    "PART->CONJ": [
+     {
+      "sentence": "start jah sai andaugiba rodei\u00fe jah waiht du imma ni qi\u00feand ibai aufto bi sunjai ufkun\u00feedun \u00feai reiks \u00featei sa ist bi sunjai xristus stop",
+      "token": "ibai",
+      "gold": "PART",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start i\u00fe at izwis waitei salja ai\u00fe\u00feau jah wintru wisa ei jus mik gasandjai\u00fe \u00feis\u0195aduh \u00feei ik wrato stop",
+      "token": "\u00feei",
+      "gold": "PART",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start swe\u00feauh qi\u00fea izwis twrim jah seidonim sutizo wair\u00fei\u00fe in daga stauos \u00feau izwis stop",
+      "token": "swe\u00feauh",
+      "gold": "PART",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start duginnam aftra uns silbans anafilhan ai\u00fe\u00feau ibai \u00feaurbum swe sumai anafilhis boko du izwis ai\u00fe\u00feau us izwis anafilhis stop",
+      "token": "ibai",
+      "gold": "PART",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start \u00feragjands \u00fean ains jah gafulljands swam akeitis galagjands ana raus dragkida ina qi\u00feands let ei sai\u0195am qimaiu helias athafjan ina stop",
+      "token": "ei",
+      "gold": "PART",
+      "pred": "CONJ"
+     }
+    ],
+    "VB->N": [
+     {
+      "sentence": "start \u00feai auk waila andbahtjandans grid goda sis fairwaurkjand jah managa bal\u00feein in galaubeinai \u00feizai in xristau iesu stop",
+      "token": "fairwaurkjand",
+      "gold": "VB",
+      "pred": "N"
+     },
+     {
+      "sentence": "start akei sa ga\u00felaihands hnaiwidaim ga\u00ferafstida uns gu\u00fe in quma teitaus stop",
+      "token": "hnaiwidaim",
+      "gold": "VB",
+      "pred": "N"
+     },
+     {
+      "sentence": "start ei waurd fraujins usfullnodedi \u00featei qa\u00fe bandwjands \u0195ileikamma dau\u00feau skulda gaswiltan stop",
+      "token": "bandwjands",
+      "gold": "VB",
+      "pred": "N"
+     },
+     {
+      "sentence": "start jah qam and allans gaujans iaurdanaus merjands daupein idreigos du fraleta frawaurhte stop",
+      "token": "merjands",
+      "gold": "VB",
+      "pred": "N"
+     },
+     {
+      "sentence": "start samaleiko jah swe war\u00fe in dagam lodis etun jah drugkun bauhtedun jah frabauhtedun satidedun timridedun stop",
+      "token": "bauhtedun",
+      "gold": "VB",
+      "pred": "N"
+     }
+    ],
+    "PRO->VB": [
+     {
+      "sentence": "start all taine in mis unbairandane akran go\u00fe usnimi\u00fe ita jah all akran bairandane gahrainei\u00fe ita ei managizo akran bairaina stop",
+      "token": "ita",
+      "gold": "PRO",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start jah war\u00fe bi\u00fee is anakumbida in garda jah sai managai motarjos jah frawaurhtai qimandans mi\u00feanakumbidedun iesua jah siponjam is stop",
+      "token": "is",
+      "gold": "PRO",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start jah ahmans unhrainjans \u00feaih \u00fean ina gase\u0195un drusun du imma jah hropidedun qi\u00feandans \u00featei \u00feu is sunus gudis stop",
+      "token": "is",
+      "gold": "PRO",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start twai dulgis skulans wesun dulgahaitjin sumamma ains skulda skatte fimf hunda i\u00fe an\u00fear fimf tiguns stop",
+      "token": "sumamma",
+      "gold": "PRO",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start in allai mahtai gaswin\u00feidai bi mahtai wul\u00feaus is in allai us\u00feulainai jah usbeisnai mi\u00fe fahedai stop",
+      "token": "is",
+      "gold": "PRO",
+      "pred": "VB"
+     }
+    ],
+    "NUM->ADV": [
+     {
+      "sentence": "start fija\u00fewa ana leika seinamma wito\u00fe anabusne garaideinim gatairands ei \u00feans twans gaskopi in sis silbin du ainamma niujamma mann waurkjands gawair\u00fei stop",
+      "token": "twans",
+      "gold": "NUM",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start twai dulgis skulans wesun dulgahaitjin sumamma ains skulda skatte fimf hunda i\u00fe an\u00fear fimf tiguns stop",
+      "token": "twai",
+      "gold": "NUM",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start niu twai sparwans assarjau bugjanda jah ains ize ni gadriusi\u00fe ana air\u00fea inuh attins izwaris wiljan stop",
+      "token": "twai",
+      "gold": "NUM",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start jah jabai fotus \u00feeins marzjai \u00feuk afmait ina go\u00fe \u00feus ist galei\u00fean in libain haltamma \u00feau twans fotuns habandin gawairpan in gaiainnan in fon \u00feata un\u0195apnando stop",
+      "token": "twans",
+      "gold": "NUM",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start i\u00fe \u00fean bi \u0195eila niundon ufhropida iesus stibnai mikilai qi\u00feands helei helei lima sibak\u00feani \u00featei ist gu\u00fe meins gu\u00fe meins du\u0195e mis bilaist stop",
+      "token": "niundon",
+      "gold": "NUM",
+      "pred": "ADV"
+     }
+    ],
+    "ADV->AP": [
+     {
+      "sentence": "start fija\u00fewa ana leika seinamma wito\u00fe anabusne garaideinim gatairands ei \u00feans twans gaskopi in sis silbin du ainamma niujamma mann waurkjands gawair\u00fei stop",
+      "token": "du",
+      "gold": "ADV",
+      "pred": "AP"
+     },
+     {
+      "sentence": "start wair\u00fei\u00fe mel \u00fean haila laisein ni us\u00feuland ak du seinaim lustum gadragand sis laisarjans su\u00fejandans hausein stop",
+      "token": "du",
+      "gold": "ADV",
+      "pred": "AP"
+     },
+     {
+      "sentence": "start ja\u00fe~\u00featei ataugids ist kefin jah afar \u00feata \u00feaim ainlibim stop",
+      "token": "afar",
+      "gold": "ADV",
+      "pred": "AP"
+     },
+     {
+      "sentence": "start jah \u00feai sind \u00feai ana air\u00feai \u00feizai godon saianans \u00feaiei hausjand \u00feata waurd jah andnimand jah akran bairand ain \u00b7l\u00b7 jah ain \u00b7j\u00b7 jah ain \u00b7r\u00b7 stop",
+      "token": "ana",
+      "gold": "ADV",
+      "pred": "AP"
+     },
+     {
+      "sentence": "start domjandans \u00feata \u00featei ains faur allans gaswalt \u00feannu allai gaswultun jah faur allans gaswalt ei \u00feai libandans ni \u00feanasei\u00fes sis silbam libaina ak \u00feamma faur sik gaswiltandin jah urreisandin stop",
+      "token": "faur",
+      "gold": "ADV",
+      "pred": "AP"
+     }
+    ],
+    "ADJ->VB": [
+     {
+      "sentence": "start jah qa\u00fe \u0195e galeikom \u00feiudangardja gudis ai\u00fe\u00feau in \u0195ileikai gajukon gabairam \u00feo stop",
+      "token": "galeikom",
+      "gold": "ADJ",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start ei waurd fraujins usfullnodedi \u00featei qa\u00fe bandwjands \u0195ileikamma dau\u00feau skulda gaswiltan stop",
+      "token": "\u0195ileikamma",
+      "gold": "ADJ",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start ai\u00fe\u00feau aglaitiwaurdei ai\u00fe\u00feau dwalawaurdei ai\u00fe\u00feau saldra \u00feoei du \u00feaurftai ni fairrinnand ak mais awiliuda stop",
+      "token": "\u00feaurftai",
+      "gold": "ADJ",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start unte saei waurstweig gatawida paitrau du apaustaulein bimaitis waurstweig gatawida jah mis in \u00feiudos stop",
+      "token": "waurstweig",
+      "gold": "ADJ",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start jabai so manaseds izwis fijai kunnei\u00fe ei mik fruman izwis fijaida stop",
+      "token": "fruman",
+      "gold": "ADJ",
+      "pred": "VB"
+     }
+    ],
+    "ADJ->N": [
+     {
+      "sentence": "start jah qa\u00fe \u0195e galeikom \u00feiudangardja gudis ai\u00fe\u00feau in \u0195ileikai gajukon gabairam \u00feo stop",
+      "token": "\u0195ileikai",
+      "gold": "ADJ",
+      "pred": "N"
+     },
+     {
+      "sentence": "start wasu\u00fe~\u00fean sunus is sa al\u00feiza ana akra jah qimands atiddja ne\u0195 razn jah gahausida saggwins jah laikins stop",
+      "token": "al\u00feiza",
+      "gold": "ADJ",
+      "pred": "N"
+     },
+     {
+      "sentence": "start jah war\u00fe bi\u00fee ne\u0195a was be\u00fesfagein jah be\u00feanijin at fairgunja \u00featei haitada alewjo insandida twans siponje seinaize stop",
+      "token": "alewjo",
+      "gold": "ADJ",
+      "pred": "N"
+     },
+     {
+      "sentence": "start a\u00fe\u00fean missaleiks jah in missaleikaim melam attins bi ina war\u00fe weitwodeins suman \u00feairh praufete waurda sumanuh \u00fean \u00feairh stibna us himina sumanuh \u00fean \u00feairh taiknins stop",
+      "token": "missaleiks",
+      "gold": "ADJ",
+      "pred": "N"
+     },
+     {
+      "sentence": "start \u00feanuh dags ju\u00fean dugann hneiwan atgaggandans \u00fean du imma \u00feai twalif qe\u00feun du imma fralet \u00feo managein ei galei\u00feandans in \u00feos bisunjane haimos jah weihsa saljaina jah bugjaina sis matins unte her in au\u00fejamma stada sium stop",
+      "token": "au\u00fejamma",
+      "gold": "ADJ",
+      "pred": "N"
+     }
+    ],
+    "AP->ADV": [
+     {
+      "sentence": "start wasu\u00fe~\u00fean sunus is sa al\u00feiza ana akra jah qimands atiddja ne\u0195 razn jah gahausida saggwins jah laikins stop",
+      "token": "ana",
+      "gold": "AP",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start domjandans \u00feata \u00featei ains faur allans gaswalt \u00feannu allai gaswultun jah faur allans gaswalt ei \u00feai libandans ni \u00feanasei\u00fes sis silbam libaina ak \u00feamma faur sik gaswiltandin jah urreisandin stop",
+      "token": "faur",
+      "gold": "AP",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start unte saei waurstweig gatawida paitrau du apaustaulein bimaitis waurstweig gatawida jah mis in \u00feiudos stop",
+      "token": "du",
+      "gold": "AP",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start jah manag ga\u00feulandei fram managaim lekjam jah fraqimandei allamma seinamma jah ni waihtai botida ak mais wairs habaida stop",
+      "token": "fram",
+      "gold": "AP",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start \u00feanei insandida du izwis du\u00fe\u00fee ei kunnjai \u0195a bi izwis ist jah ga\u00ferafstjai hairtona izwara stop",
+      "token": "du",
+      "gold": "AP",
+      "pred": "ADV"
+     }
+    ],
+    "ADV->VB": [
+     {
+      "sentence": "start wasu\u00fe~\u00fean sunus is sa al\u00feiza ana akra jah qimands atiddja ne\u0195 razn jah gahausida saggwins jah laikins stop",
+      "token": "ne\u0195",
+      "gold": "ADV",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start \u00fearuh qe\u00feun \u00feai iudaieis du sis misso \u0195adre sa skuli gaggan \u00feei weis ni bigitaima ina nibai in distahein \u00feiudo skuli gaggan jah laisjan \u00feiudos stop",
+      "token": "\u0195adre",
+      "gold": "ADV",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start jah qa\u00fe du im gaggandans in \u00feo manase\u00fe alakjo merjai\u00fe \u00feo aiwaggeljon allai \u00feizai gaskaftai stop",
+      "token": "alakjo",
+      "gold": "ADV",
+      "pred": "VB"
+     }
+    ],
+    "N->ADJ": [
+     {
+      "sentence": "start \u00feannu nu \u00feandei mel habam waurkjam \u00feiu\u00fe wi\u00fera allans \u00feishun wi\u00fera swesans galaubeinai stop",
+      "token": "galaubeinai",
+      "gold": "N",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start galiugagude skalkinassus lubjaleisei fia\u00fewos haifsteis aljan hatiza jiukos twistasseis birodeinos hairaiseis stop",
+      "token": "hairaiseis",
+      "gold": "N",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start waila ungalaubeinai usbruknodedun i\u00fe \u00feu galaubeinai gastost ni hugei hauhaba ak ogs stop",
+      "token": "galaubeinai",
+      "gold": "N",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start silbans fraisi\u00fe sijaidu in galaubeinai silbans izwis kausei\u00fe \u00feau niu kunnu\u00fe izwis \u00featei iesus xristus in izwis ist nibai aufto ungakusanai siju\u00fe stop",
+      "token": "galaubeinai",
+      "gold": "N",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start in waurstwam godaim weitwodi\u00fea habandei jau barna fodidedi jau gastins andnemi jau weihaim fotuns \u00fewohi jau aglons winnandam andbahtidedi jau allamma stop",
+      "token": "gastins",
+      "gold": "N",
+      "pred": "ADJ"
+     }
+    ],
+    "N->PRO": [
+     {
+      "sentence": "start a\u00fe\u00fean \u0195arjizuh in seinai tewai anastodeins xristus \u00fea\u00fero\u00fe~\u00fean \u00feai xristaus \u00feaiei in quma is stop",
+      "token": "seinai",
+      "gold": "N",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start moses auk raihtis qa\u00fe swerai attan \u00feeinana jah ai\u00feein \u00feeina jah saei ubil qi\u00feai attin seinamma ai\u00fe\u00feau ai\u00feein seinai dau\u00feau afdau\u00fejaidau stop",
+      "token": "seinai",
+      "gold": "N",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start i\u00fe is afwairpands wastjai seinai ushlaupands qam at iesu stop",
+      "token": "seinai",
+      "gold": "N",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start jah aftra galei\u00feands af markom twre jah seidone qam at marein galeilaie mi\u00fe tweihnaim markom daikapaulaios stop",
+      "token": "markom",
+      "gold": "N",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start \u00feis nasjandins uns jah la\u00feondins la\u00feonai weihai ni bi waurstwam unsaraim ak bi seinai leikainai jah anstai sei gibana ist unsis in xristau iesu faur mela aiweina stop",
+      "token": "seinai",
+      "gold": "N",
+      "pred": "PRO"
+     }
+    ],
+    "NUM->N": [
+     {
+      "sentence": "start ja\u00fe~\u00featei ataugids ist kefin jah afar \u00feata \u00feaim ainlibim stop",
+      "token": "ainlibim",
+      "gold": "NUM",
+      "pred": "N"
+     },
+     {
+      "sentence": "start sunaus azeiris sunaus aizaikeiins niuntehund jah \u00b7h\u00b7 stop",
+      "token": "niuntehund",
+      "gold": "NUM",
+      "pred": "N"
+     },
+     {
+      "sentence": "start andhof iesus saiwala \u00feeina faur mik lagjis amen amen qi\u00fea \u00feus \u00feei hana ni hrukei\u00fe unte \u00feu mik afaikis kunnan \u00ferim sin\u00feam stop",
+      "token": "\u00ferim",
+      "gold": "NUM",
+      "pred": "N"
+     },
+     {
+      "sentence": "start widuwo gawaljaidau ni mins saihs tigum jere sei wesi ainis abins qens stop",
+      "token": "saihs",
+      "gold": "NUM",
+      "pred": "N"
+     },
+     {
+      "sentence": "start in jera \u00fean fimftataihundin \u00feiudinassaus teibairiaus kaisaris raginondin puntiau peilatau iudaia jah fidurraginja \u00feis galeilaias herodeis filippauzuh \u00fean bro\u00fers is fidurraginja \u00feis ituraias jah trakauneitidaus landis jah lwsaniaus abeilenes fidurraginja stop",
+      "token": "fimftataihundin",
+      "gold": "NUM",
+      "pred": "N"
+     }
+    ],
+    "PRO->CONJ": [
+     {
+      "sentence": "start \u00feanuh modags war\u00fe jah ni wilda inngaggan i\u00fe atta is usgaggands ut bad ina stop",
+      "token": "\u00feanuh",
+      "gold": "PRO",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start in witoda gameli\u00fe ist \u00featei in an\u00fearaim razdom jah wairilom an\u00fearaim rodja managein \u00feizai jan~ni swa andhausjand mis qi\u00fei\u00fe frauja stop",
+      "token": "\u00featei",
+      "gold": "PRO",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start unte \u0195oftuli unsara so ist weitwodei mi\u00fewisseins unsaraizos \u00featei in ainfal\u00feein jah hlutrein gudis ni in handugein leikeinai ak in anstai gudis usmeitum in \u00feamma fair\u0195au i\u00fe ufarassau at izwis stop",
+      "token": "\u00featei",
+      "gold": "PRO",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start jah ba\u00fe ina filu qi\u00feands \u00featei dauhtar meina aftumist habai\u00fe ei qimands lagjais ana \u00feo handuns ei ganisai jah libai stop",
+      "token": "\u00featei",
+      "gold": "PRO",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start jah ahmans unhrainjans \u00feaih \u00fean ina gase\u0195un drusun du imma jah hropidedun qi\u00feandans \u00featei \u00feu is sunus gudis stop",
+      "token": "\u00featei",
+      "gold": "PRO",
+      "pred": "CONJ"
+     }
+    ],
+    "VB->PRO": [
+     {
+      "sentence": "start \u00feanuh modags war\u00fe jah ni wilda inngaggan i\u00fe atta is usgaggands ut bad ina stop",
+      "token": "is",
+      "gold": "VB",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start i\u00fe in \u00feizei \u00feaim swa waur\u00feanam hardizo \u00feizei ungalaubjandane war\u00fe hairto inuh \u00feis garaihtaba anaaiauk qi\u00feands nih stibna is \u0195anhun gahausidedu\u00fe nih siun is gase\u0195u\u00fe jah waurd is ni habai\u00fe wisando in izwis \u00feande \u00feanei insandida jains \u00feammuh jus ni galaubei\u00fe stop",
+      "token": "is",
+      "gold": "VB",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start i\u00fe is andhafjands qa\u00fe \u0195a izwis anabau\u00fe moses stop",
+      "token": "is",
+      "gold": "VB",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start ik pawlus gamelida meinai handau ik usgiba ei ni qi\u00feau \u00feus \u00featei ja\u00fe~\u00feuk silban mis skula is stop",
+      "token": "is",
+      "gold": "VB",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start swaswe gamelid ist in bokom waurde esaeiins praufetaus qi\u00feandins stibna wopjandins in au\u00feidai manweid wig fraujins raihtos waurkei\u00fe staigos is stop",
+      "token": "is",
+      "gold": "VB",
+      "pred": "PRO"
+     }
+    ],
+    "ADV->PRO": [
+     {
+      "sentence": "start \u00feanuh dags ju\u00fean dugann hneiwan atgaggandans \u00fean du imma \u00feai twalif qe\u00feun du imma fralet \u00feo managein ei galei\u00feandans in \u00feos bisunjane haimos jah weihsa saljaina jah bugjaina sis matins unte her in au\u00fejamma stada sium stop",
+      "token": "\u00feanuh",
+      "gold": "ADV",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start \u00feanuh \u00fean qa\u00fe du im iesus swikun\u00feaba lazarus gaswalt stop",
+      "token": "\u00feanuh",
+      "gold": "ADV",
+      "pred": "PRO"
+     }
+    ],
+    "ADV->N": [
+     {
+      "sentence": "start jah manag ga\u00feulandei fram managaim lekjam jah fraqimandei allamma seinamma jah ni waihtai botida ak mais wairs habaida stop",
+      "token": "wairs",
+      "gold": "ADV",
+      "pred": "N"
+     },
+     {
+      "sentence": "start jah unsahtaba mikils ist gagudeins runa saei gabairhti\u00fes war\u00fe in leika garaihts gadomi\u00fes war\u00fe in ahmin ataugids war\u00fe \u00feaim aggilum merids war\u00fe in \u00feiudom galaubi\u00fes war\u00fe in fair\u0195au andnumans war\u00fe in wul\u00feau stop",
+      "token": "unsahtaba",
+      "gold": "ADV",
+      "pred": "N"
+     },
+     {
+      "sentence": "start hait nu witan \u00feamma hlaiwa und \u00feana \u00feridjan dag ibai ufto qimandans \u00feai siponjos is binimaina imma jah qi\u00feaina du managein urrais us dau\u00feaim jah ist so speidizei airzi\u00fea wairsizei \u00feizai frumein stop",
+      "token": "ufto",
+      "gold": "ADV",
+      "pred": "N"
+     },
+     {
+      "sentence": "start jah wisandin paitrau in rohsnai dala\u00fea jah atiddja aina \u00feiujo \u00feis auhumistins gudjins stop",
+      "token": "dala\u00fea",
+      "gold": "ADV",
+      "pred": "N"
+     }
+    ],
+    "ADV->ADJ": [
+     {
+      "sentence": "start warjandans uns du \u00feiudom rodjan ei ganisaina akei du usfulljan seinos frawaurhtins sinteino a\u00fe\u00fean snauh ana ins hatis gudis und andi stop",
+      "token": "sinteino",
+      "gold": "ADV",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start wai \u00feus kaurazein wai \u00feus bai\u00fesa\u00efdan unte i\u00fe in twrai jah seidonai waur\u00feeina mahteis \u00feozei waur\u00feun in izwis airis \u00feau in sakkum jah azgon sitandeins ga\u00efdreigodedeina stop",
+      "token": "airis",
+      "gold": "ADV",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start sinteino dau\u00feein fraujins iesuis ana leika unsaramma uskun\u00fea sijai stop",
+      "token": "sinteino",
+      "gold": "ADV",
+      "pred": "ADJ"
+     }
+    ],
+    "ADV->CONJ": [
+     {
+      "sentence": "start i\u00fe waurstw sein silbins kiusai \u0195arjizuh jah \u00fean in sis silbin \u0195oftulja habai jah ni in an\u00fearamma stop",
+      "token": "\u00fean",
+      "gold": "ADV",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start \u00feanuh bi\u00fee sadai waur\u00feun qa\u00fe siponjam seinaim galisi\u00fe \u00feos aflifnandeins drausnos ei waihtai ni fraqistnai \u00feanuh galesun jah gafullidedun \u00b7ib\u00b7 tainjons gabruko us \u00feaim \u00b7e\u00b7 hlaibam barizeinam jah \u00b7b\u00b7 fiskam \u00featei aflifnoda at \u00feaim stop",
+      "token": "\u00feanuh",
+      "gold": "ADV",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start duatgaggandans \u00fean urraisidedun ina qi\u00feandans talzjand fraqistnam i\u00fe is urreisands gasok winda jah \u00feamma wega watins jah anaslawaidedun jah war\u00fe wis stop",
+      "token": "\u00fean",
+      "gold": "ADV",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start habandans nu swaleika wen managaizos bal\u00feeins brukjaima stop",
+      "token": "nu",
+      "gold": "ADV",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start a\u00fe\u00fean \u00feammei \u0195a fragibi\u00fe jah ik jah \u00fean ik jabai \u0195a fragiba fragiba in izwara in andwair\u00feja xristaus stop",
+      "token": "\u00fean",
+      "gold": "ADV",
+      "pred": "CONJ"
+     }
+    ],
+    "CONJ->ADJ": [
+     {
+      "sentence": "start qam raihtis iohannes nih matjands nih drigkands jah qi\u00feand unhul\u00feon habai\u00fe stop",
+      "token": "raihtis",
+      "gold": "CONJ",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start moses auk raihtis qa\u00fe swerai attan \u00feeinana jah ai\u00feein \u00feeina jah saei ubil qi\u00feai attin seinamma ai\u00fe\u00feau ai\u00feein seinai dau\u00feau afdau\u00fejaidau stop",
+      "token": "raihtis",
+      "gold": "CONJ",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start allis \u00fean usstandand us dau\u00feaim ni liugand ni liuganda ak sind swe aggiljus \u00feai in himinam stop",
+      "token": "allis",
+      "gold": "CONJ",
+      "pred": "ADJ"
+     }
+    ],
+    "PRO->ADV": [
+     {
+      "sentence": "start \u00feanuh bi\u00fee sadai waur\u00feun qa\u00fe siponjam seinaim galisi\u00fe \u00feos aflifnandeins drausnos ei waihtai ni fraqistnai \u00feanuh galesun jah gafullidedun \u00b7ib\u00b7 tainjons gabruko us \u00feaim \u00b7e\u00b7 hlaibam barizeinam jah \u00b7b\u00b7 fiskam \u00featei aflifnoda at \u00feaim stop",
+      "token": "\u00feanuh",
+      "gold": "PRO",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start bi unsweri\u00feai qi\u00fea swe \u00featei weis siukai weseima i\u00fe in \u00feammei \u0195e \u0195as ananan\u00feei\u00fe in unfrodein qi\u00fea gadars jah ik stop",
+      "token": "\u0195e",
+      "gold": "PRO",
+      "pred": "ADV"
+     }
+    ],
+    "NUM->VB": [
+     {
+      "sentence": "start jah \u00fean in witoda izwaramma gameli\u00fe ist \u00featei twaddje manne weitwodi\u00fea sunja ist stop",
+      "token": "twaddje",
+      "gold": "NUM",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start \u00fearuh qa\u00fe iesus du \u00feaim twalibim ibai jah jus wilei\u00fe galei\u00fean stop",
+      "token": "twalibim",
+      "gold": "NUM",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start jah sijaina \u00feo twa du leika samin swaswe \u00feanasei\u00fes ni sind twa ak leik ain stop",
+      "token": "twa",
+      "gold": "NUM",
+      "pred": "VB"
+     }
+    ],
+    "VB->ADV": [
+     {
+      "sentence": "start in jera \u00fean fimftataihundin \u00feiudinassaus teibairiaus kaisaris raginondin puntiau peilatau iudaia jah fidurraginja \u00feis galeilaias herodeis filippauzuh \u00fean bro\u00fers is fidurraginja \u00feis ituraias jah trakauneitidaus landis jah lwsaniaus abeilenes fidurraginja stop",
+      "token": "raginondin",
+      "gold": "VB",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start wai \u00feus kaurazein wai \u00feus bai\u00fesa\u00efdan unte i\u00fe in twrai jah seidonai waur\u00feeina mahteis \u00feozei waur\u00feun in izwis airis \u00feau in sakkum jah azgon sitandeins ga\u00efdreigodedeina stop",
+      "token": "wai",
+      "gold": "VB",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start wai \u00feus kaurazein wai \u00feus bai\u00fesa\u00efdan unte i\u00fe in twrai jah seidonai waur\u00feeina mahteis \u00feozei waur\u00feun in izwis airis \u00feau in sakkum jah azgon sitandeins ga\u00efdreigodedeina stop",
+      "token": "wai",
+      "gold": "VB",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start in waurstwam godaim weitwodi\u00fea habandei jau barna fodidedi jau gastins andnemi jau weihaim fotuns \u00fewohi jau aglons winnandam andbahtidedi jau allamma stop",
+      "token": "\u00fewohi",
+      "gold": "VB",
+      "pred": "ADV"
+     }
+    ],
+    "PRO->N": [
+     {
+      "sentence": "start ik auk im sa smalista apaustaule ikei ni im wair\u00fes ei haitaidau apaustaulus du\u00fee ei wrak aikklesjon gudis stop",
+      "token": "ikei",
+      "gold": "PRO",
+      "pred": "N"
+     },
+     {
+      "sentence": "start jah ik wul\u00feu \u00feanei gaft mis gaf im ei sijaina ain swaswe wit ain siju stop",
+      "token": "wit",
+      "gold": "PRO",
+      "pred": "N"
+     }
+    ],
+    "CONJ->VB": [
+     {
+      "sentence": "start iba \u00feank \u00feu fairhaitis skalka jainamma unte gatawida \u00featei anabudan was ni man stop",
+      "token": "iba",
+      "gold": "CONJ",
+      "pred": "VB"
+     }
+    ],
+    "PART->ADJ": [
+     {
+      "sentence": "start a\u00fe\u00fean nu swe\u00feauh wito\u00fe weihata jah anabusns weiha jah garaihta jah \u00feiu\u00feeiga stop",
+      "token": "swe\u00feauh",
+      "gold": "PART",
+      "pred": "ADJ"
+     }
+    ],
+    "INTJ->N": [
+     {
+      "sentence": "start o diupi\u00fea gabeins handugeins stop",
+      "token": "o",
+      "gold": "INTJ",
+      "pred": "N"
+     }
+    ],
+    "N->ADV": [
+     {
+      "sentence": "start jah qa\u00fe du im amen qi\u00fea izwis \u00featei sind sumai \u00feize her standandane \u00feai ize ni kausjand dau\u00feaus unte gasai\u0195and \u00feiudinassu gudis qumanana in mahtai stop",
+      "token": "her",
+      "gold": "N",
+      "pred": "ADV"
+     }
+    ]
+   },
+   "seed": 3,
+   "baseline": {
+    "prf": {
+     "ADJ": {
+      "precision": 0.9587020648967551,
+      "recall": 0.818639798488665,
+      "f1": 0.8831521739130435,
+      "support": 397
+     },
+     "ADV": {
+      "precision": 0.905511811023622,
+      "recall": 0.7516339869281046,
+      "f1": 0.8214285714285714,
+      "support": 306
+     },
+     "AP": {
+      "precision": 0.9138755980861244,
+      "recall": 1.0,
+      "f1": 0.955,
+      "support": 573
+     },
+     "CONJ": {
+      "precision": 0.9557344064386318,
+      "recall": 0.9047619047619048,
+      "f1": 0.9295499021526419,
+      "support": 525
+     },
+     "INTJ": {
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1": 0.5,
+      "support": 1
+     },
+     "N": {
+      "precision": 0.9845132743362832,
+      "recall": 0.8651976668826961,
+      "f1": 0.921007243877199,
+      "support": 1543
+     },
+     "NUM": {
+      "precision": 0.9615384615384616,
+      "recall": 0.9259259259259259,
+      "f1": 0.9433962264150944,
+      "support": 27
+     },
+     "PART": {
+      "precision": 0.7,
+      "recall": 0.5384615384615384,
+      "f1": 0.608695652173913,
+      "support": 13
+     },
+     "PRO": {
+      "precision": 0.9584996009577015,
+      "recall": 0.9966804979253112,
+      "f1": 0.9772172497965825,
+      "support": 1205
+     },
+     "VB": {
+      "precision": 0.8412142440163456,
+      "recall": 0.9684139784946236,
+      "f1": 0.9003436426116839,
+      "support": 1488
+     }
+    },
+    "overall_accuracy": 0.9234945705824285,
+    "confusion": {
+     "VB": {
+      "VB": 1441,
+      "N": 15,
+      "PRO": 27,
+      "ADJ": 3,
+      "INTJ": 2
+     },
+     "N": {
+      "N": 1335,
+      "VB": 197,
+      "ADJ": 5,
+      "PRO": 4,
+      "NUM": 1,
+      "ADV": 1
+     },
+     "PRO": {
+      "PRO": 1201,
+      "CONJ": 2,
+      "ADV": 1,
+      "VB": 1
+     },
+     "AP": {
+      "AP": 573
+     },
+     "CONJ": {
+      "CONJ": 475,
+      "ADV": 22,
+      "PRO": 21,
+      "ADJ": 4,
+      "PART": 3
+     },
+     "ADV": {
+      "ADV": 230,
+      "AP": 54,
+      "VB": 6,
+      "CONJ": 14,
+      "ADJ": 2
+     },
+     "ADJ": {
+      "ADJ": 325,
+      "VB": 66,
+      "N": 6
+     },
+     "PART": {
+      "CONJ": 6,
+      "PART": 7
+     },
+     "NUM": {
+      "NUM": 25,
+      "VB": 2
+     },
+     "INTJ": {
+      "INTJ": 1
+     }
+    }
+   },
+   "oov_rate_test": 0.08489634748272458,
+   "train_vocab_size": 8443
+  },
+  {
+   "confusion": {
+    "VB": {
+     "VB": 1486,
+     "N": 53,
+     "ADJ": 23,
+     "PRO": 18,
+     "NUM": 1,
+     "ADV": 1
+    },
+    "CONJ": {
+     "CONJ": 485,
+     "PRO": 17,
+     "ADV": 11
+    },
+    "ADV": {
+     "AP": 43,
+     "ADV": 221,
+     "PRO": 1,
+     "CONJ": 19,
+     "N": 7,
+     "VB": 11,
+     "ADJ": 3
+    },
+    "N": {
+     "N": 1412,
+     "VB": 116,
+     "ADJ": 25,
+     "PRO": 2,
+     "ADV": 2
+    },
+    "ADJ": {
+     "ADJ": 290,
+     "VB": 66,
+     "N": 35,
+     "ADV": 3,
+     "CONJ": 1
+    },
+    "PRO": {
+     "PRO": 1239,
+     "CONJ": 20,
+     "VB": 10,
+     "ADV": 1,
+     "N": 3
+    },
+    "AP": {
+     "AP": 542,
+     "ADV": 21,
+     "VB": 1,
+     "ADJ": 1
+    },
+    "NUM": {
+     "NUM": 11,
+     "CONJ": 1,
+     "ADJ": 1,
+     "ADV": 1,
+     "N": 2,
+     "VB": 2
+    },
+    "INTJ": {
+     "NUM": 1,
+     "CONJ": 1,
+     "VB": 2
+    },
+    "PART": {
+     "CONJ": 4,
+     "PART": 3
+    }
+   },
+   "prf": {
+    "ADJ": {
+     "precision": 0.8454810495626822,
+     "recall": 0.7341772151898734,
+     "f1": 0.7859078590785907,
+     "support": 395
+    },
+    "ADV": {
+     "precision": 0.8467432950191571,
+     "recall": 0.7245901639344262,
+     "f1": 0.7809187279151943,
+     "support": 305
+    },
+    "AP": {
+     "precision": 0.9264957264957265,
+     "recall": 0.95929203539823,
+     "f1": 0.942608695652174,
+     "support": 565
+    },
+    "CONJ": {
+     "precision": 0.9133709981167608,
+     "recall": 0.9454191033138402,
+     "f1": 0.9291187739463601,
+     "support": 513
+    },
+    "INTJ": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "support": 4
+    },
+    "N": {
+     "precision": 0.9338624338624338,
+     "recall": 0.9068721901091843,
+     "f1": 0.9201694362984685,
+     "support": 1557
+    },
+    "NUM": {
+     "precision": 0.8461538461538461,
+     "recall": 0.6111111111111112,
+     "f1": 0.7096774193548387,
+     "support": 18
+    },
+    "PART": {
+     "precision": 1.0,
+     "recall": 0.42857142857142855,
+     "f1": 0.6,
+     "support": 7
+    },
+    "PRO": {
+     "precision": 0.9702427564604542,
+     "recall": 0.9732914375490966,
+     "f1": 0.971764705882353,
+     "support": 1273
+    },
+    "VB": {
+     "precision": 0.8772136953955135,
+     "recall": 0.9393173198482933,
+     "f1": 0.9072039072039072,
+     "support": 1582
+    }
+   },
+   "overall_accuracy": 0.9147772953851101,
+   "mean_softmax_entropy": {
+    "VB": 0.20000192951281495,
+    "CONJ": 0.15092849480914095,
+    "ADV": 0.34201623191598984,
+    "N": 0.188301267937979,
+    "ADJ": 0.40001909027371224,
+    "PRO": 0.0629788829110276,
+    "AP": 0.15126826205348545,
+    "NUM": 1.0238205277257495,
+    "INTJ": 1.183478131890297,
+    "PART": 1.2452423104218073
+   },
+   "error_examples": {
+    "ADV->AP": [
+     {
+      "sentence": "start qa\u00fe \u00fean du siponjam a\u00fe\u00fean qimand dagos \u00fean gairnei\u00fe ainana \u00feize dage sunaus mans gasai\u0195an jah ni gasai\u0195i\u00fe stop",
+      "token": "du",
+      "gold": "ADV",
+      "pred": "AP"
+     },
+     {
+      "sentence": "start ai\u00fe\u00feau ibai frawaurht tawida mik silban haunjands ei jus ushauhjaindau unte arwjo gudis aiwaggeljon merida izwis stop",
+      "token": "arwjo",
+      "gold": "ADV",
+      "pred": "AP"
+     },
+     {
+      "sentence": "start in \u00feis biuga kniwa meina du attin fraujins unsaris iesuis xristaus stop",
+      "token": "du",
+      "gold": "ADV",
+      "pred": "AP"
+     },
+     {
+      "sentence": "start jah \u00feai bokarjos jah fareisaieis gasai\u0195andans ina matjandan mi\u00fe \u00feaim motarjam jah frawaurhtaim qe\u00feun du \u00feaim siponjam is \u0195a ist \u00featei mi\u00fe motarjam jah frawaurhtaim matji\u00fe jah driggki\u00fe stop",
+      "token": "du",
+      "gold": "ADV",
+      "pred": "AP"
+     },
+     {
+      "sentence": "start i\u00fe is wissuh mitonins ize jah qa\u00fe du \u00feamma mann \u00feamma \u00feaursja habandin handu urreis jah stand in midjaim \u00fearuh is urreisands gasto\u00fe stop",
+      "token": "du",
+      "gold": "ADV",
+      "pred": "AP"
+     }
+    ],
+    "PRO->CONJ": [
+     {
+      "sentence": "start saei frakann mis jah ni andnimi\u00fe waurda meina habaid \u00feana stojandan sik waurd \u00featei rodida \u00feata stoji\u00fe ina in spedistin daga stop",
+      "token": "\u00featei",
+      "gold": "PRO",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start \u00feanuh qa\u00fe du imma raihtaba andhoft \u00feata tawei jah libais stop",
+      "token": "\u00feanuh",
+      "gold": "PRO",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start \u00feo analaugnjona hairtins is swikun\u00fea wair\u00feand \u00feanuh driusands ana andawleizn inweiti\u00fe gu\u00fe gateihands \u00featei bi sunjai gu\u00fe in izwis ist stop",
+      "token": "\u00feanuh",
+      "gold": "PRO",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start \u00feo analaugnjona hairtins is swikun\u00fea wair\u00feand \u00feanuh driusands ana andawleizn inweiti\u00fe gu\u00fe gateihands \u00featei bi sunjai gu\u00fe in izwis ist stop",
+      "token": "\u00featei",
+      "gold": "PRO",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start usiddjedun \u00fean jah unhul\u00feons af managaim hropjandeins jah qi\u00feandeins \u00featei \u00feu is xristus sunus gudis jah gasakands im ni lailot \u00feos rodjan unte wissedun silban xristu ina wisan stop",
+      "token": "\u00featei",
+      "gold": "PRO",
+      "pred": "CONJ"
+     }
+    ],
+    "ADJ->VB": [
+     {
+      "sentence": "start jah fra\u00fejands iesus qa\u00fe du im \u0195a \u00feaggkei\u00fe unte hlaibans ni habai\u00fe ni nauh fra\u00feji\u00fe nih witu\u00fe unte daubata habai\u00fe hairto izwar stop",
+      "token": "daubata",
+      "gold": "ADJ",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start \u00feo analaugnjona hairtins is swikun\u00fea wair\u00feand \u00feanuh driusands ana andawleizn inweiti\u00fe gu\u00fe gateihands \u00featei bi sunjai gu\u00fe in izwis ist stop",
+      "token": "swikun\u00fea",
+      "gold": "ADJ",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start jah iesus gasai\u0195ands ina \u00featei frodaba andhof qa\u00fe du imma ni fairra is \u00feiudangardjai gudis jah ainshun \u00feanasei\u00fes ni gadaursta ina fraihnan stop",
+      "token": "frodaba",
+      "gold": "ADJ",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start inuh \u00feis qam gamains allaize nasjands allaize frawaurhtins afhrainjan ni ibna nih galeiks unsarai garaihtein ak silba garaihtei wisands ei gasaljands sik faur uns hunsl jas~sau\u00fe guda \u00feizos manasedais gawaurhtedi uslunein stop",
+      "token": "ibna",
+      "gold": "ADJ",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start inuh \u00feis qam gamains allaize nasjands allaize frawaurhtins afhrainjan ni ibna nih galeiks unsarai garaihtein ak silba garaihtei wisands ei gasaljands sik faur uns hunsl jas~sau\u00fe guda \u00feizos manasedais gawaurhtedi uslunein stop",
+      "token": "galeiks",
+      "gold": "ADJ",
+      "pred": "VB"
+     }
+    ],
+    "AP->ADV": [
+     {
+      "sentence": "start i\u00fe eis fullai waur\u00feun unfrodeins jah rodidedun du sis misso \u0195a tawidideina \u00feamma iesua stop",
+      "token": "du",
+      "gold": "AP",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start inuh \u00feis qam gamains allaize nasjands allaize frawaurhtins afhrainjan ni ibna nih galeiks unsarai garaihtein ak silba garaihtei wisands ei gasaljands sik faur uns hunsl jas~sau\u00fe guda \u00feizos manasedais gawaurhtedi uslunein stop",
+      "token": "faur",
+      "gold": "AP",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start jah atiddja dala\u00fe rign jah qemun a\u0195os jah waiwoun windos jah bistugqun bi \u00feamma razna jainamma jah ni gadraus unte gasuli\u00fe was ana staina stop",
+      "token": "ana",
+      "gold": "AP",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start jah jabai satana ussto\u00fe ana sik silban jah gadaili\u00fes war\u00fe ni mag gastandan ak andi habai\u00fe stop",
+      "token": "ana",
+      "gold": "AP",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start \u00feairh gakust \u00feis andbahtjis mikiljandans gu\u00fe ana ufhauseinai andahaitis izwaris in aiwaggeljon xristaus jah in ainfal\u00feein gamaindu\u00feais du im jah du allaim stop",
+      "token": "ana",
+      "gold": "AP",
+      "pred": "ADV"
+     }
+    ],
+    "PRO->VB": [
+     {
+      "sentence": "start ni ei \u0195arjammeh swaswe gadailida gu\u00fe ain\u0195arjatoh swaswe gala\u00feoda gu\u00fe swa gaggai jah swa in allaim aikklesjom anabiuda stop",
+      "token": "\u0195arjammeh",
+      "gold": "PRO",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start ni ei \u0195arjammeh swaswe gadailida gu\u00fe ain\u0195arjatoh swaswe gala\u00feoda gu\u00fe swa gaggai jah swa in allaim aikklesjom anabiuda stop",
+      "token": "ain\u0195arjatoh",
+      "gold": "PRO",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start wasu\u00fe~\u00fean sunus is sa al\u00feiza ana akra jah qimands atiddja ne\u0195 razn jah gahausida saggwins jah laikins stop",
+      "token": "is",
+      "gold": "PRO",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start o unfrodans galateis \u0195as izwis afhugida sunjai ni ufhausjan izwizei faura augam iesus xristus faurameli\u00fes was in izwis ushrami\u00fes stop",
+      "token": "izwizei",
+      "gold": "PRO",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start allai swa managai swe qemun \u00feiubos sind jah waidedjans akei ni hausidedun im \u00feo lamba stop",
+      "token": "im",
+      "gold": "PRO",
+      "pred": "VB"
+     }
+    ],
+    "N->VB": [
+     {
+      "sentence": "start ei gibai izwis bi gabein wul\u00feaus seinis mahtai gaswin\u00fenan \u00feairh ahman seinana in innuman mannan stop",
+      "token": "gibai",
+      "gold": "N",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start jah \u00feai mi\u00fe mis allai bro\u00ferjus aikklesjom galatiais stop",
+      "token": "galatiais",
+      "gold": "N",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start jah insandidedun du imma sumai \u00feize fareisaie jah herodiane ei ina ganuteina waurda stop",
+      "token": "herodiane",
+      "gold": "N",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start a\u00fe\u00fean \u0195arjizuh in seinai tewai anastodeins xristus \u00fea\u00fero\u00fe~\u00fean \u00feai xristaus \u00feaiei in quma is stop",
+      "token": "tewai",
+      "gold": "N",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start \u00featei gabaurans ist izwis himma daga nasjands saei ist xristus frauja in baurg daweidis stop",
+      "token": "gabaurans",
+      "gold": "N",
+      "pred": "VB"
+     }
+    ],
+    "VB->N": [
+     {
+      "sentence": "start ei gibai izwis bi gabein wul\u00feaus seinis mahtai gaswin\u00fenan \u00feairh ahman seinana in innuman mannan stop",
+      "token": "mahtai",
+      "gold": "VB",
+      "pred": "N"
+     },
+     {
+      "sentence": "start disdaili\u00fes ist xristus ibai pawlus ushrami\u00fes war\u00fe in izwara ai\u00fe\u00feau in namin pawlus daupidai wesei\u00fe stop",
+      "token": "disdaili\u00fes",
+      "gold": "VB",
+      "pred": "N"
+     },
+     {
+      "sentence": "start qa\u00fe \u00fean du im \u0195ar ist galaubeins izwara ogandans \u00fean sildaleikidedun qi\u00feandans du sis misso \u0195as siai sa ei jah windam faurbiudi\u00fe jah watnam jah ufhausjand imma stop",
+      "token": "faurbiudi\u00fe",
+      "gold": "VB",
+      "pred": "N"
+     },
+     {
+      "sentence": "start inuh \u00feis qam gamains allaize nasjands allaize frawaurhtins afhrainjan ni ibna nih galeiks unsarai garaihtein ak silba garaihtei wisands ei gasaljands sik faur uns hunsl jas~sau\u00fe guda \u00feizos manasedais gawaurhtedi uslunein stop",
+      "token": "afhrainjan",
+      "gold": "VB",
+      "pred": "N"
+     },
+     {
+      "sentence": "start pawlus apaustaulus xristaus iesuis \u00feairh wiljan gudis \u00feaim weiham \u00feaim wisandam in aifaison jah triggwaim in xristau iesu stop",
+      "token": "wiljan",
+      "gold": "VB",
+      "pred": "N"
+     }
+    ],
+    "VB->ADJ": [
+     {
+      "sentence": "start ei gibai izwis bi gabein wul\u00feaus seinis mahtai gaswin\u00fenan \u00feairh ahman seinana in innuman mannan stop",
+      "token": "innuman",
+      "gold": "VB",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start jah \u00feai bokarjos jah fareisaieis gasai\u0195andans ina matjandan mi\u00fe \u00feaim motarjam jah frawaurhtaim qe\u00feun du \u00feaim siponjam is \u0195a ist \u00featei mi\u00fe motarjam jah frawaurhtaim matji\u00fe jah driggki\u00fe stop",
+      "token": "frawaurhtaim",
+      "gold": "VB",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start unsweibandans bidjai\u00fe stop",
+      "token": "unsweibandans",
+      "gold": "VB",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start jah insandida skalk seinana \u0195eilai nahtamatis qi\u00fean \u00feaim haitanam gaggi\u00fe unte ju manwu ist allata stop",
+      "token": "haitanam",
+      "gold": "VB",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start sa dailjands in allawerein sa faurastandands in usdaudein sa armands in hlasein stop",
+      "token": "armands",
+      "gold": "VB",
+      "pred": "ADJ"
+     }
+    ],
+    "CONJ->PRO": [
+     {
+      "sentence": "start akei \u00featei was mis gawaurki \u00featuh rahnida in xristaus slei\u00fea wisan stop",
+      "token": "\u00featei",
+      "gold": "CONJ",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start jah iesus gasai\u0195ands ina \u00featei frodaba andhof qa\u00fe du imma ni fairra is \u00feiudangardjai gudis jah ainshun \u00feanasei\u00fes ni gadaursta ina fraihnan stop",
+      "token": "\u00featei",
+      "gold": "CONJ",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start unte kunnu\u00fe anst fraujins unsaris iesuis xristaus \u00featei in izwara gaunledida sik gabigs wisands ei jus \u00feamma is unledja gabeigai wair\u00feai\u00fe stop",
+      "token": "\u00featei",
+      "gold": "CONJ",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start \u00featei gabaurans ist izwis himma daga nasjands saei ist xristus frauja in baurg daweidis stop",
+      "token": "\u00featei",
+      "gold": "CONJ",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start i\u00fe iesus wissuh \u00featei wildedun ina fraihnan jah qa\u00fe im bi \u00feata sokei\u00fe mi\u00fe izwis misso \u00featei qa\u00fe leitil jah ni sai\u0195i\u00fe mik jah aftra leitil jah gasai\u0195i\u00fe mik stop",
+      "token": "\u00featei",
+      "gold": "CONJ",
+      "pred": "PRO"
+     }
+    ],
+    "VB->PRO": [
+     {
+      "sentence": "start jah \u00feai bokarjos jah fareisaieis gasai\u0195andans ina matjandan mi\u00fe \u00feaim motarjam jah frawaurhtaim qe\u00feun du \u00feaim siponjam is \u0195a ist \u00featei mi\u00fe motarjam jah frawaurhtaim matji\u00fe jah driggki\u00fe stop",
+      "token": "is",
+      "gold": "VB",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start a\u00fe\u00fean \u0195arjizuh in seinai tewai anastodeins xristus \u00fea\u00fero\u00fe~\u00fean \u00feai xristaus \u00feaiei in quma is stop",
+      "token": "is",
+      "gold": "VB",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start i\u00fe is wissuh mitonins ize jah qa\u00fe du \u00feamma mann \u00feamma \u00feaursja habandin handu urreis jah stand in midjaim \u00fearuh is urreisands gasto\u00fe stop",
+      "token": "is",
+      "gold": "VB",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start ni manna mag kasa swin\u00feis galei\u00feands in gard is wilwan niba faur\u00feis \u00feana swin\u00fean gabindi\u00fe jah \u00fean \u00feana gard is diswilwai stop",
+      "token": "is",
+      "gold": "VB",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start gabundans is qenai ni sokei lausjan galausi\u00fes is qenai ni sokei qen stop",
+      "token": "is",
+      "gold": "VB",
+      "pred": "PRO"
+     }
+    ],
+    "ADJ->N": [
+     {
+      "sentence": "start \u00feo analaugnjona hairtins is swikun\u00fea wair\u00feand \u00feanuh driusands ana andawleizn inweiti\u00fe gu\u00fe gateihands \u00featei bi sunjai gu\u00fe in izwis ist stop",
+      "token": "analaugnjona",
+      "gold": "ADJ",
+      "pred": "N"
+     },
+     {
+      "sentence": "start inuh \u00feis qam gamains allaize nasjands allaize frawaurhtins afhrainjan ni ibna nih galeiks unsarai garaihtein ak silba garaihtei wisands ei gasaljands sik faur uns hunsl jas~sau\u00fe guda \u00feizos manasedais gawaurhtedi uslunein stop",
+      "token": "frawaurhtins",
+      "gold": "ADJ",
+      "pred": "N"
+     },
+     {
+      "sentence": "start jah athaihait \u00feans twalif jah dugann ins insandjan twans \u0195anzuh jah gaf im waldufni ahmane unhrainjaize stop",
+      "token": "unhrainjaize",
+      "gold": "ADJ",
+      "pred": "N"
+     },
+     {
+      "sentence": "start a\u00fe\u00fean af smakkabagma ganimi\u00fe \u00feo gajukon \u00fean \u00feis ju\u00fean asts \u00felaqus wair\u00fei\u00fe jah uskeinand laubos kunnu\u00fe \u00featei ne\u0195a ist asans stop",
+      "token": "\u00felaqus",
+      "gold": "ADJ",
+      "pred": "N"
+     },
+     {
+      "sentence": "start \u00feanuh dags ju\u00fean dugann hneiwan atgaggandans \u00fean du imma \u00feai twalif qe\u00feun du imma fralet \u00feo managein ei galei\u00feandans in \u00feos bisunjane haimos jah weihsa saljaina jah bugjaina sis matins unte her in au\u00fejamma stada sium stop",
+      "token": "au\u00fejamma",
+      "gold": "ADJ",
+      "pred": "N"
+     }
+    ],
+    "ADV->PRO": [
+     {
+      "sentence": "start i\u00fe eis tauhun iesu fram kajafin in praitoriaun \u00feanuh was maurgins i\u00fe eis ni iddjedun in praitoriaun ei ni bisaulnodedeina ak matidedeina pasxa stop",
+      "token": "\u00feanuh",
+      "gold": "ADV",
+      "pred": "PRO"
+     }
+    ],
+    "N->ADJ": [
+     {
+      "sentence": "start i\u00fe eis tauhun iesu fram kajafin in praitoriaun \u00feanuh was maurgins i\u00fe eis ni iddjedun in praitoriaun ei ni bisaulnodedeina ak matidedeina pasxa stop",
+      "token": "pasxa",
+      "gold": "N",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start seinai galaubeinai wair\u00feands ju faur ina bal\u00feei\u00fe in mela raihtis \u00feulainais leik is afar \u00feulain swikun\u00feaba mi\u00fe ioseba usfilhands gaswikun\u00fejands ei ni afwandida sik in faurama\u00felje \u0195otos stop",
+      "token": "galaubeinai",
+      "gold": "N",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start \u00feiubja faihufrikeins unseleins liutei aglaitei augo unsel wajamereins hauhhairtei unwiti stop",
+      "token": "aglaitei",
+      "gold": "N",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start \u00feiubja faihufrikeins unseleins liutei aglaitei augo unsel wajamereins hauhhairtei unwiti stop",
+      "token": "unwiti",
+      "gold": "N",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start _teins \u00feis balsanis war\u00fe stop",
+      "token": "balsanis",
+      "gold": "N",
+      "pred": "ADJ"
+     }
+    ],
+    "ADV->CONJ": [
+     {
+      "sentence": "start \u00feanuh \u00fean nam peilatus iesu jah usblaggw stop",
+      "token": "\u00feanuh",
+      "gold": "ADV",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start \u00feanuh dags ju\u00fean dugann hneiwan atgaggandans \u00fean du imma \u00feai twalif qe\u00feun du imma fralet \u00feo managein ei galei\u00feandans in \u00feos bisunjane haimos jah weihsa saljaina jah bugjaina sis matins unte her in au\u00fejamma stada sium stop",
+      "token": "\u00feanuh",
+      "gold": "ADV",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start gali\u00feun \u00fean jah bigetun fulan gabundanana at daura uta ana gagga jah andbundun ina stop",
+      "token": "\u00fean",
+      "gold": "ADV",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start \u0195e nu galeiko \u00feans mans \u00feis kunjis jah \u0195e sijaina galeikai stop",
+      "token": "nu",
+      "gold": "ADV",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start ni\u00fe~\u00fean giutand wein niujata in balgins fairnjans ai\u00fe\u00feau distaurnand balgeis bi\u00feeh \u00fean jah wein usgutni\u00fe jah balgeis fraqistnand ak giutand wein juggata in balgins niujans jah bajo\u00feum gabairgada stop",
+      "token": "bi\u00feeh",
+      "gold": "ADV",
+      "pred": "CONJ"
+     }
+    ],
+    "ADJ->ADV": [
+     {
+      "sentence": "start qi\u00fea allis izwis \u00featei \u0195arjammeh habandane gibada i\u00fe af \u00feamma unhabandin jah \u00featei habai\u00fe afnimada af imma stop",
+      "token": "allis",
+      "gold": "ADJ",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start qi\u00fea allis izwis maiza in baurim qinono praufetus iohanne \u00feamma daupjandin ainshun nist i\u00fe sa minniza imma in \u00feiudangardjai gudis maiza imma ist stop",
+      "token": "allis",
+      "gold": "ADJ",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start a\u00fe\u00fean mahteigs ist gu\u00fe alla anst ufarassjan in izwis ei in allamma sinteino allis ganauhan habandans ufarassjai\u00fe in allamma waurstwe godaize stop",
+      "token": "sinteino",
+      "gold": "ADJ",
+      "pred": "ADV"
+     }
+    ],
+    "N->PRO": [
+     {
+      "sentence": "start jah laisida ins in gajukom manag jah qa\u00fe im in laiseinai seinai stop",
+      "token": "seinai",
+      "gold": "N",
+      "pred": "PRO"
+     },
+     {
+      "sentence": "start inuh \u00feis nu jah leik mans andnam ei laisareis uns wair\u00feai \u00feizos du guda garaihteins swa auk skulda du galeikon seinai frodein jah mans aftra gala\u00feon waurdam jah waurstwam jah spilla wair\u00fean aiwaggeljons usmete stop",
+      "token": "seinai",
+      "gold": "N",
+      "pred": "PRO"
+     }
+    ],
+    "NUM->CONJ": [
+     {
+      "sentence": "start \u00feanuh dags ju\u00fean dugann hneiwan atgaggandans \u00fean du imma \u00feai twalif qe\u00feun du imma fralet \u00feo managein ei galei\u00feandans in \u00feos bisunjane haimos jah weihsa saljaina jah bugjaina sis matins unte her in au\u00fejamma stada sium stop",
+      "token": "twalif",
+      "gold": "NUM",
+      "pred": "CONJ"
+     }
+    ],
+    "ADV->N": [
+     {
+      "sentence": "start \u00feanuh dags ju\u00fean dugann hneiwan atgaggandans \u00fean du imma \u00feai twalif qe\u00feun du imma fralet \u00feo managein ei galei\u00feandans in \u00feos bisunjane haimos jah weihsa saljaina jah bugjaina sis matins unte her in au\u00fejamma stada sium stop",
+      "token": "her",
+      "gold": "ADV",
+      "pred": "N"
+     },
+     {
+      "sentence": "start nih ist ains ak jah andraias saei qa\u00fe ist magula ains her saei habai\u00fe \u00b7e\u00b7 hlaibans barizeinans jah twans fiskans analeiko swe filippus gasakada ni waiht mikilis hugjands nih wair\u00feidos laisareis and\u00feaggkjands \u00feairh \u00feoei usbar qi\u00feands akei \u00feata \u0195a ist du swa managaim stop",
+      "token": "analeiko",
+      "gold": "ADV",
+      "pred": "N"
+     },
+     {
+      "sentence": "start andhof imma iesus ik andaugjo rodida manasedai ik sinteino laisida in gaqum\u00feai jah in gudhusa \u00fearei sinteino iudaieis gaqimand jah \u00feiubjo ni rodida waiht stop",
+      "token": "andaugjo",
+      "gold": "ADV",
+      "pred": "N"
+     },
+     {
+      "sentence": "start jah jabai \u0195as iggqis qi\u00feai du\u0195e \u00feata taujats qi\u00feaits \u00featei frauja \u00feis gairnei\u00fe jah sunsaiw ina insandei\u00fe hidre stop",
+      "token": "hidre",
+      "gold": "ADV",
+      "pred": "N"
+     },
+     {
+      "sentence": "start jah war\u00fe mi\u00fe\u00feanei afskaiskaidun sik af imma qa\u00fe paitrus du iesua talzjand god ist unsis her wisan jah gawaurkjaima hlei\u00feros \u00ferins aina \u00feus jah aina mose jah aina helijin ni witands \u0195a qi\u00fei\u00fe stop",
+      "token": "her",
+      "gold": "ADV",
+      "pred": "N"
+     }
+    ],
+    "N->ADV": [
+     {
+      "sentence": "start nih ist ains ak jah andraias saei qa\u00fe ist magula ains her saei habai\u00fe \u00b7e\u00b7 hlaibans barizeinans jah twans fiskans analeiko swe filippus gasakada ni waiht mikilis hugjands nih wair\u00feidos laisareis and\u00feaggkjands \u00feairh \u00feoei usbar qi\u00feands akei \u00feata \u0195a ist du swa managaim stop",
+      "token": "her",
+      "gold": "N",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start alewa haubid meinata ni salbodes i\u00fe si balsana gasalboda fotuns meinans stop",
+      "token": "balsana",
+      "gold": "N",
+      "pred": "ADV"
+     }
+    ],
+    "ADV->VB": [
+     {
+      "sentence": "start andhof imma iesus ik andaugjo rodida manasedai ik sinteino laisida in gaqum\u00feai jah in gudhusa \u00fearei sinteino iudaieis gaqimand jah \u00feiubjo ni rodida waiht stop",
+      "token": "\u00feiubjo",
+      "gold": "ADV",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start wasu\u00fe~\u00fean sunus is sa al\u00feiza ana akra jah qimands atiddja ne\u0195 razn jah gahausida saggwins jah laikins stop",
+      "token": "ne\u0195",
+      "gold": "ADV",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start samaleiko \u00fean jah waurstwa goda swikun\u00fea sind jah \u00feoei aljaleikos sik habandona filhan ni mahta sind stop",
+      "token": "aljaleikos",
+      "gold": "ADV",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start i\u00fe nu sai ufkunnandans gu\u00fe maizu\u00fe~\u00fean gakunnaidai fram guda \u0195aiwa gawandidedu\u00fe izwis aftra du \u00feaim unmahteigam jah halkam stabim \u00feaimei aftra iupana skalkinon wilei\u00fe stop",
+      "token": "iupana",
+      "gold": "ADV",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start jah wisandin paitrau in rohsnai dala\u00fea jah atiddja aina \u00feiujo \u00feis auhumistins gudjins stop",
+      "token": "dala\u00fea",
+      "gold": "ADV",
+      "pred": "VB"
+     }
+    ],
+    "PRO->ADV": [
+     {
+      "sentence": "start \u0195e nu galeiko \u00feans mans \u00feis kunjis jah \u0195e sijaina galeikai stop",
+      "token": "\u0195e",
+      "gold": "PRO",
+      "pred": "ADV"
+     }
+    ],
+    "CONJ->ADV": [
+     {
+      "sentence": "start a\u00fe\u00fean ju so aqizi at waurtim bagme ligi\u00fe all nu bagme unbairandane akran god usmaitada jah in fon galagjada stop",
+      "token": "nu",
+      "gold": "CONJ",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start sai\u0195am nu \u00feairh skuggwan in frisahtai i\u00fe \u00fean andwair\u00fei wi\u00fera andwair\u00fei nu wait us dailai i\u00fe \u00fean ufkunna stop",
+      "token": "nu",
+      "gold": "CONJ",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start bi usbeisnai jah wenai meinaim unte ni in waihtai gaaiwisko\u00fes wair\u00fea ak in allai trauainai swe sinteino jah nu mikiljada xristus in leika meinamma ja\u00fe\u00fee \u00feairh libain ja\u00fe\u00fee \u00feairh dau\u00feu stop",
+      "token": "nu",
+      "gold": "CONJ",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start \u00featei an\u00fearaim aldim ni kun\u00fe was sunum manne swaswe nu andhuli\u00fe ist \u00feaim weiham is apaustaulum jah praufetum in ahmin stop",
+      "token": "nu",
+      "gold": "CONJ",
+      "pred": "ADV"
+     },
+     {
+      "sentence": "start in \u00feamma nu mela izwar ufarassus du jainaize \u00fearbom ei jah jainaize ufarassus wair\u00feai du izwaraim \u00fearbom ei wair\u00feai ibnassus stop",
+      "token": "nu",
+      "gold": "CONJ",
+      "pred": "ADV"
+     }
+    ],
+    "NUM->ADJ": [
+     {
+      "sentence": "start ni\u00fe~\u00fean giutand wein niujata in balgins fairnjans ai\u00fe\u00feau distaurnand balgeis bi\u00feeh \u00fean jah wein usgutni\u00fe jah balgeis fraqistnand ak giutand wein juggata in balgins niujans jah bajo\u00feum gabairgada stop",
+      "token": "bajo\u00feum",
+      "gold": "NUM",
+      "pred": "ADJ"
+     }
+    ],
+    "INTJ->NUM": [
+     {
+      "sentence": "start o unfrodans galateis \u0195as izwis afhugida sunjai ni ufhausjan izwizei faura augam iesus xristus faurameli\u00fes was in izwis ushrami\u00fes stop",
+      "token": "o",
+      "gold": "INTJ",
+      "pred": "NUM"
+     }
+    ],
+    "VB->NUM": [
+     {
+      "sentence": "start jah alls hiuhma was manageins beidandans uta \u0195eilai \u00fewmiamins stop",
+      "token": "beidandans",
+      "gold": "VB",
+      "pred": "NUM"
+     }
+    ],
+    "PART->CONJ": [
+     {
+      "sentence": "start i\u00fe in \u00feizei us\u00feriuti\u00fe mis so widuwo fraweita \u00feo ibai und andi qimandei usagljai mis stop",
+      "token": "ibai",
+      "gold": "PART",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start du\u00fe\u00fee jah weis fram \u00feamma daga ei hausidedum ni \u0195eilaidedum faur izwis bidjandans jah aihtrondans ei fullnai\u00fe kun\u00fejis wiljins is in allai handugein jah frodein ahmeinai stop",
+      "token": "ei",
+      "gold": "PART",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start i\u00fe eis qe\u00feun du imma magu i\u00fe iesus qa\u00feuh du im swe\u00feauh \u00feana stikl \u00feanei ik driggka driggkats jah \u00feizai daupeinai \u00feizaiei ik daupjada daupjanda stop",
+      "token": "swe\u00feauh",
+      "gold": "PART",
+      "pred": "CONJ"
+     },
+     {
+      "sentence": "start andhofun jah qe\u00feun du imma ibai jah \u00feu us galeilaia is ussokei jah sai\u0195 \u00featei praufetus us galeilaia ni urreisi\u00fe stop",
+      "token": "ibai",
+      "gold": "PART",
+      "pred": "CONJ"
+     }
+    ],
+    "ADV->ADJ": [
+     {
+      "sentence": "start ak qimands in rumai usdaudo sokida mik jah bigat stop",
+      "token": "usdaudo",
+      "gold": "ADV",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start \u00fearuh qa\u00fe im iesus mel mein ni nauh ist i\u00fe mel izwar sinteino ist manwu stop",
+      "token": "sinteino",
+      "gold": "ADV",
+      "pred": "ADJ"
+     },
+     {
+      "sentence": "start i\u00fe \u00feans unledans sinteino habai\u00fe mi\u00fe izwis i\u00fe mik ni sinteino habai\u00fe stop",
+      "token": "sinteino",
+      "gold": "ADV",
+      "pred": "ADJ"
+     }
+    ],
+    "PRO->N": [
+     {
+      "sentence": "start jah ni du ainaihun \u00feizo insandi\u00fes was helias alja in saraipta seidonais du qinon widuwon stop",
+      "token": "ainaihun",
+      "gold": "PRO",
+      "pred": "N"
+     },
+     {
+      "sentence": "start bro\u00ferjus jabai gafahaidau manna in \u0195izai missadede jus \u00feai ahmeinans ga\u00fewastjai\u00fe \u00feana swaleikana in ahmin qairreins atsai\u0195ands \u00feuk silban ibai jah \u00feu fraisaizau stop",
+      "token": "\u0195izai",
+      "gold": "PRO",
+      "pred": "N"
+     },
+     {
+      "sentence": "start unagein us handau fijande unsaraize galausidaim skalkinon imma stop",
+      "token": "unsaraize",
+      "gold": "PRO",
+      "pred": "N"
+     }
+    ],
+    "AP->VB": [
+     {
+      "sentence": "start jah ni du ainaihun \u00feizo insandi\u00fes was helias alja in saraipta seidonais du qinon widuwon stop",
+      "token": "alja",
+      "gold": "AP",
+      "pred": "VB"
+     }
+    ],
+    "VB->ADV": [
+     {
+      "sentence": "start sai\u0195am nu \u00feairh skuggwan in frisahtai i\u00fe \u00fean andwair\u00fei wi\u00fera andwair\u00fei nu wait us dailai i\u00fe \u00fean ufkunna stop",
+      "token": "sai\u0195am",
+      "gold": "VB",
+      "pred": "ADV"
+     }
+    ],
+    "NUM->ADV": [
+     {
+      "sentence": "start unte \u00feairh ina habam atgagg bajo\u00fes in ainamma ahmin du attin stop",
+      "token": "bajo\u00fes",
+      "gold": "NUM",
+      "pred": "ADV"
+     }
+    ],
+    "INTJ->CONJ": [
+     {
+      "sentence": "start andhafjands \u00fean iesus qa\u00fe o kuni ungalaubjando jah inwindo und \u0195a siau at izwis jah \u00feulau izwis attiuh \u00feana sunu \u00feeinana hidrei stop",
+      "token": "o",
+      "gold": "INTJ",
+      "pred": "CONJ"
+     }
+    ],
+    "NUM->N": [
+     {
+      "sentence": "start \u00fea\u00feroh bi fidwortaihun jera usiddja aftra in iairusaulwma mi\u00fe barnabin ganimands mi\u00fe mis jah teitu stop",
+      "token": "fidwortaihun",
+      "gold": "NUM",
+      "pred": "N"
+     },
+     {
+      "sentence": "start maht wesi auk \u00feata balsan frabugjan in managizo \u00feau \u00ferija hunda skatte jah giban unledaim jah andstaurraidedun \u00feo stop",
+      "token": "hunda",
+      "gold": "NUM",
+      "pred": "N"
+     }
+    ],
+    "AP->ADJ": [
+     {
+      "sentence": "start i\u00fe \u00feata du sitan af taihswon meinai ai\u00fe\u00feau af hleidumein nist mein du giban alja \u00feaimei manwi\u00fe was stop",
+      "token": "alja",
+      "gold": "AP",
+      "pred": "ADJ"
+     }
+    ],
+    "ADJ->CONJ": [
+     {
+      "sentence": "start jah anaks insai\u0195andans ni \u00feanasei\u00fes ainohun gase\u0195un alja iesu ainana mi\u00fe sis stop",
+      "token": "alja",
+      "gold": "ADJ",
+      "pred": "CONJ"
+     }
+    ],
+    "NUM->VB": [
+     {
+      "sentence": "start in jera \u00fean fimftataihundin \u00feiudinassaus teibairiaus kaisaris raginondin puntiau peilatau iudaia jah fidurraginja \u00feis galeilaias herodeis filippauzuh \u00fean bro\u00fers is fidurraginja \u00feis ituraias jah trakauneitidaus landis jah lwsaniaus abeilenes fidurraginja stop",
+      "token": "fimftataihundin",
+      "gold": "NUM",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start maht wesi auk \u00feata balsan frabugjan in managizo \u00feau \u00ferija hunda skatte jah giban unledaim jah andstaurraidedun \u00feo stop",
+      "token": "\u00ferija",
+      "gold": "NUM",
+      "pred": "VB"
+     }
+    ],
+    "INTJ->VB": [
+     {
+      "sentence": "start wai \u00feus kaurazein wai \u00feus be\u00fesa\u00efdan unte i\u00fe waur\u00feeina in twre jah seidone landa mahteis \u00feos waur\u00feanons in izwis airis \u00feau in sakkau jah azgon idreigodedeina stop",
+      "token": "wai",
+      "gold": "INTJ",
+      "pred": "VB"
+     },
+     {
+      "sentence": "start wai \u00feus kaurazein wai \u00feus be\u00fesa\u00efdan unte i\u00fe waur\u00feeina in twre jah seidone landa mahteis \u00feos waur\u00feanons in izwis airis \u00feau in sakkau jah azgon idreigodedeina stop",
+      "token": "wai",
+      "gold": "INTJ",
+      "pred": "VB"
+     }
+    ]
+   },
+   "seed": 4,
+   "baseline": {
+    "prf": {
+     "ADJ": {
+      "precision": 0.9104477611940298,
+      "recall": 0.7721518987341772,
+      "f1": 0.8356164383561644,
+      "support": 395
+     },
+     "ADV": {
+      "precision": 0.9132231404958677,
+      "recall": 0.7245901639344262,
+      "f1": 0.8080438756855576,
+      "support": 305
+     },
+     "AP": {
+      "precision": 0.9123376623376623,
+      "recall": 0.9946902654867257,
+      "f1": 0.9517358171041491,
+      "support": 565
+     },
+     "CONJ": {
+      "precision": 0.959830866807611,
+      "recall": 0.884990253411306,
+      "f1": 0.920892494929006,
+      "support": 513
+     },
+     "INTJ": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 4
+     },
+     "N": {
+      "precision": 0.9783705839942322,
+      "recall": 0.8715478484264612,
+      "f1": 0.9218750000000001,
+      "support": 1557
+     },
+     "NUM": {
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1": 0.9090909090909091,
+      "support": 18
+     },
+     "PART": {
+      "precision": 0.5454545454545454,
+      "recall": 0.8571428571428571,
+      "f1": 0.6666666666666665,
+      "support": 7
+     },
+     "PRO": {
+      "precision": 0.9503759398496241,
+      "recall": 0.992930086410055,
+      "f1": 0.9711870918171341,
+      "support": 1273
+     },
+     "VB": {
+      "precision": 0.8466223698781838,
+      "recall": 0.9664981036662452,
+      "f1": 0.9025974025974025,
+      "support": 1582
+     }
+    },
+    "overall_accuracy": 0.9192796269496704,
+    "confusion": {
+     "VB": {
+      "VB": 1529,
+      "ADJ": 10,
+      "PRO": 26,
+      "N": 17
+     },
+     "CONJ": {
+      "CONJ": 454,
+      "PART": 5,
+      "PRO": 36,
+      "ADV": 17,
+      "ADJ": 1
+     },
+     "ADV": {
+      "AP": 54,
+      "ADV": 221,
+      "CONJ": 15,
+      "VB": 9,
+      "ADJ": 6
+     },
+     "N": {
+      "N": 1357,
+      "VB": 183,
+      "PRO": 4,
+      "ADV": 2,
+      "ADJ": 11
+     },
+     "ADJ": {
+      "ADJ": 305,
+      "N": 12,
+      "VB": 78
+     },
+     "PRO": {
+      "PRO": 1264,
+      "VB": 5,
+      "CONJ": 3,
+      "ADV": 1
+     },
+     "AP": {
+      "AP": 562,
+      "ADJ": 2,
+      "ADV": 1
+     },
+     "NUM": {
+      "NUM": 15,
+      "VB": 2,
+      "N": 1
+     },
+     "INTJ": {
+      "INTJ": 4
+     },
+     "PART": {
+      "PART": 6,
+      "CONJ": 1
+     }
+    }
+   },
+   "oov_rate_test": 0.08747387039716996,
+   "train_vocab_size": 8419
+  }
+ ],
+ "aggregate_prf": {
+  "ADJ": {
+   "precision": {
+    "mean": 0.8618793762383709,
+    "sd": 0.04417953625337687
+   },
+   "recall": {
+    "mean": 0.7609041514912916,
+    "sd": 0.036226868034522484
+   },
+   "f1": {
+    "mean": 0.8071228776872316,
+    "sd": 0.020397039167965262
+   },
+   "support_mean": 387.6
+  },
+  "ADV": {
+   "precision": {
+    "mean": 0.8403517537826719,
+    "sd": 0.018400921670758984
+   },
+   "recall": {
+    "mean": 0.7577094319021608,
+    "sd": 0.02760121495086852
+   },
+   "f1": {
+    "mean": 0.7964977816228556,
+    "sd": 0.013869890172651675
+   },
+   "support_mean": 290.0
+  },
+  "AP": {
+   "precision": {
+    "mean": 0.9268740916720268,
+    "sd": 0.007673240518059086
+   },
+   "recall": {
+    "mean": 0.96199032207179,
+    "sd": 0.005564257515054339
+   },
+   "f1": {
+    "mean": 0.9440790245492756,
+    "sd": 0.0037949627035222815
+   },
+   "support_mean": 542.8
+  },
+  "CONJ": {
+   "precision": {
+    "mean": 0.9301808292509289,
+    "sd": 0.014269050714486555
+   },
+   "recall": {
+    "mean": 0.9300164148935739,
+    "sd": 0.008867661153820114
+   },
+   "f1": {
+    "mean": 0.9300049138845659,
+    "sd": 0.005646681271847182
+   },
+   "support_mean": 511.4
+  },
+  "INTJ": {
+   "precision": {
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "recall": {
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "f1": {
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "support_mean": 2.6666666666666665
+  },
+  "N": {
+   "precision": {
+    "mean": 0.9176714204813555,
+    "sd": 0.01424477494463462
+   },
+   "recall": {
+    "mean": 0.9131272800022915,
+    "sd": 0.015255486375208982
+   },
+   "f1": {
+    "mean": 0.9152181645400936,
+    "sd": 0.003919761356009084
+   },
+   "support_mean": 1495.8
+  },
+  "NUM": {
+   "precision": {
+    "mean": 0.9457013574660633,
+    "sd": 0.07544494117888266
+   },
+   "recall": {
+    "mean": 0.6346031746031746,
+    "sd": 0.14707357832106097
+   },
+   "f1": {
+    "mean": 0.752126794062278,
+    "sd": 0.11922396674736699
+   },
+   "support_mean": 22.6
+  },
+  "PART": {
+   "precision": {
+    "mean": 0.6755555555555556,
+    "sd": 0.413237742829434
+   },
+   "recall": {
+    "mean": 0.3421736158578264,
+    "sd": 0.2044800464855951
+   },
+   "f1": {
+    "mean": 0.44197802197802194,
+    "sd": 0.2498742589229833
+   },
+   "support_mean": 13.8
+  },
+  "PRO": {
+   "precision": {
+    "mean": 0.9709913455035087,
+    "sd": 0.0032123056659584103
+   },
+   "recall": {
+    "mean": 0.9736524755651835,
+    "sd": 0.00858737091768643
+   },
+   "f1": {
+    "mean": 0.9723062549142656,
+    "sd": 0.005020693007154613
+   },
+   "support_mean": 1216.4
+  },
+  "VB": {
+   "precision": {
+    "mean": 0.8837503908861754,
+    "sd": 0.01754020969880466
+   },
+   "recall": {
+    "mean": 0.9258714265366924,
+    "sd": 0.01083933853134429
+   },
+   "f1": {
+    "mean": 0.9041594240488247,
+    "sd": 0.006054082074912522
+   },
+   "support_mean": 1513.8
+  }
+ },
+ "aggregate_overall": {
+  "mean": 0.9144411250450734,
+  "sd": 0.0032411013574699574
+ }
+}

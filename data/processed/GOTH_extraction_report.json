@@ -1,0 +1,20 @@
+{
+ "dataset": "GOTH",
+ "n_sentences": 4305,
+ "n_tokens": 75981,
+ "final_tag_counts": {
+  "VB": 15063,
+  "N": 14676,
+  "PRO": 12216,
+  "XX": 7945,
+  "AP": 5341,
+  "CONJ": 4934,
+  "start": 4305,
+  "stop": 4305,
+  "ADJ": 3942,
+  "ADV": 2887,
+  "NUM": 233,
+  "PART": 119,
+  "INTJ": 15
+ }
+}

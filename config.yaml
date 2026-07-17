@@ -1,0 +1,73 @@
+paths:
+  raw:
+    ycoe_psd_dir: data/raw/ycoe/psd
+    helipad_psd: data/raw/helipad/heliand.psd
+    icepahc_tagged_dir: data/raw/icepahc/tagged
+    gothic_csv: data/raw/gothic/gothcorpus.csv
+    ohg_csv: data/raw/ohg/OHG_corpus.csv
+  processed: data/processed
+  results: results
+
+extraction:
+  lowercase: true
+  add_boundary_tokens: true
+  oi_files:
+    [1150.homiliubok.rel-ser.tagged, 1150.firstgrammar.sci-lin.tagged,
+     1210.jartein.rel-sag.tagged, 1210.thorlakur.rel-sag.tagged,
+     1250.sturlunga.nar-sag.tagged, 1250.thetubrot.nar-sag.tagged,
+     1260.jomsvikingar.nar-sag.tagged, 1270.gragas.law-law.tagged,
+     1275.morkin.nar-his.tagged, 1300.alexander.nar-sag.tagged,
+     1310.grettir.nar-sag.tagged, 1325.arni.nar-sag.tagged,
+     1350.bandamennM.nar-sag.tagged, 1350.finnbogi.nar-sag.tagged,
+     1350.marta.rel-sag.tagged, 1400.gunnar.nar-sag.tagged,
+     1400.gunnar2.nar-sag.tagged, 1400.viglundur.nar-sag.tagged]
+  ohg:
+    uncertain_single: keep
+    uncertain_double: mask
+    disjunction: unify_or_mask
+
+masked_tags: [XX, PUNCT, start, stop]
+
+model: {embedding_dim: 300, hidden_size: 60, num_layers: 3, dropout: 0.2}
+
+oov: {unk_dropout: 0.5}
+
+training:
+  lr: 0.001
+  batch_size: 64
+  max_epochs: 20
+  patience: 3
+  split: [0.8, 0.1, 0.1]
+  seeds: [0, 1, 2, 3, 4]
+
+ablation:
+  sizes: [250, 500, 750, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000, 7500, 10000, 25000, 50000, 75000, 100000]
+  runs_per_size: 100
+  seed_base: 1000
+
+languages:
+  OE:   {sents: OE_sents.npy,   tags: OE_tags.npy}
+  OS:   {sents: OS_sents.npy,   tags: OS_tags.npy}
+  OI:   {sents: OI_sents.npy,   tags: OI_tags.npy}
+  GOTH: {sents: GOTH_sents.npy, tags: GOTH_tags.npy}
+  OHG:  {sents: OHG_sents.npy,  tags: OHG_tags.npy}
+
+ohg_subsets:
+  notker: {files_prefix: "DDD-AD-Z-Notker", n_sents: [2000, 3000]}
+  heterogeneous: {n_sents: 3000}
+
+contrast_seeds: [0, 1, 2]
+
+comparable:
+  CONJ: [OE, OS, OI, GOTH, OHG]
+  C:    [OE, OS, OI, OHG]
+  ADJ:  [OE, OS, OI, GOTH, OHG]
+  D:    [OE, OS, OI, OHG]
+  N:    [OE, OS, OI, GOTH, OHG]
+  VB:   [OE, OS, OI, GOTH, OHG]
+  ADV:  [OE, OS, OI, GOTH, OHG]
+  PRO:  [OE, OS, OI, GOTH, OHG]
+  AP:   [OE, OS, OI, GOTH, OHG]
+  NUM:  [OE, OS, OHG, GOTH]
+  NEG:  [OE, OS, OI, OHG]
+  TO:   [OE, OS, OI, OHG]
